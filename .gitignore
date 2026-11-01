@@ -1,0 +1,68 @@
+# ============================================================
+# 雅思听力视频流水线 — Git 忽略规则
+# 原则：只托管「源码 / 文档 / 小体积配置」，
+#       大体积二进制（音频、视频）与中间产物不入库
+# ============================================================
+
+# ---------- 1. 大体积二进制：音频 / 视频 ----------
+*.mp3
+*.wav
+*.m4a
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# ---------- 2. 中间产物（可随时由脚本重新生成）----------
+# 音频切片（220+ 个片段，由 03_rebuild_audio.py 生成）
+ielts-video/data/tmp_audio/
+# 重组音频与字幕时间轴
+ielts-video/data/rebuilt_audio.mp3
+ielts-video/data/timeline.json
+ielts-video/data/subtitles.ass
+ielts-video/data/subtitles_shifted.ass
+
+# ---------- 3. 成片输出 ----------
+ielts-video/out/
+# 但保留 QA 参考帧目录以外的说明（out 整体忽略）
+
+# ---------- 3b. 背景图重复副本（与 background.png 同内容）----------
+ielts-video/assets/A_serene__fresh_and_calming_st_*.png
+
+# ---------- 4. Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+*.so
+
+# ---------- 5. 敏感信息（防误提交）----------
+.env
+.env.*
+*.key
+*.pem
+secrets.*
+config.local.*
+# 注意：DEEPSEEK_API_KEY 通过环境变量提供，禁止写入任何文件
+
+# ---------- 6. 编辑器 / 系统 ----------
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# ---------- 7. 工具数据目录 ----------
+.workbuddy/
+.venv/
+
+# ---------- 8. 模型缓存（若落在工作区）----------
+*.bin
+*.onnx
+models/
+cache/
