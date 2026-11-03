@@ -31,6 +31,12 @@ LANG = "en"
 # 正常句间停顿 < 3s，题目说明段（含读题静音）都 > 5s，取 4.0 安全区分。
 GAP_THRESHOLD = float(os.environ.get("GAP_THRESHOLD", "4.0"))
 
+# 对齐合理性校验阈值（防"锚点错位"缺陷）：
+# 高频词（school/the/a 等）会被 SequenceMatcher 错配到几十秒外的同名位置，
+# 把句子边界错误拉长，导致成片出现"有字幕、无人声"的静音区段。
+MAX_SENT_SEC = float(os.environ.get("MAX_SENT_SEC", "15.0"))   # 单句最大合理时长
+MAX_WORD_GAP_SEC = float(os.environ.get("MAX_WORD_GAP_SEC", "2.0"))  # 句内相邻词最大间隔
+
 
 def normalize(s: str) -> str:
     s = s.lower()
@@ -118,6 +124,26 @@ def align(orig_sents, whisper_segs):
         wpos_sorted = sorted(set(p[1] for p in pairs))
         words = [{"w": w_words[i][0], "start": w_words[i][1], "end": w_words[i][2]}
                  for i in wpos_sorted]
+
+        # —— 对齐合理性校验（防锚点错位）——
+        # 从末词往前回溯，遇到时间跳变即截断，只保留"时间连续"的词段。
+        # 否则高频词错配会把句子边界错误拉长（详见 docs/07）。
+        cut = len(words)
+        for i in range(1, len(words)):
+            gap = words[i]["start"] - words[i - 1]["end"]
+            if gap > MAX_WORD_GAP_SEC:
+                cut = i  # 在此处断开，丢弃错配的尾部词
+                break
+        if cut < len(words):
+            words = words[:cut]
+            end = words[-1]["end"]
+
+        # 截断后仍超长（例如首词就错配到很远），整句判为未匹配，走插值兜底
+        if (end - start) > MAX_SENT_SEC:
+            results.append({"index": sent_idx, "text": s, "start": None,
+                            "end": None, "words": [], "matched": False})
+            continue
+
         results.append({
             "index": sent_idx, "text": s,
             "start": round(start, 3), "end": round(end, 3),

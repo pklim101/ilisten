@@ -95,6 +95,14 @@ for AUDIO in "${AUDIOS[@]}"; do
     && $PY "$SCRIPT_DIR/scripts/04_subtitles.py" \
     && $PY "$SCRIPT_DIR/scripts/05_compose.py"; then
     echo "✅ 完成：$OUT_MP4"
+
+    # 附带产出考点词表 PDF（B站引流资料；失败不影响成片计数）
+    MATERIAL_NAME="$NAME" \
+    OUT_VOCAB_PDF="$OUT_DIR/${STEM}_vocab.pdf" \
+    $PY "$SCRIPT_DIR/scripts/06_vocab_pdf.py" \
+      && echo "📄 考点词表：$OUT_DIR/${STEM}_vocab.pdf" \
+      || echo "⚠️  考点词 PDF 生成失败（不影响成片）"
+
     SUCCESS=$((SUCCESS + 1))
   else
     echo "❌ 失败：$BASENAME"

@@ -40,5 +40,14 @@ $PY ielts-video/scripts/04_subtitles.py
 echo "==> [5/5] 合成出片"
 OUT="$OUT_MP4" $PY ielts-video/scripts/05_compose.py
 
+echo "==> [6/6] 生成考点词表 PDF（B站引流资料）"
+BASE_NAME="$(basename "$OUT_MP4" .mp4)"
+MATERIAL_NAME="${MATERIAL_NAME:-$(echo "$BASE_NAME" | sed -E 's/c([0-9]+)_test([0-9]+)_part([0-9]+)/剑\1 Test\2 Part\3/I')}"
+MATERIAL_NAME="$MATERIAL_NAME" \
+OUT_VOCAB_PDF="${OUT_MP4%.mp4}_vocab.pdf" \
+$PY ielts-video/scripts/06_vocab_pdf.py \
+  || echo "⚠️  考点词 PDF 生成失败（不影响成片，可稍后单独重跑 06_vocab_pdf.py）"
+
 echo ""
 echo "完成！成片位于：$OUT_MP4"
+echo "考点词表：${OUT_MP4%.mp4}_vocab.pdf（发布后请设 VIDEO_REF=BV号 重新生成以回填）"
