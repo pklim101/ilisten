@@ -1,0 +1,77 @@
+{
+  "_meta": {
+    "purpose": "出片质检的说明段数量与对齐率历史基线；写死在仓库，运行时不落盘（决策 4A）",
+    "source": "项目 .workbuddy/memory 日志 + docs/07-静音错位问题诊断.md + 实测 data/*.json",
+    "usage": "instruction_typical 用于 WARN（数量略增），instruction_max 用于 BLOCK（数量异常）。未知 stem 用 _default。events/align_rate/duration_sec 仅供参考，qa_check.py 不拿它们做阻断判定。",
+    "updated": "2026-11-09"
+  },
+  "_default": {
+    "instruction_typical": 4,
+    "instruction_max": 6,
+    "align_rate_min": 0.9
+  },
+  "c19_test1_part1": {
+    "instruction_typical": 6,
+    "instruction_max": 8,
+    "events": 141,
+    "align_rate": 0.93,
+    "duration_sec": 1091.7,
+    "note": "修复锚点错位后说明段 5→6、总时长 1206→1092s；events 为修复前口径，仅供参考"
+  },
+  "c19_test1_part2": {
+    "instruction_typical": 4,
+    "instruction_max": 6,
+    "events": 129,
+    "align_rate": 0.95,
+    "duration_sec": null,
+    "note": "43 句 × 3 = 129 事件；说明段数为区间估计"
+  },
+  "c19_test1_part3": {
+    "instruction_typical": 4,
+    "instruction_max": 6,
+    "events": 168,
+    "align_rate": 0.97,
+    "duration_sec": 1170.0,
+    "note": "64/66 对齐，56 句 × 3；自适应阈值修复后长对话恢复"
+  },
+  "c19_test1_part4": {
+    "instruction_typical": 3,
+    "instruction_max": 5,
+    "events": 114,
+    "align_rate": 1.0,
+    "duration_sec": 1060.0,
+    "note": "38/38 全对齐，含首尾 ANNOUNCER: 指令行过滤"
+  },
+  "c19_test2_part1": {
+    "instruction_typical": 3,
+    "instruction_max": 5,
+    "events": 237,
+    "align_rate": 0.953,
+    "duration_sec": 1387.7,
+    "note": "81/85 对齐，79 句 × 3 = 237；4 个未匹配均为孤立句号残片；说明段 91.5/36.4/12.9s"
+  },
+  "c19_test2_part2": {
+    "instruction_typical": 3,
+    "instruction_max": 5,
+    "events": 114,
+    "align_rate": 1.0,
+    "duration_sec": 977.6,
+    "note": "38/38 全对齐，38 句 × 3 = 114；0 未匹配；3 个说明段 69.2/36.6/25.4s；质检 17 PASS / 0 WARN / 0 BLOCK；考点 112 个"
+  },
+  "c19_test2_part3": {
+    "instruction_typical": 4,
+    "instruction_max": 6,
+    "events": 189,
+    "align_rate": 1.0,
+    "duration_sec": 1193.7,
+    "note": "67/67 全对齐、0 未匹配；63 句 × 3 = 189 事件；省略号切句修复后孤立句号残片 8→0（docs/07 第八节）；4 个说明段（含结尾 13.9s）；质检 17 PASS / 0 WARN / 0 BLOCK；考点 149 个；成片 19:53 / 64.1MB"
+  },
+  "c19_test2_part4": {
+    "instruction_typical": 3,
+    "instruction_max": 5,
+    "events": 117,
+    "align_rate": 1.0,
+    "duration_sec": 1198.4,
+    "note": "39/39 全对齐、0 未匹配；39 句 ×3 = 117 事件；3 个说明段 71.8/7.7/17.7s；45 词学术长句 22.2s → C1 改按词数自适应后 17 PASS / 0 BLOCK；考点 125 个；成片 19:58 / 69.0MB"
+  }
+}

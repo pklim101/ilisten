@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "schema": "ilisten/cover-palettes/1",
+    "updated": "2026-11-09",
+    "source": "docs/05-方法论文脚本与封面文案.md 第二部分「配色方案（两套，A/B 测试）」",
+    "consumer": ".workbuddy/skills/ielts-listening-video/scripts/make_cover.py",
+    "usage": "make_cover.py 启动时优先读取本文件 palettes，缺文件或缺键时回退脚本内置值。换配色只改这里，不要改代码；改完跑 make_asset_plates.py 重出底板。",
+    "note": "rgb 数组顺序 R,G,B；hex 仅供人工查阅与 Figma / 稿定设计对齐，脚本不读取。"
+  },
+  "palettes": {
+    "blue": {
+      "name": "学术蓝 A",
+      "role": "生产默认（用户 2026-11-08 定稿）",
+      "hex": {
+        "bg_top": "#1B2A4A",
+        "bg_bottom": "#091122",
+        "glow": "#3A68A8",
+        "title": "#FFFFFF",
+        "accent": "#FFD700",
+        "sub": "#D6E4F8",
+        "bar_bg": "#1B2A4A",
+        "bar_text": "#F0F6FF",
+        "badge_bg": "#FFD700",
+        "badge_text": "#14223C",
+        "stroke": "#0C1830"
+      },
+      "bg_top": [27, 42, 74],
+      "bg_bottom": [9, 17, 34],
+      "glow": [58, 104, 168],
+      "title": [255, 255, 255],
+      "accent": [255, 215, 0],
+      "sub": [214, 228, 248],
+      "bar_bg": [27, 42, 74],
+      "bar_text": [240, 246, 255],
+      "badge_bg": [255, 215, 0],
+      "badge_text": [20, 34, 60],
+      "stroke": [12, 24, 48]
+    },
+    "red": {
+      "name": "剑桥红 B",
+      "role": "A/B 对照备选，默认不用于生产",
+      "hex": {
+        "bg_top": "#8B1A1A",
+        "bg_bottom": "#3A0A0E",
+        "glow": "#BE3E2E",
+        "title": "#FFF8DC",
+        "accent": "#FFD700",
+        "sub": "#FAE2D2",
+        "bar_bg": "#681A1C",
+        "bar_text": "#FFF4E2",
+        "badge_bg": "#FFF8DC",
+        "badge_text": "#6E1414",
+        "stroke": "#3A0A0E"
+      },
+      "bg_top": [139, 26, 26],
+      "bg_bottom": [58, 10, 14],
+      "glow": [190, 62, 46],
+      "title": [255, 248, 220],
+      "accent": [255, 215, 0],
+      "sub": [250, 226, 210],
+      "bar_bg": [104, 26, 28],
+      "bar_text": [255, 244, 226],
+      "badge_bg": [255, 248, 220],
+      "badge_text": [110, 20, 20],
+      "stroke": [58, 10, 14]
+    }
+  }
+}

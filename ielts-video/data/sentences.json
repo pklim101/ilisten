@@ -1,3084 +1,3941 @@
 [
   {
     "index": 0,
-    "text": "SALLY: Good morning.",
-    "start": null,
-    "end": null,
-    "words": [],
-    "matched": false
+    "text": "For my project on invertebrates, I chose to study tardigrades.",
+    "start": 71.84,
+    "end": 76.04,
+    "words": [
+      {
+        "w": "for",
+        "start": 71.84,
+        "end": 72.24
+      },
+      {
+        "w": "my",
+        "start": 72.24,
+        "end": 72.42
+      },
+      {
+        "w": "project",
+        "start": 72.42,
+        "end": 72.9
+      },
+      {
+        "w": "on",
+        "start": 72.9,
+        "end": 73.24
+      },
+      {
+        "w": "invertebrates",
+        "start": 73.24,
+        "end": 74.08
+      },
+      {
+        "w": "i",
+        "start": 74.28,
+        "end": 74.44
+      },
+      {
+        "w": "chose",
+        "start": 74.44,
+        "end": 74.74
+      },
+      {
+        "w": "to",
+        "start": 74.74,
+        "end": 75.04
+      },
+      {
+        "w": "study",
+        "start": 75.04,
+        "end": 75.38
+      },
+      {
+        "w": "tardigrades",
+        "start": 75.38,
+        "end": 76.04
+      }
+    ],
+    "matched": true
   },
   {
     "index": 1,
-    "text": "Hinchingbrooke Country Park, Sally speaking.",
-    "start": null,
-    "end": null,
-    "words": [],
-    "matched": false
+    "text": "These are microscopic - or to be more precise - near-microscopic animals.",
+    "start": 76.74,
+    "end": 81.1,
+    "words": [
+      {
+        "w": "these",
+        "start": 76.74,
+        "end": 76.98
+      },
+      {
+        "w": "are",
+        "start": 76.98,
+        "end": 77.26
+      },
+      {
+        "w": "microscopic",
+        "start": 77.26,
+        "end": 77.84
+      },
+      {
+        "w": "or",
+        "start": 77.84,
+        "end": 78.44
+      },
+      {
+        "w": "to",
+        "start": 78.5,
+        "end": 78.64
+      },
+      {
+        "w": "be",
+        "start": 78.64,
+        "end": 78.76
+      },
+      {
+        "w": "more",
+        "start": 78.76,
+        "end": 78.92
+      },
+      {
+        "w": "precise",
+        "start": 78.92,
+        "end": 79.28
+      },
+      {
+        "w": "near",
+        "start": 79.68,
+        "end": 79.9
+      },
+      {
+        "w": "microscopic",
+        "start": 79.9,
+        "end": 80.54
+      },
+      {
+        "w": "animals",
+        "start": 80.54,
+        "end": 81.1
+      }
+    ],
+    "matched": true
   },
   {
     "index": 2,
-    "text": "I‘m one of the rangers.",
-    "start": 37.88,
-    "end": 38.12,
+    "text": "There are well over a thousand known species of these tiny animals, which belong to the phylum Tardigrada.",
+    "start": 81.9,
+    "end": 88.68,
     "words": [
       {
+        "w": "there",
+        "start": 81.9,
+        "end": 82.18
+      },
+      {
+        "w": "are",
+        "start": 82.18,
+        "end": 82.3
+      },
+      {
+        "w": "well",
+        "start": 82.3,
+        "end": 82.44
+      },
+      {
+        "w": "over",
+        "start": 82.44,
+        "end": 82.78
+      },
+      {
+        "w": "a",
+        "start": 82.78,
+        "end": 83.04
+      },
+      {
+        "w": "thousand",
+        "start": 83.04,
+        "end": 83.48
+      },
+      {
+        "w": "known",
+        "start": 83.48,
+        "end": 84.0
+      },
+      {
+        "w": "species",
+        "start": 84.0,
+        "end": 84.52
+      },
+      {
         "w": "of",
-        "start": 37.88,
-        "end": 38.02
+        "start": 84.52,
+        "end": 84.94
+      },
+      {
+        "w": "these",
+        "start": 84.94,
+        "end": 85.16
+      },
+      {
+        "w": "tiny",
+        "start": 85.16,
+        "end": 85.48
+      },
+      {
+        "w": "animals",
+        "start": 85.48,
+        "end": 86.06
+      },
+      {
+        "w": "which",
+        "start": 86.06,
+        "end": 86.52
+      },
+      {
+        "w": "belong",
+        "start": 86.52,
+        "end": 86.94
+      },
+      {
+        "w": "to",
+        "start": 86.94,
+        "end": 87.26
       },
       {
         "w": "the",
-        "start": 38.02,
-        "end": 38.12
+        "start": 87.26,
+        "end": 87.38
+      },
+      {
+        "w": "phylum",
+        "start": 87.38,
+        "end": 87.82
+      },
+      {
+        "w": "tardigrada",
+        "start": 87.82,
+        "end": 88.68
       }
     ],
     "matched": true
   },
   {
     "index": 3,
-    "text": "JOHN: Oh hello.",
-    "start": null,
-    "end": null,
-    "words": [],
-    "matched": false
+    "text": "Most tardigrades range in length from 0.05 to 1 millimetre, though the largest species can grow to be 1.2 millimetres in length.",
+    "start": 88.68,
+    "end": 101.02,
+    "words": [
+      {
+        "w": "most",
+        "start": 88.68,
+        "end": 89.98
+      },
+      {
+        "w": "tardigrades",
+        "start": 89.98,
+        "end": 90.9
+      },
+      {
+        "w": "range",
+        "start": 90.9,
+        "end": 91.54
+      },
+      {
+        "w": "in",
+        "start": 91.54,
+        "end": 91.88
+      },
+      {
+        "w": "length",
+        "start": 91.88,
+        "end": 92.2
+      },
+      {
+        "w": "from",
+        "start": 92.2,
+        "end": 92.48
+      },
+      {
+        "w": "0",
+        "start": 92.48,
+        "end": 92.72
+      },
+      {
+        "w": "05",
+        "start": 92.72,
+        "end": 93.48
+      },
+      {
+        "w": "to",
+        "start": 93.48,
+        "end": 94.22
+      },
+      {
+        "w": "though",
+        "start": 95.7,
+        "end": 95.98
+      },
+      {
+        "w": "the",
+        "start": 95.98,
+        "end": 96.14
+      },
+      {
+        "w": "largest",
+        "start": 96.14,
+        "end": 96.6
+      },
+      {
+        "w": "species",
+        "start": 96.6,
+        "end": 97.32
+      },
+      {
+        "w": "can",
+        "start": 97.32,
+        "end": 97.9
+      },
+      {
+        "w": "grow",
+        "start": 97.9,
+        "end": 98.26
+      },
+      {
+        "w": "to",
+        "start": 98.26,
+        "end": 98.5
+      },
+      {
+        "w": "be",
+        "start": 98.5,
+        "end": 98.7
+      },
+      {
+        "w": "1",
+        "start": 98.7,
+        "end": 98.96
+      },
+      {
+        "w": "in",
+        "start": 100.1,
+        "end": 100.54
+      },
+      {
+        "w": "length",
+        "start": 100.54,
+        "end": 101.02
+      }
+    ],
+    "matched": true
   },
   {
     "index": 4,
-    "text": "My name’s John Chapman, and I‘m a teaching assistant at a local primary school.",
-    "start": 54.6,
-    "end": 55.66,
+    "text": "They are also sometimes called 'water bears': 'water' because that's where they thrive best and 'bear' because of the way they move.",
+    "start": 101.66,
+    "end": 109.94,
     "words": [
       {
-        "w": "a",
-        "start": 54.6,
-        "end": 54.8
+        "w": "they",
+        "start": 101.66,
+        "end": 102.0
       },
       {
-        "w": "teaching",
-        "start": 54.8,
-        "end": 55.1
+        "w": "are",
+        "start": 102.0,
+        "end": 102.12
       },
       {
-        "w": "assistant",
-        "start": 55.1,
-        "end": 55.66
+        "w": "also",
+        "start": 102.12,
+        "end": 102.52
+      },
+      {
+        "w": "sometimes",
+        "start": 102.52,
+        "end": 103.1
+      },
+      {
+        "w": "called",
+        "start": 103.1,
+        "end": 103.48
+      },
+      {
+        "w": "because",
+        "start": 104.98,
+        "end": 105.54
+      },
+      {
+        "w": "that's",
+        "start": 105.54,
+        "end": 106.1
+      },
+      {
+        "w": "where",
+        "start": 106.1,
+        "end": 106.24
+      },
+      {
+        "w": "they",
+        "start": 106.24,
+        "end": 106.4
+      },
+      {
+        "w": "thrive",
+        "start": 106.4,
+        "end": 106.74
+      },
+      {
+        "w": "best",
+        "start": 106.74,
+        "end": 107.18
+      },
+      {
+        "w": "and",
+        "start": 107.82,
+        "end": 108.16
+      },
+      {
+        "w": "because",
+        "start": 108.56,
+        "end": 108.92
+      },
+      {
+        "w": "of",
+        "start": 108.92,
+        "end": 109.12
+      },
+      {
+        "w": "the",
+        "start": 109.12,
+        "end": 109.22
+      },
+      {
+        "w": "way",
+        "start": 109.22,
+        "end": 109.4
+      },
+      {
+        "w": "they",
+        "start": 109.4,
+        "end": 109.56
+      },
+      {
+        "w": "move",
+        "start": 109.56,
+        "end": 109.94
       }
     ],
     "matched": true
   },
   {
     "index": 5,
-    "text": "I’ve been asked to arrange a visit to the park for two of our classes.",
-    "start": 113.04,
-    "end": 113.04,
+    "text": "'Moss piglet' is another name for tardigrades because of the way they look when viewed from the front.",
+    "start": 111.7,
+    "end": 117.32,
     "words": [
       {
-        "w": "visit",
-        "start": 113.04,
-        "end": 113.04
+        "w": "is",
+        "start": 111.7,
+        "end": 112.2
+      },
+      {
+        "w": "another",
+        "start": 112.2,
+        "end": 112.54
+      },
+      {
+        "w": "name",
+        "start": 112.54,
+        "end": 112.96
+      },
+      {
+        "w": "for",
+        "start": 112.96,
+        "end": 113.3
+      },
+      {
+        "w": "tardigrades",
+        "start": 113.3,
+        "end": 114.08
+      },
+      {
+        "w": "because",
+        "start": 114.08,
+        "end": 114.64
+      },
+      {
+        "w": "of",
+        "start": 114.64,
+        "end": 114.88
+      },
+      {
+        "w": "the",
+        "start": 114.88,
+        "end": 114.98
+      },
+      {
+        "w": "way",
+        "start": 114.98,
+        "end": 115.16
+      },
+      {
+        "w": "they",
+        "start": 115.16,
+        "end": 115.36
+      },
+      {
+        "w": "look",
+        "start": 115.36,
+        "end": 115.74
+      },
+      {
+        "w": "when",
+        "start": 115.74,
+        "end": 116.12
+      },
+      {
+        "w": "viewed",
+        "start": 116.12,
+        "end": 116.52
+      },
+      {
+        "w": "from",
+        "start": 116.52,
+        "end": 116.84
+      },
+      {
+        "w": "the",
+        "start": 116.84,
+        "end": 117.0
+      },
+      {
+        "w": "front",
+        "start": 117.0,
+        "end": 117.32
       }
     ],
     "matched": true
   },
   {
     "index": 6,
-    "text": "SALLY: OK.",
-    "start": null,
-    "end": null,
-    "words": [],
-    "matched": false
-  },
-  {
-    "index": 7,
-    "text": "What would you like to know?",
-    "start": 120.12,
-    "end": 121.76,
+    "text": "They were first discovered in Germany in 1773 by Johann Goeze, who coined the name Tardigrada.",
+    "start": 117.32,
+    "end": 126.42,
     "words": [
       {
-        "w": "what",
-        "start": 120.12,
+        "w": "they",
+        "start": 117.32,
+        "end": 118.2
+      },
+      {
+        "w": "were",
+        "start": 118.2,
+        "end": 118.34
+      },
+      {
+        "w": "first",
+        "start": 118.34,
+        "end": 118.68
+      },
+      {
+        "w": "discovered",
+        "start": 118.68,
+        "end": 119.3
+      },
+      {
+        "w": "in",
+        "start": 119.3,
+        "end": 119.74
+      },
+      {
+        "w": "germany",
+        "start": 119.74,
+        "end": 120.16
+      },
+      {
+        "w": "in",
+        "start": 120.16,
         "end": 120.8
       },
       {
-        "w": "would",
+        "w": "1773",
         "start": 120.8,
-        "end": 121.0
+        "end": 122.2
       },
       {
-        "w": "you",
-        "start": 121.0,
-        "end": 121.12
+        "w": "by",
+        "start": 122.2,
+        "end": 122.86
       },
       {
-        "w": "like",
-        "start": 121.12,
-        "end": 121.3
+        "w": "johann",
+        "start": 122.86,
+        "end": 123.24
+      },
+      {
+        "w": "who",
+        "start": 124.24,
+        "end": 124.48
+      },
+      {
+        "w": "coined",
+        "start": 124.48,
+        "end": 124.9
+      },
+      {
+        "w": "the",
+        "start": 124.9,
+        "end": 125.18
+      },
+      {
+        "w": "name",
+        "start": 125.18,
+        "end": 125.52
+      },
+      {
+        "w": "tardigrada",
+        "start": 125.52,
+        "end": 126.42
+      }
+    ],
+    "matched": true
+  },
+  {
+    "index": 7,
+    "text": "As I say, there are many different species of tardigrade - too many to describe here - but, generally speaking, the different species share similar physical traits.",
+    "start": 127.54,
+    "end": 138.8,
+    "words": [
+      {
+        "w": "as",
+        "start": 127.54,
+        "end": 128.02
+      },
+      {
+        "w": "i",
+        "start": 128.02,
+        "end": 128.18
+      },
+      {
+        "w": "say",
+        "start": 128.18,
+        "end": 128.52
+      },
+      {
+        "w": "there",
+        "start": 128.86,
+        "end": 128.98
+      },
+      {
+        "w": "are",
+        "start": 128.98,
+        "end": 129.2
+      },
+      {
+        "w": "many",
+        "start": 129.2,
+        "end": 129.58
+      },
+      {
+        "w": "different",
+        "start": 129.58,
+        "end": 130.08
+      },
+      {
+        "w": "species",
+        "start": 130.08,
+        "end": 130.8
+      },
+      {
+        "w": "of",
+        "start": 130.8,
+        "end": 131.12
+      },
+      {
+        "w": "tardigrade",
+        "start": 131.12,
+        "end": 131.68
+      },
+      {
+        "w": "too",
+        "start": 132.2,
+        "end": 132.42
+      },
+      {
+        "w": "many",
+        "start": 132.42,
+        "end": 132.66
       },
       {
         "w": "to",
-        "start": 121.3,
-        "end": 121.48
+        "start": 132.66,
+        "end": 132.84
       },
       {
-        "w": "know",
-        "start": 121.48,
-        "end": 121.76
+        "w": "describe",
+        "start": 132.84,
+        "end": 133.24
+      },
+      {
+        "w": "here",
+        "start": 133.24,
+        "end": 133.72
+      },
+      {
+        "w": "but",
+        "start": 133.94,
+        "end": 134.12
+      },
+      {
+        "w": "generally",
+        "start": 134.12,
+        "end": 134.58
+      },
+      {
+        "w": "speaking",
+        "start": 134.58,
+        "end": 135.12
+      },
+      {
+        "w": "the",
+        "start": 135.68,
+        "end": 135.8
+      },
+      {
+        "w": "different",
+        "start": 135.8,
+        "end": 136.12
+      },
+      {
+        "w": "species",
+        "start": 136.12,
+        "end": 136.7
+      },
+      {
+        "w": "share",
+        "start": 136.7,
+        "end": 137.34
+      },
+      {
+        "w": "similar",
+        "start": 137.34,
+        "end": 137.92
+      },
+      {
+        "w": "physical",
+        "start": 137.92,
+        "end": 138.3
+      },
+      {
+        "w": "traits",
+        "start": 138.3,
+        "end": 138.8
       }
     ],
     "matched": true
   },
   {
     "index": 8,
-    "text": "JOHN: Well, I‘m new to this area, so perhaps you could tell me something about the park first, please.",
-    "start": 122.7,
-    "end": 129.3,
+    "text": "They have a body which is short, and also rounded - a bit like a barrel - and the body comprises four segments.",
+    "start": 139.48,
+    "end": 148.16,
     "words": [
       {
-        "w": "well",
-        "start": 122.7,
-        "end": 122.88
+        "w": "they",
+        "start": 139.48,
+        "end": 139.7
       },
       {
-        "w": "new",
-        "start": 123.78,
-        "end": 124.08
+        "w": "have",
+        "start": 139.7,
+        "end": 139.92
       },
       {
-        "w": "to",
-        "start": 124.08,
-        "end": 124.32
+        "w": "a",
+        "start": 139.92,
+        "end": 140.02
       },
       {
-        "w": "this",
-        "start": 124.32,
-        "end": 124.56
+        "w": "body",
+        "start": 140.02,
+        "end": 140.3
       },
       {
-        "w": "area",
-        "start": 124.56,
-        "end": 124.94
+        "w": "which",
+        "start": 140.3,
+        "end": 140.68
       },
       {
-        "w": "so",
-        "start": 124.94,
-        "end": 125.9
+        "w": "is",
+        "start": 140.68,
+        "end": 141.02
       },
       {
-        "w": "perhaps",
-        "start": 125.9,
-        "end": 126.3
+        "w": "short",
+        "start": 141.02,
+        "end": 141.5
       },
       {
-        "w": "you",
-        "start": 126.3,
-        "end": 126.52
+        "w": "and",
+        "start": 141.5,
+        "end": 142.3
       },
       {
-        "w": "could",
-        "start": 126.52,
-        "end": 126.62
+        "w": "also",
+        "start": 142.3,
+        "end": 142.76
       },
       {
-        "w": "tell",
-        "start": 126.62,
-        "end": 126.84
+        "w": "rounded",
+        "start": 142.76,
+        "end": 143.4
       },
       {
-        "w": "me",
-        "start": 126.84,
-        "end": 127.0
+        "w": "a",
+        "start": 143.94,
+        "end": 144.08
       },
       {
-        "w": "something",
-        "start": 127.0,
-        "end": 127.46
+        "w": "bit",
+        "start": 144.08,
+        "end": 144.26
       },
       {
-        "w": "about",
-        "start": 127.46,
-        "end": 127.82
+        "w": "like",
+        "start": 144.26,
+        "end": 144.5
+      },
+      {
+        "w": "a",
+        "start": 144.5,
+        "end": 144.68
+      },
+      {
+        "w": "barrel",
+        "start": 144.68,
+        "end": 145.0
+      },
+      {
+        "w": "and",
+        "start": 145.0,
+        "end": 145.88
       },
       {
         "w": "the",
-        "start": 127.82,
-        "end": 128.08
+        "start": 145.88,
+        "end": 146.08
       },
       {
-        "w": "park",
-        "start": 128.08,
-        "end": 128.44
+        "w": "body",
+        "start": 146.08,
+        "end": 146.32
       },
       {
-        "w": "first",
-        "start": 128.44,
-        "end": 128.9
+        "w": "comprises",
+        "start": 146.32,
+        "end": 147.08
       },
       {
-        "w": "please",
-        "start": 129.0,
-        "end": 129.3
+        "w": "four",
+        "start": 147.08,
+        "end": 147.58
+      },
+      {
+        "w": "segments",
+        "start": 147.58,
+        "end": 148.16
       }
     ],
     "matched": true
   },
   {
     "index": 9,
-    "text": "SALLY: Of course.",
-    "start": 129.88,
-    "end": 130.34,
+    "text": "Each segment has a pair of legs, at the end of which are between four and eight sharp claws.",
+    "start": 148.88,
+    "end": 155.3,
     "words": [
       {
-        "w": "of",
-        "start": 129.88,
-        "end": 130.02
+        "w": "each",
+        "start": 148.88,
+        "end": 149.16
       },
       {
-        "w": "course",
-        "start": 130.02,
-        "end": 130.34
+        "w": "segment",
+        "start": 149.16,
+        "end": 149.56
+      },
+      {
+        "w": "has",
+        "start": 149.56,
+        "end": 150.02
+      },
+      {
+        "w": "a",
+        "start": 150.02,
+        "end": 150.26
+      },
+      {
+        "w": "pair",
+        "start": 150.26,
+        "end": 150.42
+      },
+      {
+        "w": "of",
+        "start": 150.42,
+        "end": 150.58
+      },
+      {
+        "w": "legs",
+        "start": 150.58,
+        "end": 151.0
+      },
+      {
+        "w": "at",
+        "start": 151.44,
+        "end": 151.76
+      },
+      {
+        "w": "the",
+        "start": 151.76,
+        "end": 151.9
+      },
+      {
+        "w": "end",
+        "start": 151.9,
+        "end": 152.1
+      },
+      {
+        "w": "of",
+        "start": 152.1,
+        "end": 152.26
+      },
+      {
+        "w": "which",
+        "start": 152.26,
+        "end": 152.5
+      },
+      {
+        "w": "are",
+        "start": 152.5,
+        "end": 152.88
+      },
+      {
+        "w": "between",
+        "start": 152.88,
+        "end": 153.18
+      },
+      {
+        "w": "four",
+        "start": 153.18,
+        "end": 153.74
+      },
+      {
+        "w": "and",
+        "start": 153.74,
+        "end": 154.0
+      },
+      {
+        "w": "eight",
+        "start": 154.0,
+        "end": 154.3
+      },
+      {
+        "w": "sharp",
+        "start": 154.3,
+        "end": 154.82
+      },
+      {
+        "w": "claws",
+        "start": 154.82,
+        "end": 155.3
       }
     ],
     "matched": true
   },
   {
     "index": 10,
-    "text": "Altogether the park covers 170 acres, that’s 69 hectares.",
-    "start": 132.34,
-    "end": 137.68,
+    "text": "I should also say that some species don't have any claws; what they have are discs, and these work by means of suction.",
+    "start": 156.1,
+    "end": 165.5,
     "words": [
       {
-        "w": "the",
-        "start": 132.34,
-        "end": 132.44
+        "w": "i",
+        "start": 156.1,
+        "end": 156.36
       },
       {
-        "w": "park",
-        "start": 132.44,
-        "end": 132.74
+        "w": "should",
+        "start": 156.36,
+        "end": 156.54
       },
       {
-        "w": "covers",
-        "start": 132.74,
-        "end": 133.22
+        "w": "also",
+        "start": 156.54,
+        "end": 156.82
       },
       {
-        "w": "170",
-        "start": 133.22,
-        "end": 134.2
+        "w": "say",
+        "start": 156.82,
+        "end": 157.26
       },
       {
-        "w": "acres",
-        "start": 134.2,
-        "end": 134.84
+        "w": "that",
+        "start": 157.26,
+        "end": 157.54
       },
       {
-        "w": "69",
-        "start": 136.14,
-        "end": 136.82
+        "w": "some",
+        "start": 157.54,
+        "end": 157.9
       },
       {
-        "w": "hectares",
-        "start": 136.82,
-        "end": 137.68
+        "w": "species",
+        "start": 157.9,
+        "end": 158.38
+      },
+      {
+        "w": "don't",
+        "start": 158.38,
+        "end": 159.08
+      },
+      {
+        "w": "have",
+        "start": 159.08,
+        "end": 159.32
+      },
+      {
+        "w": "any",
+        "start": 159.32,
+        "end": 159.66
+      },
+      {
+        "w": "claws",
+        "start": 159.66,
+        "end": 160.02
+      },
+      {
+        "w": "what",
+        "start": 160.6,
+        "end": 160.88
+      },
+      {
+        "w": "they",
+        "start": 160.88,
+        "end": 161.06
+      },
+      {
+        "w": "have",
+        "start": 161.06,
+        "end": 161.48
+      },
+      {
+        "w": "are",
+        "start": 161.48,
+        "end": 161.8
+      },
+      {
+        "w": "and",
+        "start": 162.9,
+        "end": 163.42
+      },
+      {
+        "w": "these",
+        "start": 163.42,
+        "end": 163.78
+      },
+      {
+        "w": "work",
+        "start": 163.78,
+        "end": 164.18
+      },
+      {
+        "w": "by",
+        "start": 164.18,
+        "end": 164.5
+      },
+      {
+        "w": "means",
+        "start": 164.5,
+        "end": 164.8
+      },
+      {
+        "w": "of",
+        "start": 164.8,
+        "end": 165.02
+      },
+      {
+        "w": "suction",
+        "start": 165.02,
+        "end": 165.5
       }
     ],
     "matched": true
   },
   {
     "index": 11,
-    "text": "There are three main types of habitat: wetland, grassland and woodland.",
-    "start": 137.68,
-    "end": 144.12,
+    "text": "They enable the tardigrade to cling on to surfaces or to grip its prey.",
+    "start": 166.16,
+    "end": 171.32,
     "words": [
       {
-        "w": "there",
-        "start": 137.68,
-        "end": 138.26
+        "w": "they",
+        "start": 166.16,
+        "end": 166.5
       },
       {
-        "w": "are",
-        "start": 138.26,
-        "end": 139.1
+        "w": "enable",
+        "start": 166.5,
+        "end": 167.04
       },
       {
-        "w": "three",
-        "start": 139.1,
-        "end": 139.42
+        "w": "the",
+        "start": 167.04,
+        "end": 167.24
       },
       {
-        "w": "main",
-        "start": 139.42,
-        "end": 139.84
+        "w": "tardigrade",
+        "start": 167.24,
+        "end": 167.72
       },
       {
-        "w": "types",
-        "start": 139.84,
-        "end": 140.12
+        "w": "to",
+        "start": 167.72,
+        "end": 168.02
       },
       {
-        "w": "of",
-        "start": 140.12,
-        "end": 140.32
+        "w": "cling",
+        "start": 168.02,
+        "end": 168.38
       },
       {
-        "w": "habitat",
-        "start": 140.32,
-        "end": 140.66
+        "w": "on",
+        "start": 168.38,
+        "end": 168.76
       },
       {
-        "w": "wetland",
-        "start": 141.28,
-        "end": 142.0
+        "w": "to",
+        "start": 168.76,
+        "end": 168.98
       },
       {
-        "w": "grassland",
-        "start": 142.46,
-        "end": 143.24
+        "w": "surfaces",
+        "start": 168.98,
+        "end": 169.36
       },
       {
-        "w": "and",
-        "start": 143.24,
-        "end": 143.58
+        "w": "or",
+        "start": 169.36,
+        "end": 170.22
       },
       {
-        "w": "woodland",
-        "start": 143.58,
-        "end": 144.12
+        "w": "to",
+        "start": 170.22,
+        "end": 170.42
+      },
+      {
+        "w": "grip",
+        "start": 170.42,
+        "end": 170.76
+      },
+      {
+        "w": "its",
+        "start": 170.76,
+        "end": 170.98
+      },
+      {
+        "w": "prey",
+        "start": 170.98,
+        "end": 171.32
       }
     ],
     "matched": true
   },
   {
     "index": 12,
-    "text": "The woods are well established and varied, with an oak plantation, and other areas of mixed species.",
-    "start": 144.84,
-    "end": 151.7,
+    "text": "Within the body, there are no lungs, or any organs for breathing at all.",
+    "start": 171.32,
+    "end": 176.5,
     "words": [
       {
-        "w": "the",
-        "start": 144.84,
-        "end": 145.02
+        "w": "within",
+        "start": 171.32,
+        "end": 172.26
       },
       {
-        "w": "woods",
-        "start": 145.02,
-        "end": 145.28
+        "w": "the",
+        "start": 172.26,
+        "end": 172.5
+      },
+      {
+        "w": "body",
+        "start": 172.5,
+        "end": 172.8
+      },
+      {
+        "w": "there",
+        "start": 173.34,
+        "end": 173.44
       },
       {
         "w": "are",
-        "start": 145.28,
-        "end": 145.52
+        "start": 173.44,
+        "end": 173.56
       },
       {
-        "w": "well",
-        "start": 145.52,
-        "end": 145.72
+        "w": "no",
+        "start": 173.56,
+        "end": 173.76
       },
       {
-        "w": "established",
-        "start": 145.72,
-        "end": 146.24
+        "w": "lungs",
+        "start": 173.76,
+        "end": 174.22
       },
       {
-        "w": "and",
-        "start": 146.24,
-        "end": 146.96
+        "w": "or",
+        "start": 174.22,
+        "end": 174.6
       },
       {
-        "w": "varied",
-        "start": 146.96,
-        "end": 147.38
+        "w": "any",
+        "start": 174.6,
+        "end": 174.92
       },
       {
-        "w": "with",
-        "start": 147.9,
-        "end": 148.1
+        "w": "organs",
+        "start": 174.92,
+        "end": 175.3
       },
       {
-        "w": "an",
-        "start": 148.1,
-        "end": 148.22
+        "w": "for",
+        "start": 175.3,
+        "end": 175.54
       },
       {
-        "w": "oak",
-        "start": 148.22,
-        "end": 148.46
+        "w": "breathing",
+        "start": 175.54,
+        "end": 175.9
       },
       {
-        "w": "plantation",
-        "start": 148.46,
-        "end": 148.88
+        "w": "at",
+        "start": 175.9,
+        "end": 176.16
       },
       {
-        "w": "and",
-        "start": 148.88,
-        "end": 149.7
-      },
-      {
-        "w": "other",
-        "start": 149.7,
-        "end": 149.98
-      },
-      {
-        "w": "areas",
-        "start": 149.98,
-        "end": 150.46
-      },
-      {
-        "w": "of",
-        "start": 150.46,
-        "end": 150.7
-      },
-      {
-        "w": "mixed",
-        "start": 150.7,
-        "end": 151.06
-      },
-      {
-        "w": "species",
-        "start": 151.06,
-        "end": 151.7
+        "w": "all",
+        "start": 176.16,
+        "end": 176.5
       }
     ],
     "matched": true
   },
   {
     "index": 13,
-    "text": "JOHN: Right.",
-    "start": 152.2,
-    "end": 152.7,
+    "text": "Instead, oxygen and also blood are transported in a fluid that fills the cavity of the body.",
+    "start": 177.12,
+    "end": 184.36,
     "words": [
       {
-        "w": "right",
-        "start": 152.2,
-        "end": 152.7
+        "w": "instead",
+        "start": 177.12,
+        "end": 177.68
+      },
+      {
+        "w": "oxygen",
+        "start": 178.08,
+        "end": 178.52
+      },
+      {
+        "w": "and",
+        "start": 178.52,
+        "end": 179.1
+      },
+      {
+        "w": "also",
+        "start": 179.1,
+        "end": 179.58
+      },
+      {
+        "w": "blood",
+        "start": 179.58,
+        "end": 179.96
+      },
+      {
+        "w": "are",
+        "start": 179.96,
+        "end": 180.6
+      },
+      {
+        "w": "transported",
+        "start": 180.6,
+        "end": 181.18
+      },
+      {
+        "w": "in",
+        "start": 181.18,
+        "end": 181.68
+      },
+      {
+        "w": "a",
+        "start": 181.68,
+        "end": 181.78
+      },
+      {
+        "w": "fluid",
+        "start": 181.78,
+        "end": 182.14
+      },
+      {
+        "w": "that",
+        "start": 182.14,
+        "end": 182.64
+      },
+      {
+        "w": "fills",
+        "start": 182.64,
+        "end": 183.1
+      },
+      {
+        "w": "the",
+        "start": 183.1,
+        "end": 183.38
+      },
+      {
+        "w": "cavity",
+        "start": 183.38,
+        "end": 183.68
+      },
+      {
+        "w": "of",
+        "start": 183.68,
+        "end": 183.94
+      },
+      {
+        "w": "the",
+        "start": 183.94,
+        "end": 184.04
+      },
+      {
+        "w": "body",
+        "start": 184.04,
+        "end": 184.36
       }
     ],
     "matched": true
   },
   {
     "index": 14,
-    "text": "SALLY: The wetland is quite varied, too.",
-    "start": 153.2,
-    "end": 155.42,
+    "text": "As far as the tardigrade's head is concerned, the best way I can describe this is that it looks rather strange - a bit squashed even - though many of the websites I looked at described its appearance as cute, which isn't exactly very scientific.",
+    "start": 185.34,
+    "end": 201.82,
     "words": [
       {
-        "w": "the",
-        "start": 153.2,
-        "end": 153.48
+        "w": "as",
+        "start": 185.34,
+        "end": 185.86
       },
       {
-        "w": "wetland",
-        "start": 153.48,
-        "end": 153.94
+        "w": "far",
+        "start": 185.86,
+        "end": 186.28
+      },
+      {
+        "w": "as",
+        "start": 186.28,
+        "end": 186.46
+      },
+      {
+        "w": "the",
+        "start": 186.46,
+        "end": 186.58
+      },
+      {
+        "w": "tardigrade's",
+        "start": 186.58,
+        "end": 187.34
+      },
+      {
+        "w": "head",
+        "start": 187.34,
+        "end": 187.62
       },
       {
         "w": "is",
-        "start": 153.94,
-        "end": 154.24
+        "start": 187.62,
+        "end": 187.94
       },
       {
-        "w": "quite",
-        "start": 154.24,
-        "end": 154.56
+        "w": "concerned",
+        "start": 187.94,
+        "end": 188.48
       },
       {
-        "w": "varied",
-        "start": 154.56,
-        "end": 155.04
+        "w": "the",
+        "start": 188.78,
+        "end": 188.9
       },
       {
-        "w": "too",
-        "start": 155.04,
-        "end": 155.42
+        "w": "best",
+        "start": 188.9,
+        "end": 189.22
+      },
+      {
+        "w": "way",
+        "start": 189.22,
+        "end": 189.44
+      },
+      {
+        "w": "i",
+        "start": 189.44,
+        "end": 189.6
+      },
+      {
+        "w": "can",
+        "start": 189.6,
+        "end": 189.74
+      },
+      {
+        "w": "describe",
+        "start": 189.74,
+        "end": 190.12
+      },
+      {
+        "w": "this",
+        "start": 190.12,
+        "end": 190.5
+      },
+      {
+        "w": "is",
+        "start": 190.5,
+        "end": 191.12
+      },
+      {
+        "w": "that",
+        "start": 191.12,
+        "end": 191.36
+      },
+      {
+        "w": "it",
+        "start": 191.36,
+        "end": 191.48
+      },
+      {
+        "w": "looks",
+        "start": 191.48,
+        "end": 191.7
+      },
+      {
+        "w": "rather",
+        "start": 191.7,
+        "end": 191.96
+      },
+      {
+        "w": "strange",
+        "start": 191.96,
+        "end": 192.58
+      },
+      {
+        "w": "a",
+        "start": 193.06,
+        "end": 193.18
+      },
+      {
+        "w": "bit",
+        "start": 193.18,
+        "end": 193.3
+      },
+      {
+        "w": "squashed",
+        "start": 193.3,
+        "end": 193.76
+      },
+      {
+        "w": "even",
+        "start": 193.76,
+        "end": 194.16
+      },
+      {
+        "w": "though",
+        "start": 194.86,
+        "end": 195.2
+      },
+      {
+        "w": "many",
+        "start": 195.2,
+        "end": 195.54
+      },
+      {
+        "w": "of",
+        "start": 195.54,
+        "end": 195.68
+      },
+      {
+        "w": "the",
+        "start": 195.68,
+        "end": 195.8
+      },
+      {
+        "w": "websites",
+        "start": 195.8,
+        "end": 196.2
+      },
+      {
+        "w": "i",
+        "start": 196.2,
+        "end": 196.54
+      },
+      {
+        "w": "looked",
+        "start": 196.54,
+        "end": 196.84
+      },
+      {
+        "w": "at",
+        "start": 196.84,
+        "end": 197.16
+      },
+      {
+        "w": "described",
+        "start": 197.16,
+        "end": 197.58
+      },
+      {
+        "w": "its",
+        "start": 197.58,
+        "end": 197.94
+      },
+      {
+        "w": "appearance",
+        "start": 197.94,
+        "end": 198.28
+      },
+      {
+        "w": "as",
+        "start": 198.28,
+        "end": 198.58
+      },
+      {
+        "w": "cute",
+        "start": 198.58,
+        "end": 198.94
+      },
+      {
+        "w": "which",
+        "start": 198.94,
+        "end": 199.58
+      },
+      {
+        "w": "isn't",
+        "start": 199.58,
+        "end": 200.26
+      },
+      {
+        "w": "exactly",
+        "start": 200.26,
+        "end": 200.7
+      },
+      {
+        "w": "very",
+        "start": 200.7,
+        "end": 201.16
+      },
+      {
+        "w": "scientific",
+        "start": 201.16,
+        "end": 201.82
       }
     ],
     "matched": true
   },
   {
     "index": 15,
-    "text": "The original farmland was dug up around 40 years ago to extract gravel.",
-    "start": 156.16,
-    "end": 161.34,
+    "text": "The tardigrade's mouth is a kind of tube that can open outwards to reveal teeth-like structures known as 'stylets'.",
+    "start": 202.72,
+    "end": 210.18,
     "words": [
       {
         "w": "the",
-        "start": 156.16,
-        "end": 156.42
+        "start": 202.72,
+        "end": 202.92
       },
       {
-        "w": "original",
-        "start": 156.42,
-        "end": 156.82
+        "w": "tardigrade's",
+        "start": 202.92,
+        "end": 203.64
       },
       {
-        "w": "farmland",
-        "start": 156.82,
-        "end": 157.5
+        "w": "mouth",
+        "start": 203.64,
+        "end": 203.84
       },
       {
-        "w": "was",
-        "start": 157.5,
-        "end": 158.0
+        "w": "is",
+        "start": 203.84,
+        "end": 204.46
       },
       {
-        "w": "dug",
-        "start": 158.0,
-        "end": 158.28
+        "w": "a",
+        "start": 204.46,
+        "end": 204.72
       },
       {
-        "w": "up",
-        "start": 158.28,
-        "end": 158.46
+        "w": "kind",
+        "start": 204.72,
+        "end": 204.94
       },
       {
-        "w": "around",
-        "start": 158.46,
-        "end": 158.86
+        "w": "of",
+        "start": 204.94,
+        "end": 205.1
       },
       {
-        "w": "40",
-        "start": 158.86,
-        "end": 159.36
+        "w": "tube",
+        "start": 205.1,
+        "end": 205.64
       },
       {
-        "w": "years",
-        "start": 159.36,
-        "end": 159.74
+        "w": "that",
+        "start": 205.64,
+        "end": 206.32
       },
       {
-        "w": "ago",
-        "start": 159.74,
-        "end": 160.08
+        "w": "can",
+        "start": 206.32,
+        "end": 206.54
+      },
+      {
+        "w": "open",
+        "start": 206.54,
+        "end": 206.96
+      },
+      {
+        "w": "outwards",
+        "start": 206.96,
+        "end": 207.66
       },
       {
         "w": "to",
-        "start": 160.08,
-        "end": 160.34
+        "start": 207.66,
+        "end": 207.9
       },
       {
-        "w": "extract",
-        "start": 160.34,
-        "end": 160.88
+        "w": "reveal",
+        "start": 207.9,
+        "end": 208.26
       },
       {
-        "w": "gravel",
-        "start": 160.88,
-        "end": 161.34
+        "w": "teeth",
+        "start": 208.26,
+        "end": 208.64
+      },
+      {
+        "w": "like",
+        "start": 208.64,
+        "end": 208.96
+      },
+      {
+        "w": "structures",
+        "start": 208.96,
+        "end": 209.62
+      },
+      {
+        "w": "known",
+        "start": 209.62,
+        "end": 209.96
+      },
+      {
+        "w": "as",
+        "start": 209.96,
+        "end": 210.18
       }
     ],
     "matched": true
   },
   {
     "index": 16,
-    "text": "Once this work was completed, the gravel pits filled with water, forming the two large lakes.",
-    "start": 162.1,
-    "end": 168.74,
+    "text": "These are sharp enough to pierce plant or animal cells.",
+    "start": 211.44,
+    "end": 215.06,
     "words": [
       {
-        "w": "once",
-        "start": 162.1,
-        "end": 162.54
+        "w": "these",
+        "start": 211.44,
+        "end": 211.86
       },
       {
-        "w": "this",
-        "start": 162.54,
-        "end": 162.96
+        "w": "are",
+        "start": 211.86,
+        "end": 212.1
       },
       {
-        "w": "work",
-        "start": 162.96,
-        "end": 163.26
+        "w": "sharp",
+        "start": 212.1,
+        "end": 212.4
       },
       {
-        "w": "was",
-        "start": 163.26,
-        "end": 163.48
+        "w": "enough",
+        "start": 212.4,
+        "end": 212.68
       },
       {
-        "w": "completed",
-        "start": 163.48,
-        "end": 164.0
+        "w": "to",
+        "start": 212.68,
+        "end": 212.9
       },
       {
-        "w": "the",
-        "start": 164.72,
-        "end": 164.84
+        "w": "pierce",
+        "start": 212.9,
+        "end": 213.38
       },
       {
-        "w": "gravel",
-        "start": 164.84,
-        "end": 165.1
+        "w": "plant",
+        "start": 213.38,
+        "end": 213.74
       },
       {
-        "w": "pits",
-        "start": 165.1,
-        "end": 165.46
+        "w": "or",
+        "start": 213.74,
+        "end": 214.16
       },
       {
-        "w": "filled",
-        "start": 165.46,
-        "end": 165.92
+        "w": "animal",
+        "start": 214.16,
+        "end": 214.52
       },
       {
-        "w": "with",
-        "start": 165.92,
-        "end": 166.16
-      },
-      {
-        "w": "water",
-        "start": 166.16,
-        "end": 166.58
-      },
-      {
-        "w": "forming",
-        "start": 166.9,
-        "end": 167.3
-      },
-      {
-        "w": "the",
-        "start": 167.3,
-        "end": 167.58
-      },
-      {
-        "w": "two",
-        "start": 167.58,
-        "end": 167.82
-      },
-      {
-        "w": "large",
-        "start": 167.82,
-        "end": 168.26
-      },
-      {
-        "w": "lakes",
-        "start": 168.26,
-        "end": 168.74
+        "w": "cells",
+        "start": 214.52,
+        "end": 215.06
       }
     ],
     "matched": true
   },
   {
     "index": 17,
-    "text": "There are also several smaller ones, ponds and a stream that flows through the park.",
-    "start": 169.58,
-    "end": 176.0,
+    "text": "So where are tardigrades found?",
+    "start": 216.2,
+    "end": 218.78,
     "words": [
       {
-        "w": "there",
-        "start": 169.58,
-        "end": 169.84
+        "w": "so",
+        "start": 216.2,
+        "end": 216.8
+      },
+      {
+        "w": "where",
+        "start": 216.8,
+        "end": 217.26
       },
       {
         "w": "are",
-        "start": 169.84,
-        "end": 169.96
+        "start": 217.26,
+        "end": 217.64
       },
       {
-        "w": "also",
-        "start": 169.96,
-        "end": 170.42
+        "w": "tardigrades",
+        "start": 217.64,
+        "end": 218.32
       },
       {
-        "w": "several",
-        "start": 170.42,
-        "end": 170.82
-      },
-      {
-        "w": "smaller",
-        "start": 170.82,
-        "end": 171.3
-      },
-      {
-        "w": "ones",
-        "start": 171.3,
-        "end": 171.64
-      },
-      {
-        "w": "ponds",
-        "start": 172.18,
-        "end": 172.64
-      },
-      {
-        "w": "and",
-        "start": 172.64,
-        "end": 173.44
-      },
-      {
-        "w": "a",
-        "start": 173.44,
-        "end": 173.66
-      },
-      {
-        "w": "stream",
-        "start": 173.66,
-        "end": 174.1
-      },
-      {
-        "w": "that",
-        "start": 174.1,
-        "end": 174.82
-      },
-      {
-        "w": "flows",
-        "start": 174.82,
-        "end": 175.12
-      },
-      {
-        "w": "through",
-        "start": 175.12,
-        "end": 175.46
-      },
-      {
-        "w": "the",
-        "start": 175.46,
-        "end": 175.6
-      },
-      {
-        "w": "park",
-        "start": 175.6,
-        "end": 176.0
+        "w": "found",
+        "start": 218.32,
+        "end": 218.78
       }
     ],
     "matched": true
   },
   {
     "index": 18,
-    "text": "JOHN: OK, so I suppose with these different habitats there‘s quite a variety of wildlife.",
-    "start": 177.36,
-    "end": 183.44,
+    "text": "Well, they live in every part of the world, in a variety of habitats: most commonly, on the bed of a lake, or on many kinds of plants or in very wet environments.",
+    "start": 219.24,
+    "end": 231.7,
     "words": [
       {
-        "w": "so",
-        "start": 177.36,
-        "end": 177.84
+        "w": "well",
+        "start": 219.24,
+        "end": 219.6
       },
       {
-        "w": "i",
-        "start": 177.84,
-        "end": 178.5
+        "w": "they",
+        "start": 219.9,
+        "end": 220.1
       },
       {
-        "w": "suppose",
-        "start": 178.5,
-        "end": 178.96
+        "w": "live",
+        "start": 220.1,
+        "end": 220.44
       },
       {
-        "w": "with",
-        "start": 178.96,
-        "end": 179.44
+        "w": "in",
+        "start": 220.44,
+        "end": 220.64
       },
       {
-        "w": "these",
-        "start": 179.44,
-        "end": 179.82
+        "w": "every",
+        "start": 220.64,
+        "end": 221.08
       },
       {
-        "w": "different",
-        "start": 179.82,
-        "end": 180.28
-      },
-      {
-        "w": "habitats",
-        "start": 180.28,
-        "end": 180.96
-      },
-      {
-        "w": "quite",
-        "start": 181.58,
-        "end": 182.06
-      },
-      {
-        "w": "a",
-        "start": 182.06,
-        "end": 182.26
-      },
-      {
-        "w": "variety",
-        "start": 182.26,
-        "end": 182.7
+        "w": "part",
+        "start": 221.08,
+        "end": 221.46
       },
       {
         "w": "of",
-        "start": 182.7,
-        "end": 183.02
+        "start": 221.46,
+        "end": 221.64
       },
       {
-        "w": "wildlife",
-        "start": 183.02,
-        "end": 183.44
+        "w": "the",
+        "start": 221.64,
+        "end": 221.74
+      },
+      {
+        "w": "world",
+        "start": 221.74,
+        "end": 222.1
+      },
+      {
+        "w": "in",
+        "start": 222.58,
+        "end": 222.9
+      },
+      {
+        "w": "a",
+        "start": 222.9,
+        "end": 223.1
+      },
+      {
+        "w": "variety",
+        "start": 223.1,
+        "end": 223.5
+      },
+      {
+        "w": "of",
+        "start": 223.5,
+        "end": 223.86
+      },
+      {
+        "w": "habitats",
+        "start": 223.86,
+        "end": 224.38
+      },
+      {
+        "w": "most",
+        "start": 224.38,
+        "end": 224.96
+      },
+      {
+        "w": "commonly",
+        "start": 224.96,
+        "end": 225.54
+      },
+      {
+        "w": "on",
+        "start": 225.54,
+        "end": 225.92
+      },
+      {
+        "w": "the",
+        "start": 225.92,
+        "end": 226.06
+      },
+      {
+        "w": "bed",
+        "start": 226.06,
+        "end": 226.28
+      },
+      {
+        "w": "of",
+        "start": 226.28,
+        "end": 226.6
+      },
+      {
+        "w": "a",
+        "start": 226.6,
+        "end": 226.86
+      },
+      {
+        "w": "lake",
+        "start": 226.86,
+        "end": 227.22
+      },
+      {
+        "w": "or",
+        "start": 227.22,
+        "end": 228.04
+      },
+      {
+        "w": "on",
+        "start": 228.04,
+        "end": 228.32
+      },
+      {
+        "w": "many",
+        "start": 228.32,
+        "end": 228.6
+      },
+      {
+        "w": "kinds",
+        "start": 228.6,
+        "end": 228.88
+      },
+      {
+        "w": "of",
+        "start": 228.88,
+        "end": 229.16
+      },
+      {
+        "w": "plants",
+        "start": 229.16,
+        "end": 229.58
+      },
+      {
+        "w": "or",
+        "start": 229.58,
+        "end": 230.1
+      },
+      {
+        "w": "in",
+        "start": 230.1,
+        "end": 230.4
+      },
+      {
+        "w": "very",
+        "start": 230.4,
+        "end": 230.68
+      },
+      {
+        "w": "wet",
+        "start": 230.68,
+        "end": 231.04
+      },
+      {
+        "w": "environments",
+        "start": 231.04,
+        "end": 231.7
       }
     ],
     "matched": true
   },
   {
     "index": 19,
-    "text": "SALLY: There certainly is – a lot of different species of birds and insects, and also animals like deer and rabbits.",
-    "start": 183.88,
-    "end": 192.7,
+    "text": "There's been some interesting research which has found that tardigrades are capable of surviving radiation and very high pressure, and they're also able to withstand temperatures as cold as - 200 degrees centigrade, or highs of more than 148 degrees centigrade, which is incredibly hot.",
+    "start": 232.58,
+    "end": 254.76,
     "words": [
       {
-        "w": "there",
-        "start": 183.88,
-        "end": 184.14
+        "w": "there's",
+        "start": 232.58,
+        "end": 233.06
       },
       {
-        "w": "certainly",
-        "start": 184.14,
-        "end": 184.6
+        "w": "been",
+        "start": 233.06,
+        "end": 233.24
       },
       {
-        "w": "is",
-        "start": 184.6,
-        "end": 185.16
+        "w": "some",
+        "start": 233.24,
+        "end": 233.42
       },
       {
-        "w": "a",
-        "start": 185.16,
-        "end": 186.04
+        "w": "interesting",
+        "start": 233.42,
+        "end": 234.02
       },
       {
-        "w": "lot",
-        "start": 186.04,
-        "end": 186.2
+        "w": "research",
+        "start": 234.02,
+        "end": 234.7
+      },
+      {
+        "w": "which",
+        "start": 234.7,
+        "end": 235.12
+      },
+      {
+        "w": "has",
+        "start": 235.12,
+        "end": 235.38
+      },
+      {
+        "w": "found",
+        "start": 235.38,
+        "end": 235.8
+      },
+      {
+        "w": "that",
+        "start": 235.8,
+        "end": 236.08
+      },
+      {
+        "w": "tardigrades",
+        "start": 236.08,
+        "end": 236.76
+      },
+      {
+        "w": "are",
+        "start": 236.76,
+        "end": 237.1
+      },
+      {
+        "w": "capable",
+        "start": 237.1,
+        "end": 237.38
       },
       {
         "w": "of",
-        "start": 186.2,
-        "end": 186.36
+        "start": 237.38,
+        "end": 237.66
       },
       {
-        "w": "different",
-        "start": 186.36,
-        "end": 186.66
+        "w": "surviving",
+        "start": 237.66,
+        "end": 238.08
       },
       {
-        "w": "species",
-        "start": 186.66,
-        "end": 187.26
-      },
-      {
-        "w": "of",
-        "start": 187.26,
-        "end": 187.78
-      },
-      {
-        "w": "birds",
-        "start": 187.78,
-        "end": 188.26
+        "w": "radiation",
+        "start": 238.08,
+        "end": 238.92
       },
       {
         "w": "and",
-        "start": 188.26,
-        "end": 188.96
+        "start": 238.92,
+        "end": 239.62
       },
       {
-        "w": "insects",
-        "start": 188.96,
-        "end": 189.42
+        "w": "very",
+        "start": 239.62,
+        "end": 240.04
+      },
+      {
+        "w": "high",
+        "start": 240.04,
+        "end": 240.36
+      },
+      {
+        "w": "pressure",
+        "start": 240.36,
+        "end": 240.86
       },
       {
         "w": "and",
-        "start": 189.9,
-        "end": 190.36
+        "start": 241.36,
+        "end": 241.82
+      },
+      {
+        "w": "they're",
+        "start": 241.82,
+        "end": 242.08
       },
       {
         "w": "also",
-        "start": 190.36,
-        "end": 190.66
+        "start": 242.08,
+        "end": 242.48
       },
       {
-        "w": "animals",
-        "start": 190.66,
-        "end": 191.08
+        "w": "able",
+        "start": 242.48,
+        "end": 242.86
       },
       {
-        "w": "like",
-        "start": 191.08,
-        "end": 191.64
+        "w": "to",
+        "start": 242.86,
+        "end": 243.08
       },
       {
-        "w": "deer",
-        "start": 191.64,
-        "end": 192.08
+        "w": "withstand",
+        "start": 243.08,
+        "end": 243.38
       },
       {
-        "w": "and",
-        "start": 192.08,
-        "end": 192.4
+        "w": "temperatures",
+        "start": 243.38,
+        "end": 244.22
       },
       {
-        "w": "rabbits",
-        "start": 192.4,
-        "end": 192.7
+        "w": "as",
+        "start": 244.22,
+        "end": 244.82
+      },
+      {
+        "w": "cold",
+        "start": 244.82,
+        "end": 245.32
+      },
+      {
+        "w": "as",
+        "start": 245.32,
+        "end": 245.64
+      },
+      {
+        "w": "200",
+        "start": 245.94,
+        "end": 246.74
+      },
+      {
+        "w": "degrees",
+        "start": 246.74,
+        "end": 247.14
+      },
+      {
+        "w": "centigrade",
+        "start": 247.14,
+        "end": 247.84
+      },
+      {
+        "w": "or",
+        "start": 247.84,
+        "end": 248.72
+      },
+      {
+        "w": "highs",
+        "start": 248.72,
+        "end": 249.18
+      },
+      {
+        "w": "of",
+        "start": 249.18,
+        "end": 249.64
+      },
+      {
+        "w": "more",
+        "start": 249.64,
+        "end": 249.88
+      },
+      {
+        "w": "than",
+        "start": 249.88,
+        "end": 250.1
+      },
+      {
+        "w": "148",
+        "start": 250.1,
+        "end": 251.52
+      },
+      {
+        "w": "degrees",
+        "start": 251.52,
+        "end": 251.94
+      },
+      {
+        "w": "centigrade",
+        "start": 251.94,
+        "end": 252.6
+      },
+      {
+        "w": "which",
+        "start": 253.16,
+        "end": 253.46
+      },
+      {
+        "w": "is",
+        "start": 253.46,
+        "end": 253.74
+      },
+      {
+        "w": "incredibly",
+        "start": 253.74,
+        "end": 254.3
+      },
+      {
+        "w": "hot",
+        "start": 254.3,
+        "end": 254.76
       }
     ],
     "matched": true
   },
   {
     "index": 20,
-    "text": "JOHN: And I understand you organise educational visits for school parties.",
-    "start": 193.36,
-    "end": 197.9,
+    "text": "It has been said that tardigrades could survive long after human beings have been wiped out, even in the event of an asteroid hitting the earth.",
+    "start": 259.5,
+    "end": 269.1,
     "words": [
       {
-        "w": "and",
-        "start": 193.36,
-        "end": 193.66
+        "w": "it",
+        "start": 259.5,
+        "end": 260.28
       },
       {
-        "w": "i",
-        "start": 193.66,
-        "end": 193.92
+        "w": "has",
+        "start": 260.28,
+        "end": 260.5
       },
       {
-        "w": "understand",
-        "start": 193.92,
-        "end": 194.36
+        "w": "been",
+        "start": 260.5,
+        "end": 260.7
       },
       {
-        "w": "you",
-        "start": 194.36,
-        "end": 194.76
+        "w": "said",
+        "start": 260.7,
+        "end": 261.22
       },
       {
-        "w": "organise",
-        "start": 194.76,
-        "end": 195.24
+        "w": "that",
+        "start": 261.22,
+        "end": 261.58
       },
       {
-        "w": "educational",
-        "start": 195.24,
-        "end": 196.16
+        "w": "tardigrades",
+        "start": 261.58,
+        "end": 262.28
       },
       {
-        "w": "visits",
-        "start": 196.16,
-        "end": 196.64
+        "w": "could",
+        "start": 262.28,
+        "end": 262.66
       },
       {
-        "w": "for",
-        "start": 196.64,
-        "end": 197.1
+        "w": "survive",
+        "start": 262.66,
+        "end": 263.06
       },
       {
-        "w": "school",
-        "start": 197.1,
-        "end": 197.48
+        "w": "long",
+        "start": 263.06,
+        "end": 263.52
       },
       {
-        "w": "parties",
-        "start": 197.48,
-        "end": 197.9
+        "w": "after",
+        "start": 263.52,
+        "end": 264.04
+      },
+      {
+        "w": "human",
+        "start": 264.04,
+        "end": 264.4
+      },
+      {
+        "w": "beings",
+        "start": 264.4,
+        "end": 264.84
+      },
+      {
+        "w": "have",
+        "start": 264.84,
+        "end": 265.04
+      },
+      {
+        "w": "been",
+        "start": 265.04,
+        "end": 265.2
+      },
+      {
+        "w": "wiped",
+        "start": 265.2,
+        "end": 265.46
+      },
+      {
+        "w": "out",
+        "start": 265.46,
+        "end": 265.88
+      },
+      {
+        "w": "even",
+        "start": 266.4,
+        "end": 266.74
+      },
+      {
+        "w": "in",
+        "start": 266.74,
+        "end": 266.96
+      },
+      {
+        "w": "the",
+        "start": 266.96,
+        "end": 267.06
+      },
+      {
+        "w": "event",
+        "start": 267.06,
+        "end": 267.26
+      },
+      {
+        "w": "of",
+        "start": 267.26,
+        "end": 267.5
+      },
+      {
+        "w": "an",
+        "start": 267.5,
+        "end": 267.6
+      },
+      {
+        "w": "asteroid",
+        "start": 267.6,
+        "end": 268.14
+      },
+      {
+        "w": "hitting",
+        "start": 268.14,
+        "end": 268.58
+      },
+      {
+        "w": "the",
+        "start": 268.58,
+        "end": 268.84
+      },
+      {
+        "w": "earth",
+        "start": 268.84,
+        "end": 269.1
       }
     ],
     "matched": true
   },
   {
     "index": 21,
-    "text": "SALLY: That’s right.",
-    "start": 198.96,
-    "end": 199.24,
+    "text": "If conditions become too extreme and tardigrades are at risk of drying out, they enter a state called cryptobiosis.",
+    "start": 269.98,
+    "end": 277.96,
     "words": [
       {
-        "w": "right",
-        "start": 198.96,
-        "end": 199.24
+        "w": "if",
+        "start": 269.98,
+        "end": 270.36
+      },
+      {
+        "w": "conditions",
+        "start": 270.36,
+        "end": 270.88
+      },
+      {
+        "w": "become",
+        "start": 270.88,
+        "end": 271.42
+      },
+      {
+        "w": "too",
+        "start": 271.42,
+        "end": 271.76
+      },
+      {
+        "w": "extreme",
+        "start": 271.76,
+        "end": 272.42
+      },
+      {
+        "w": "and",
+        "start": 272.42,
+        "end": 272.74
+      },
+      {
+        "w": "tardigrades",
+        "start": 272.74,
+        "end": 273.36
+      },
+      {
+        "w": "are",
+        "start": 273.36,
+        "end": 273.66
+      },
+      {
+        "w": "at",
+        "start": 273.66,
+        "end": 273.76
+      },
+      {
+        "w": "risk",
+        "start": 273.76,
+        "end": 274.0
+      },
+      {
+        "w": "of",
+        "start": 274.0,
+        "end": 274.18
+      },
+      {
+        "w": "drying",
+        "start": 274.18,
+        "end": 274.48
+      },
+      {
+        "w": "out",
+        "start": 274.48,
+        "end": 274.9
+      },
+      {
+        "w": "they",
+        "start": 274.9,
+        "end": 275.54
+      },
+      {
+        "w": "enter",
+        "start": 275.54,
+        "end": 275.9
+      },
+      {
+        "w": "a",
+        "start": 275.9,
+        "end": 276.18
+      },
+      {
+        "w": "state",
+        "start": 276.18,
+        "end": 276.4
+      },
+      {
+        "w": "called",
+        "start": 276.4,
+        "end": 276.82
+      },
+      {
+        "w": "cryptobiosis",
+        "start": 276.82,
+        "end": 277.96
       }
     ],
     "matched": true
   },
   {
     "index": 22,
-    "text": "We can organise a wide range of activities and adapt them to suit all ages.",
-    "start": 200.04,
-    "end": 205.42,
+    "text": "They curl into a ball, called a tun - that's T-U-N - by retracting their head and legs, and their metabolism drops to less than one percent of normal levels.",
+    "start": 278.72,
+    "end": 290.6,
     "words": [
       {
-        "w": "we",
-        "start": 200.04,
-        "end": 200.28
+        "w": "they",
+        "start": 278.72,
+        "end": 279.0
       },
       {
-        "w": "can",
-        "start": 200.28,
-        "end": 200.46
+        "w": "curl",
+        "start": 279.0,
+        "end": 279.4
       },
       {
-        "w": "organise",
-        "start": 200.46,
-        "end": 200.92
+        "w": "into",
+        "start": 279.4,
+        "end": 279.7
       },
       {
         "w": "a",
-        "start": 200.92,
-        "end": 201.22
+        "start": 279.7,
+        "end": 279.88
       },
       {
-        "w": "wide",
-        "start": 201.22,
-        "end": 201.58
+        "w": "ball",
+        "start": 279.88,
+        "end": 280.18
       },
       {
-        "w": "range",
-        "start": 201.58,
-        "end": 202.02
+        "w": "called",
+        "start": 280.18,
+        "end": 280.62
       },
       {
-        "w": "of",
-        "start": 202.02,
-        "end": 202.2
+        "w": "a",
+        "start": 280.62,
+        "end": 280.86
       },
       {
-        "w": "activities",
-        "start": 202.2,
-        "end": 202.76
+        "w": "that's",
+        "start": 281.86,
+        "end": 282.14
+      },
+      {
+        "w": "t",
+        "start": 282.14,
+        "end": 282.52
+      },
+      {
+        "w": "u",
+        "start": 282.52,
+        "end": 282.82
+      },
+      {
+        "w": "n",
+        "start": 282.82,
+        "end": 283.14
+      },
+      {
+        "w": "by",
+        "start": 283.62,
+        "end": 283.82
+      },
+      {
+        "w": "retracting",
+        "start": 283.82,
+        "end": 284.46
+      },
+      {
+        "w": "their",
+        "start": 284.46,
+        "end": 284.6
+      },
+      {
+        "w": "head",
+        "start": 284.6,
+        "end": 284.86
       },
       {
         "w": "and",
-        "start": 202.76,
-        "end": 203.56
+        "start": 284.86,
+        "end": 285.04
       },
       {
-        "w": "adapt",
-        "start": 203.56,
-        "end": 203.92
+        "w": "legs",
+        "start": 285.04,
+        "end": 285.38
       },
       {
-        "w": "them",
-        "start": 203.92,
-        "end": 204.22
+        "w": "and",
+        "start": 285.88,
+        "end": 286.26
+      },
+      {
+        "w": "their",
+        "start": 286.26,
+        "end": 286.46
+      },
+      {
+        "w": "metabolism",
+        "start": 286.46,
+        "end": 287.18
+      },
+      {
+        "w": "drops",
+        "start": 287.18,
+        "end": 287.88
       },
       {
         "w": "to",
-        "start": 204.22,
-        "end": 204.4
+        "start": 287.88,
+        "end": 288.28
       },
       {
-        "w": "suit",
-        "start": 204.4,
-        "end": 204.7
+        "w": "less",
+        "start": 288.28,
+        "end": 288.52
       },
       {
-        "w": "all",
-        "start": 204.7,
-        "end": 205.0
+        "w": "than",
+        "start": 288.52,
+        "end": 288.8
       },
       {
-        "w": "ages",
-        "start": 205.0,
-        "end": 205.42
+        "w": "of",
+        "start": 289.52,
+        "end": 289.8
+      },
+      {
+        "w": "normal",
+        "start": 289.8,
+        "end": 290.06
+      },
+      {
+        "w": "levels",
+        "start": 290.06,
+        "end": 290.6
       }
     ],
     "matched": true
   },
   {
     "index": 23,
-    "text": "JOHN: Can you give me some examples of the activities?",
-    "start": 206.02,
-    "end": 208.74,
+    "text": "They can remain like this until they are re-introduced to water, when they will come back to life in a matter of a few hours.",
+    "start": 291.42,
+    "end": 298.44,
     "words": [
       {
+        "w": "they",
+        "start": 291.42,
+        "end": 291.68
+      },
+      {
         "w": "can",
-        "start": 206.02,
-        "end": 206.32
+        "start": 291.68,
+        "end": 291.86
       },
       {
-        "w": "you",
-        "start": 206.32,
-        "end": 206.48
+        "w": "remain",
+        "start": 291.86,
+        "end": 292.1
       },
       {
-        "w": "give",
-        "start": 206.48,
-        "end": 206.72
+        "w": "like",
+        "start": 292.1,
+        "end": 292.46
       },
       {
-        "w": "me",
-        "start": 206.72,
-        "end": 206.92
+        "w": "this",
+        "start": 292.46,
+        "end": 292.88
       },
       {
-        "w": "some",
-        "start": 206.92,
-        "end": 207.18
+        "w": "until",
+        "start": 292.88,
+        "end": 293.28
       },
       {
-        "w": "examples",
-        "start": 207.18,
-        "end": 207.72
+        "w": "to",
+        "start": 294.36,
+        "end": 294.54
+      },
+      {
+        "w": "water",
+        "start": 294.54,
+        "end": 294.88
+      },
+      {
+        "w": "when",
+        "start": 294.88,
+        "end": 295.62
+      },
+      {
+        "w": "they",
+        "start": 295.62,
+        "end": 295.84
+      },
+      {
+        "w": "will",
+        "start": 295.84,
+        "end": 295.98
+      },
+      {
+        "w": "come",
+        "start": 295.98,
+        "end": 296.2
+      },
+      {
+        "w": "back",
+        "start": 296.2,
+        "end": 296.38
+      },
+      {
+        "w": "to",
+        "start": 296.38,
+        "end": 296.56
+      },
+      {
+        "w": "life",
+        "start": 296.56,
+        "end": 296.86
+      },
+      {
+        "w": "in",
+        "start": 296.86,
+        "end": 297.12
+      },
+      {
+        "w": "a",
+        "start": 297.12,
+        "end": 297.2
+      },
+      {
+        "w": "matter",
+        "start": 297.2,
+        "end": 297.44
       },
       {
         "w": "of",
-        "start": 207.72,
-        "end": 208.08
+        "start": 297.44,
+        "end": 297.66
       },
       {
-        "w": "the",
-        "start": 208.08,
-        "end": 208.22
+        "w": "a",
+        "start": 297.66,
+        "end": 297.78
       },
       {
-        "w": "activities",
-        "start": 208.22,
-        "end": 208.74
+        "w": "few",
+        "start": 297.78,
+        "end": 297.96
+      },
+      {
+        "w": "hours",
+        "start": 297.96,
+        "end": 298.44
       }
     ],
     "matched": true
   },
   {
     "index": 24,
-    "text": "SALLY: Well, one focus is on science, where we help children to discover and study plants, trees and insects.",
-    "start": 209.42,
-    "end": 217.48,
+    "text": "While in a state of cryptobiosis, tardigrades produce a protein that protects their DNA.",
+    "start": 299.28,
+    "end": 306.24,
     "words": [
       {
-        "w": "well",
-        "start": 209.42,
-        "end": 209.82
+        "w": "while",
+        "start": 299.28,
+        "end": 299.68
       },
       {
-        "w": "one",
-        "start": 210.18,
-        "end": 210.52
+        "w": "in",
+        "start": 299.68,
+        "end": 299.98
       },
       {
-        "w": "focus",
-        "start": 210.52,
-        "end": 210.92
+        "w": "a",
+        "start": 299.98,
+        "end": 300.12
       },
       {
-        "w": "is",
-        "start": 210.92,
-        "end": 211.54
+        "w": "state",
+        "start": 300.12,
+        "end": 300.38
       },
       {
-        "w": "on",
-        "start": 211.54,
-        "end": 211.72
+        "w": "of",
+        "start": 300.38,
+        "end": 300.54
       },
       {
-        "w": "science",
-        "start": 211.72,
-        "end": 212.3
+        "w": "cryptobiosis",
+        "start": 300.54,
+        "end": 301.48
       },
       {
-        "w": "where",
-        "start": 212.74,
-        "end": 212.98
+        "w": "tardigrades",
+        "start": 301.48,
+        "end": 302.74
       },
       {
-        "w": "we",
-        "start": 212.98,
-        "end": 213.12
+        "w": "produce",
+        "start": 302.74,
+        "end": 303.26
       },
       {
-        "w": "help",
-        "start": 213.12,
-        "end": 213.46
+        "w": "a",
+        "start": 303.26,
+        "end": 303.62
       },
       {
-        "w": "children",
-        "start": 213.46,
-        "end": 213.94
+        "w": "protein",
+        "start": 303.62,
+        "end": 304.18
       },
       {
-        "w": "to",
-        "start": 213.94,
-        "end": 214.16
+        "w": "that",
+        "start": 304.18,
+        "end": 304.96
       },
       {
-        "w": "discover",
-        "start": 214.16,
-        "end": 214.6
+        "w": "protects",
+        "start": 304.96,
+        "end": 305.5
       },
       {
-        "w": "and",
-        "start": 214.6,
-        "end": 214.9
+        "w": "their",
+        "start": 305.5,
+        "end": 305.86
       },
       {
-        "w": "study",
-        "start": 214.9,
-        "end": 215.26
-      },
-      {
-        "w": "plants",
-        "start": 215.26,
-        "end": 215.86
-      },
-      {
-        "w": "trees",
-        "start": 216.36,
-        "end": 216.66
-      },
-      {
-        "w": "and",
-        "start": 216.66,
-        "end": 217.02
-      },
-      {
-        "w": "insects",
-        "start": 217.02,
-        "end": 217.48
+        "w": "dna",
+        "start": 305.86,
+        "end": 306.24
       }
     ],
     "matched": true
   },
   {
     "index": 25,
-    "text": "They also collect and analyse data about the things they see.",
-    "start": 218.34,
-    "end": 222.98,
+    "text": "In 2016, scientists revived two tardigrades that had been tuns for more than 30 years.",
+    "start": 307.1,
+    "end": 314.12,
     "words": [
       {
-        "w": "they",
-        "start": 218.34,
-        "end": 218.64
+        "w": "in",
+        "start": 307.1,
+        "end": 307.4
       },
       {
-        "w": "also",
-        "start": 218.64,
-        "end": 219.06
+        "w": "2016",
+        "start": 307.4,
+        "end": 308.14
       },
       {
-        "w": "collect",
-        "start": 219.06,
-        "end": 219.76
+        "w": "scientists",
+        "start": 308.82,
+        "end": 309.46
       },
       {
-        "w": "and",
-        "start": 219.76,
-        "end": 220.12
+        "w": "revived",
+        "start": 309.46,
+        "end": 310.12
       },
       {
-        "w": "analyse",
-        "start": 220.12,
-        "end": 220.64
+        "w": "two",
+        "start": 310.12,
+        "end": 310.78
       },
       {
-        "w": "data",
-        "start": 220.64,
-        "end": 221.14
+        "w": "tardigrades",
+        "start": 310.78,
+        "end": 311.54
       },
       {
-        "w": "about",
-        "start": 221.14,
-        "end": 221.82
+        "w": "that",
+        "start": 311.54,
+        "end": 311.82
       },
       {
-        "w": "the",
-        "start": 221.82,
-        "end": 222.02
+        "w": "had",
+        "start": 311.82,
+        "end": 312.0
       },
       {
-        "w": "things",
-        "start": 222.02,
-        "end": 222.34
+        "w": "been",
+        "start": 312.0,
+        "end": 312.18
       },
       {
-        "w": "they",
-        "start": 222.34,
-        "end": 222.6
+        "w": "for",
+        "start": 312.52,
+        "end": 312.88
       },
       {
-        "w": "see",
-        "start": 222.6,
-        "end": 222.98
+        "w": "more",
+        "start": 312.88,
+        "end": 313.1
+      },
+      {
+        "w": "than",
+        "start": 313.1,
+        "end": 313.3
+      },
+      {
+        "w": "30",
+        "start": 313.3,
+        "end": 313.6
+      },
+      {
+        "w": "years",
+        "start": 313.6,
+        "end": 314.12
       }
     ],
     "matched": true
   },
   {
     "index": 26,
-    "text": "JOHN: Uhuh.",
-    "start": 223.08,
-    "end": 223.44,
-    "words": [],
-    "matched": true,
-    "interpolated": true
+    "text": "There was a report that, in 1948, a 120-year-old tun was revived, but this experiment has never been repeated.",
+    "start": 314.84,
+    "end": 324.52,
+    "words": [
+      {
+        "w": "there",
+        "start": 314.84,
+        "end": 315.18
+      },
+      {
+        "w": "was",
+        "start": 315.18,
+        "end": 315.32
+      },
+      {
+        "w": "a",
+        "start": 315.32,
+        "end": 315.44
+      },
+      {
+        "w": "report",
+        "start": 315.44,
+        "end": 315.82
+      },
+      {
+        "w": "that",
+        "start": 315.82,
+        "end": 316.1
+      },
+      {
+        "w": "in",
+        "start": 316.36,
+        "end": 316.56
+      },
+      {
+        "w": "1948",
+        "start": 316.56,
+        "end": 317.36
+      },
+      {
+        "w": "a",
+        "start": 318.04,
+        "end": 318.18
+      },
+      {
+        "w": "120",
+        "start": 318.18,
+        "end": 319.06
+      },
+      {
+        "w": "year",
+        "start": 319.06,
+        "end": 320.1
+      },
+      {
+        "w": "old",
+        "start": 320.1,
+        "end": 320.32
+      },
+      {
+        "w": "was",
+        "start": 320.88,
+        "end": 321.0
+      },
+      {
+        "w": "revived",
+        "start": 321.0,
+        "end": 321.66
+      },
+      {
+        "w": "but",
+        "start": 322.14,
+        "end": 322.44
+      },
+      {
+        "w": "this",
+        "start": 322.44,
+        "end": 322.7
+      },
+      {
+        "w": "experiment",
+        "start": 322.7,
+        "end": 323.18
+      },
+      {
+        "w": "has",
+        "start": 323.18,
+        "end": 323.54
+      },
+      {
+        "w": "never",
+        "start": 323.54,
+        "end": 323.88
+      },
+      {
+        "w": "been",
+        "start": 323.88,
+        "end": 324.1
+      },
+      {
+        "w": "repeated",
+        "start": 324.1,
+        "end": 324.52
+      }
+    ],
+    "matched": true
   },
   {
     "index": 27,
-    "text": "SALLY: Another focus is on geography.",
-    "start": 223.54,
-    "end": 226.06,
+    "text": "There are currently several tests taking place in space, to determine how long tardigrades might be able to survive there.",
+    "start": 325.28,
+    "end": 333.68,
     "words": [
       {
-        "w": "another",
-        "start": 223.54,
-        "end": 224.34
+        "w": "there",
+        "start": 325.28,
+        "end": 325.6
       },
       {
-        "w": "focus",
-        "start": 224.34,
-        "end": 224.94
+        "w": "are",
+        "start": 325.6,
+        "end": 325.78
       },
       {
-        "w": "is",
-        "start": 224.94,
-        "end": 225.4
+        "w": "currently",
+        "start": 325.78,
+        "end": 326.2
       },
       {
-        "w": "on",
-        "start": 225.4,
-        "end": 225.6
+        "w": "several",
+        "start": 326.2,
+        "end": 326.66
       },
       {
-        "w": "geography",
-        "start": 225.6,
-        "end": 226.06
+        "w": "tests",
+        "start": 326.66,
+        "end": 327.26
+      },
+      {
+        "w": "taking",
+        "start": 327.26,
+        "end": 327.72
+      },
+      {
+        "w": "place",
+        "start": 327.72,
+        "end": 328.1
+      },
+      {
+        "w": "in",
+        "start": 328.1,
+        "end": 328.66
+      },
+      {
+        "w": "space",
+        "start": 328.66,
+        "end": 329.16
+      },
+      {
+        "w": "to",
+        "start": 329.16,
+        "end": 329.9
+      },
+      {
+        "w": "determine",
+        "start": 329.9,
+        "end": 330.36
+      },
+      {
+        "w": "how",
+        "start": 330.36,
+        "end": 330.84
+      },
+      {
+        "w": "long",
+        "start": 330.84,
+        "end": 331.24
+      },
+      {
+        "w": "tardigrades",
+        "start": 331.24,
+        "end": 331.86
+      },
+      {
+        "w": "might",
+        "start": 331.86,
+        "end": 332.22
+      },
+      {
+        "w": "be",
+        "start": 332.22,
+        "end": 332.46
+      },
+      {
+        "w": "able",
+        "start": 332.46,
+        "end": 332.68
+      },
+      {
+        "w": "to",
+        "start": 332.68,
+        "end": 332.86
+      },
+      {
+        "w": "survive",
+        "start": 332.86,
+        "end": 333.24
+      },
+      {
+        "w": "there",
+        "start": 333.24,
+        "end": 333.68
       }
     ],
     "matched": true
   },
   {
     "index": 28,
-    "text": "The park is a great environment to learn and practise reading a map and using a compass to navigate around the park.",
-    "start": 227.14,
-    "end": 235.46,
+    "text": "I believe the record so far is 10 days.",
+    "start": 334.36,
+    "end": 337.2,
     "words": [
       {
-        "w": "the",
-        "start": 227.14,
-        "end": 227.32
+        "w": "i",
+        "start": 334.36,
+        "end": 334.84
       },
       {
-        "w": "park",
-        "start": 227.32,
-        "end": 227.6
+        "w": "believe",
+        "start": 334.84,
+        "end": 335.12
+      },
+      {
+        "w": "the",
+        "start": 335.12,
+        "end": 335.38
+      },
+      {
+        "w": "record",
+        "start": 335.38,
+        "end": 335.68
+      },
+      {
+        "w": "so",
+        "start": 335.68,
+        "end": 336.0
+      },
+      {
+        "w": "far",
+        "start": 336.0,
+        "end": 336.32
       },
       {
         "w": "is",
-        "start": 227.6,
-        "end": 227.86
+        "start": 336.32,
+        "end": 336.58
       },
       {
-        "w": "a",
-        "start": 227.86,
-        "end": 228.02
+        "w": "10",
+        "start": 336.58,
+        "end": 336.86
       },
       {
-        "w": "great",
-        "start": 228.02,
-        "end": 228.24
-      },
-      {
-        "w": "environment",
-        "start": 228.24,
-        "end": 228.84
-      },
-      {
-        "w": "to",
-        "start": 228.84,
-        "end": 229.18
-      },
-      {
-        "w": "learn",
-        "start": 229.18,
-        "end": 229.64
-      },
-      {
-        "w": "and",
-        "start": 229.64,
-        "end": 230.0
-      },
-      {
-        "w": "reading",
-        "start": 230.46,
-        "end": 231.0
-      },
-      {
-        "w": "a",
-        "start": 231.0,
-        "end": 231.4
-      },
-      {
-        "w": "map",
-        "start": 231.4,
-        "end": 231.76
-      },
-      {
-        "w": "and",
-        "start": 231.76,
-        "end": 232.6
-      },
-      {
-        "w": "using",
-        "start": 232.6,
-        "end": 232.92
-      },
-      {
-        "w": "a",
-        "start": 232.92,
-        "end": 233.14
-      },
-      {
-        "w": "compass",
-        "start": 233.14,
-        "end": 233.48
-      },
-      {
-        "w": "to",
-        "start": 233.48,
-        "end": 233.88
-      },
-      {
-        "w": "navigate",
-        "start": 233.88,
-        "end": 234.28
-      },
-      {
-        "w": "around",
-        "start": 234.28,
-        "end": 234.82
-      },
-      {
-        "w": "the",
-        "start": 234.82,
-        "end": 235.06
-      },
-      {
-        "w": "park",
-        "start": 235.06,
-        "end": 235.46
+        "w": "days",
+        "start": 336.86,
+        "end": 337.2
       }
     ],
     "matched": true
   },
   {
     "index": 29,
-    "text": "JOHN: Do you do anything connected with history?",
-    "start": 236.4,
-    "end": 239.22,
+    "text": "So, erm, moving on.",
+    "start": 338.38,
+    "end": 339.88,
     "words": [
       {
-        "w": "do",
-        "start": 236.39999999999998,
-        "end": 236.76
+        "w": "so",
+        "start": 338.38,
+        "end": 338.74
       },
       {
-        "w": "you",
-        "start": 236.76,
-        "end": 236.92
+        "w": "moving",
+        "start": 338.98,
+        "end": 339.5
       },
       {
-        "w": "do",
-        "start": 236.92,
-        "end": 237.04
-      },
-      {
-        "w": "anything",
-        "start": 237.04,
-        "end": 237.32
-      },
-      {
-        "w": "connected",
-        "start": 237.32,
-        "end": 238.02
-      },
-      {
-        "w": "with",
-        "start": 238.02,
-        "end": 238.56
-      },
-      {
-        "w": "history",
-        "start": 238.56,
-        "end": 239.22
+        "w": "on",
+        "start": 339.5,
+        "end": 339.88
       }
     ],
     "matched": true
   },
   {
     "index": 30,
-    "text": "SALLY: Yes, we do.",
-    "start": 239.98,
-    "end": 240.82,
+    "text": "In terms of their diet, tardigrades consume liquids in order to survive.",
+    "start": 340.68,
+    "end": 346.5,
     "words": [
       {
-        "w": "yes",
-        "start": 239.98,
-        "end": 240.2
+        "w": "in",
+        "start": 340.68,
+        "end": 340.88
       },
       {
-        "w": "we",
-        "start": 240.44,
-        "end": 240.56
+        "w": "terms",
+        "start": 340.88,
+        "end": 341.36
       },
       {
-        "w": "do",
-        "start": 240.56,
-        "end": 240.82
+        "w": "of",
+        "start": 341.36,
+        "end": 341.76
+      },
+      {
+        "w": "their",
+        "start": 341.76,
+        "end": 341.96
+      },
+      {
+        "w": "diet",
+        "start": 341.96,
+        "end": 342.42
+      },
+      {
+        "w": "tardigrades",
+        "start": 342.96,
+        "end": 343.5
+      },
+      {
+        "w": "consume",
+        "start": 343.5,
+        "end": 344.2
+      },
+      {
+        "w": "liquids",
+        "start": 344.2,
+        "end": 344.88
+      },
+      {
+        "w": "in",
+        "start": 344.88,
+        "end": 345.58
+      },
+      {
+        "w": "order",
+        "start": 345.58,
+        "end": 345.88
+      },
+      {
+        "w": "to",
+        "start": 345.88,
+        "end": 346.08
+      },
+      {
+        "w": "survive",
+        "start": 346.08,
+        "end": 346.5
       }
     ],
     "matched": true
   },
   {
     "index": 31,
-    "text": "For instance, the children can explore how the use of the land has changed over time.",
-    "start": 241.5,
-    "end": 247.4,
+    "text": "Although they have teeth, they don't use these for chewing.",
+    "start": 347.16,
+    "end": 350.5,
     "words": [
       {
-        "w": "for",
-        "start": 241.5,
-        "end": 241.7
+        "w": "although",
+        "start": 347.16,
+        "end": 347.48
       },
       {
-        "w": "instance",
-        "start": 241.7,
-        "end": 242.02
+        "w": "they",
+        "start": 347.48,
+        "end": 347.76
       },
       {
-        "w": "the",
-        "start": 242.64,
-        "end": 242.72
+        "w": "have",
+        "start": 347.76,
+        "end": 348.1
       },
       {
-        "w": "children",
-        "start": 242.72,
-        "end": 243.16
+        "w": "teeth",
+        "start": 348.1,
+        "end": 348.4
       },
       {
-        "w": "can",
-        "start": 243.16,
-        "end": 243.54
+        "w": "they",
+        "start": 348.76,
+        "end": 348.88
       },
       {
-        "w": "explore",
-        "start": 243.54,
-        "end": 244.02
-      },
-      {
-        "w": "how",
-        "start": 244.02,
-        "end": 244.56
-      },
-      {
-        "w": "the",
-        "start": 244.56,
-        "end": 244.74
+        "w": "don't",
+        "start": 348.88,
+        "end": 349.28
       },
       {
         "w": "use",
-        "start": 244.74,
-        "end": 245.1
+        "start": 349.28,
+        "end": 349.64
       },
       {
-        "w": "of",
-        "start": 245.1,
-        "end": 245.26
+        "w": "these",
+        "start": 349.64,
+        "end": 349.9
       },
       {
-        "w": "the",
-        "start": 245.26,
-        "end": 245.38
+        "w": "for",
+        "start": 349.9,
+        "end": 350.2
       },
       {
-        "w": "land",
-        "start": 245.38,
-        "end": 245.68
-      },
-      {
-        "w": "has",
-        "start": 245.68,
-        "end": 245.94
-      },
-      {
-        "w": "changed",
-        "start": 245.94,
-        "end": 246.62
-      },
-      {
-        "w": "over",
-        "start": 246.62,
-        "end": 246.92
-      },
-      {
-        "w": "time",
-        "start": 246.92,
-        "end": 247.4
+        "w": "chewing",
+        "start": 350.2,
+        "end": 350.5
       }
     ],
     "matched": true
   },
   {
     "index": 32,
-    "text": "Then there‘s leisure and tourism.",
-    "start": 248.18,
-    "end": 249.76,
+    "text": "They suck the juices from moss, or extract fluid from seaweed, but some species prey on other tardigrades, from other species or within their own.",
+    "start": 351.26,
+    "end": 362.68,
     "words": [
       {
-        "w": "then",
-        "start": 248.18,
-        "end": 248.46
+        "w": "they",
+        "start": 351.26,
+        "end": 351.54
       },
       {
-        "w": "leisure",
-        "start": 248.84,
-        "end": 249.12
+        "w": "suck",
+        "start": 351.54,
+        "end": 351.92
       },
       {
-        "w": "and",
-        "start": 249.12,
-        "end": 249.38
+        "w": "the",
+        "start": 351.92,
+        "end": 352.2
       },
       {
-        "w": "tourism",
-        "start": 249.38,
-        "end": 249.76
+        "w": "juices",
+        "start": 352.2,
+        "end": 352.5
+      },
+      {
+        "w": "from",
+        "start": 352.5,
+        "end": 352.86
+      },
+      {
+        "w": "moss",
+        "start": 352.86,
+        "end": 353.24
+      },
+      {
+        "w": "or",
+        "start": 353.24,
+        "end": 353.86
+      },
+      {
+        "w": "extract",
+        "start": 353.86,
+        "end": 354.5
+      },
+      {
+        "w": "fluid",
+        "start": 354.5,
+        "end": 355.1
+      },
+      {
+        "w": "from",
+        "start": 355.1,
+        "end": 355.7
+      },
+      {
+        "w": "seaweed",
+        "start": 355.7,
+        "end": 356.18
+      },
+      {
+        "w": "but",
+        "start": 356.18,
+        "end": 357.16
+      },
+      {
+        "w": "some",
+        "start": 357.16,
+        "end": 357.68
+      },
+      {
+        "w": "species",
+        "start": 357.68,
+        "end": 358.14
+      },
+      {
+        "w": "prey",
+        "start": 358.14,
+        "end": 358.58
+      },
+      {
+        "w": "on",
+        "start": 358.58,
+        "end": 358.84
+      },
+      {
+        "w": "other",
+        "start": 358.84,
+        "end": 359.18
+      },
+      {
+        "w": "tardigrades",
+        "start": 359.18,
+        "end": 359.74
+      },
+      {
+        "w": "from",
+        "start": 360.28,
+        "end": 360.52
+      },
+      {
+        "w": "other",
+        "start": 360.52,
+        "end": 360.8
+      },
+      {
+        "w": "species",
+        "start": 360.8,
+        "end": 361.24
+      },
+      {
+        "w": "or",
+        "start": 361.24,
+        "end": 361.74
+      },
+      {
+        "w": "within",
+        "start": 361.74,
+        "end": 362.14
+      },
+      {
+        "w": "their",
+        "start": 362.14,
+        "end": 362.4
+      },
+      {
+        "w": "own",
+        "start": 362.4,
+        "end": 362.68
       }
     ],
     "matched": true
   },
   {
     "index": 33,
-    "text": "JOHN: That focuses on your visitors, I would imagine.",
-    "start": 250.34,
-    "end": 253.98,
+    "text": "I suppose this isn't surprising, given that tardigrades are mainly comprised of liquid and are coated with a type of gel.",
+    "start": 363.4,
+    "end": 371.02,
     "words": [
       {
-        "w": "that",
-        "start": 250.34,
-        "end": 250.9
-      },
-      {
-        "w": "on",
-        "start": 251.68,
-        "end": 251.98
-      },
-      {
-        "w": "your",
-        "start": 251.98,
-        "end": 252.14
-      },
-      {
-        "w": "visitors",
-        "start": 252.14,
-        "end": 252.74
-      },
-      {
         "w": "i",
-        "start": 253.1,
-        "end": 253.32
+        "start": 363.4,
+        "end": 363.66
       },
       {
-        "w": "would",
-        "start": 253.32,
-        "end": 253.6
+        "w": "suppose",
+        "start": 363.66,
+        "end": 364.08
       },
       {
-        "w": "imagine",
-        "start": 253.6,
-        "end": 253.98
+        "w": "this",
+        "start": 364.08,
+        "end": 364.46
+      },
+      {
+        "w": "isn't",
+        "start": 364.46,
+        "end": 364.9
+      },
+      {
+        "w": "surprising",
+        "start": 364.9,
+        "end": 365.4
+      },
+      {
+        "w": "given",
+        "start": 365.76,
+        "end": 365.96
+      },
+      {
+        "w": "that",
+        "start": 365.96,
+        "end": 366.22
+      },
+      {
+        "w": "tardigrades",
+        "start": 366.22,
+        "end": 366.86
+      },
+      {
+        "w": "are",
+        "start": 366.86,
+        "end": 367.14
+      },
+      {
+        "w": "mainly",
+        "start": 367.14,
+        "end": 367.54
+      },
+      {
+        "w": "comprised",
+        "start": 367.54,
+        "end": 367.98
+      },
+      {
+        "w": "of",
+        "start": 367.98,
+        "end": 368.4
+      },
+      {
+        "w": "liquid",
+        "start": 368.4,
+        "end": 368.8
+      },
+      {
+        "w": "and",
+        "start": 368.8,
+        "end": 369.38
+      },
+      {
+        "w": "are",
+        "start": 369.38,
+        "end": 369.62
+      },
+      {
+        "w": "coated",
+        "start": 369.62,
+        "end": 369.96
+      },
+      {
+        "w": "with",
+        "start": 369.96,
+        "end": 370.3
+      },
+      {
+        "w": "a",
+        "start": 370.3,
+        "end": 370.42
+      },
+      {
+        "w": "type",
+        "start": 370.42,
+        "end": 370.64
+      },
+      {
+        "w": "of",
+        "start": 370.64,
+        "end": 370.76
+      },
+      {
+        "w": "gel",
+        "start": 370.76,
+        "end": 371.02
       }
     ],
     "matched": true
   },
   {
     "index": 34,
-    "text": "SALLY: Yes, mostly.",
-    "start": 254.52,
-    "end": 255.42,
+    "text": "Finally, I'd like to mention the conservation status of tardigrades.",
+    "start": 372.04,
+    "end": 376.5,
     "words": [
       {
-        "w": "yes",
-        "start": 254.52,
-        "end": 254.86
+        "w": "finally",
+        "start": 372.04,
+        "end": 372.8
       },
       {
-        "w": "mostly",
-        "start": 255.04,
-        "end": 255.42
+        "w": "i'd",
+        "start": 373.12,
+        "end": 373.34
+      },
+      {
+        "w": "like",
+        "start": 373.34,
+        "end": 373.5
+      },
+      {
+        "w": "to",
+        "start": 373.5,
+        "end": 373.72
+      },
+      {
+        "w": "mention",
+        "start": 373.72,
+        "end": 374.04
+      },
+      {
+        "w": "the",
+        "start": 374.04,
+        "end": 374.26
+      },
+      {
+        "w": "conservation",
+        "start": 374.26,
+        "end": 374.88
+      },
+      {
+        "w": "status",
+        "start": 374.88,
+        "end": 375.44
+      },
+      {
+        "w": "of",
+        "start": 375.44,
+        "end": 375.82
+      },
+      {
+        "w": "tardigrades",
+        "start": 375.82,
+        "end": 376.5
       }
     ],
     "matched": true
   },
   {
     "index": 35,
-    "text": "The children find out about them, their requirements, the problems they may cause and how we manage these.",
-    "start": 256.36,
-    "end": 263.24,
+    "text": "It is estimated that they have been in existence for approximately half a billion years and, in that time, they have survived five mass extinctions.",
+    "start": 377.22,
+    "end": 387.46,
     "words": [
       {
-        "w": "the",
-        "start": 256.36,
-        "end": 256.56
+        "w": "it",
+        "start": 377.22,
+        "end": 377.54
       },
       {
-        "w": "children",
-        "start": 256.56,
-        "end": 256.92
+        "w": "is",
+        "start": 377.54,
+        "end": 377.7
       },
       {
-        "w": "find",
-        "start": 256.92,
-        "end": 257.32
+        "w": "estimated",
+        "start": 377.7,
+        "end": 378.12
       },
       {
-        "w": "out",
-        "start": 257.32,
-        "end": 257.58
-      },
-      {
-        "w": "about",
-        "start": 257.58,
-        "end": 257.86
-      },
-      {
-        "w": "them",
-        "start": 257.86,
-        "end": 258.16
-      },
-      {
-        "w": "their",
-        "start": 258.58,
-        "end": 258.78
-      },
-      {
-        "w": "requirements",
-        "start": 258.78,
-        "end": 259.34
-      },
-      {
-        "w": "the",
-        "start": 260.12,
-        "end": 260.3
-      },
-      {
-        "w": "problems",
-        "start": 260.3,
-        "end": 260.7
+        "w": "that",
+        "start": 378.12,
+        "end": 378.58
       },
       {
         "w": "they",
-        "start": 260.7,
-        "end": 260.94
+        "start": 378.58,
+        "end": 378.78
       },
       {
-        "w": "may",
-        "start": 260.94,
-        "end": 261.08
+        "w": "have",
+        "start": 378.78,
+        "end": 378.96
       },
       {
-        "w": "cause",
-        "start": 261.08,
-        "end": 261.56
+        "w": "been",
+        "start": 378.96,
+        "end": 379.12
+      },
+      {
+        "w": "in",
+        "start": 379.12,
+        "end": 379.26
+      },
+      {
+        "w": "existence",
+        "start": 379.26,
+        "end": 379.68
+      },
+      {
+        "w": "for",
+        "start": 379.68,
+        "end": 380.18
+      },
+      {
+        "w": "approximately",
+        "start": 380.18,
+        "end": 380.74
+      },
+      {
+        "w": "half",
+        "start": 380.74,
+        "end": 381.22
+      },
+      {
+        "w": "a",
+        "start": 381.22,
+        "end": 381.4
+      },
+      {
+        "w": "billion",
+        "start": 381.4,
+        "end": 381.58
+      },
+      {
+        "w": "years",
+        "start": 381.58,
+        "end": 382.2
       },
       {
         "w": "and",
-        "start": 261.56,
-        "end": 262.18
+        "start": 382.2,
+        "end": 382.62
       },
       {
-        "w": "how",
-        "start": 262.18,
-        "end": 262.4
+        "w": "in",
+        "start": 382.62,
+        "end": 383.26
       },
       {
-        "w": "we",
-        "start": 262.4,
-        "end": 262.52
+        "w": "that",
+        "start": 383.26,
+        "end": 383.5
       },
       {
-        "w": "manage",
-        "start": 262.52,
-        "end": 262.92
+        "w": "time",
+        "start": 383.5,
+        "end": 384.02
       },
       {
-        "w": "these",
-        "start": 262.92,
-        "end": 263.24
+        "w": "they",
+        "start": 384.02,
+        "end": 384.52
+      },
+      {
+        "w": "have",
+        "start": 384.52,
+        "end": 384.72
+      },
+      {
+        "w": "survived",
+        "start": 384.72,
+        "end": 385.22
+      },
+      {
+        "w": "five",
+        "start": 385.22,
+        "end": 385.9
+      },
+      {
+        "w": "mass",
+        "start": 385.9,
+        "end": 386.46
+      },
+      {
+        "w": "extinctions",
+        "start": 386.46,
+        "end": 387.46
       }
     ],
     "matched": true
   },
   {
     "index": 36,
-    "text": "And another subject we cover is music: here the children experiment with natural materials to create sounds and explore rhythm and tempo.",
-    "start": 263.24,
-    "end": 275.4,
+    "text": "So, it will probably come as no surprise to you, that tardigrades have not been evaluated by the International Union for Conservation of Nature and are not on any endangered list.",
+    "start": 388.14,
+    "end": 400.64,
     "words": [
       {
-        "w": "and",
-        "start": 263.24,
-        "end": 264.4
+        "w": "so",
+        "start": 388.14,
+        "end": 388.52
       },
       {
-        "w": "another",
-        "start": 264.4,
-        "end": 264.8
+        "w": "it",
+        "start": 388.52,
+        "end": 388.74
       },
       {
-        "w": "subject",
-        "start": 264.8,
-        "end": 265.26
+        "w": "will",
+        "start": 388.74,
+        "end": 388.86
       },
       {
-        "w": "we",
-        "start": 265.26,
-        "end": 265.58
+        "w": "probably",
+        "start": 388.86,
+        "end": 389.34
       },
       {
-        "w": "cover",
-        "start": 265.58,
-        "end": 265.9
+        "w": "come",
+        "start": 389.34,
+        "end": 389.62
       },
       {
-        "w": "is",
-        "start": 265.9,
-        "end": 266.72
+        "w": "as",
+        "start": 389.62,
+        "end": 389.82
       },
       {
-        "w": "music",
-        "start": 266.72,
-        "end": 267.2
+        "w": "no",
+        "start": 389.82,
+        "end": 390.02
       },
       {
-        "w": "the",
-        "start": 268.56,
-        "end": 268.74
-      },
-      {
-        "w": "children",
-        "start": 268.74,
-        "end": 269.08
-      },
-      {
-        "w": "experiment",
-        "start": 269.08,
-        "end": 269.66
-      },
-      {
-        "w": "with",
-        "start": 269.66,
-        "end": 270.1
-      },
-      {
-        "w": "natural",
-        "start": 270.1,
-        "end": 270.5
-      },
-      {
-        "w": "materials",
-        "start": 270.5,
-        "end": 271.2
+        "w": "surprise",
+        "start": 390.02,
+        "end": 390.5
       },
       {
         "w": "to",
-        "start": 271.2,
-        "end": 271.98
+        "start": 390.5,
+        "end": 390.88
       },
       {
-        "w": "create",
-        "start": 271.98,
-        "end": 272.34
+        "w": "you",
+        "start": 390.88,
+        "end": 391.14
       },
       {
-        "w": "sounds",
-        "start": 272.34,
-        "end": 273.12
+        "w": "that",
+        "start": 391.14,
+        "end": 391.54
+      },
+      {
+        "w": "tardigrades",
+        "start": 391.54,
+        "end": 392.3
+      },
+      {
+        "w": "have",
+        "start": 392.3,
+        "end": 392.82
+      },
+      {
+        "w": "not",
+        "start": 392.82,
+        "end": 393.12
+      },
+      {
+        "w": "been",
+        "start": 393.12,
+        "end": 393.38
+      },
+      {
+        "w": "evaluated",
+        "start": 393.38,
+        "end": 393.78
+      },
+      {
+        "w": "by",
+        "start": 393.78,
+        "end": 394.3
+      },
+      {
+        "w": "the",
+        "start": 394.3,
+        "end": 394.44
+      },
+      {
+        "w": "international",
+        "start": 394.44,
+        "end": 394.94
+      },
+      {
+        "w": "union",
+        "start": 394.94,
+        "end": 395.4
+      },
+      {
+        "w": "for",
+        "start": 395.4,
+        "end": 395.72
+      },
+      {
+        "w": "conservation",
+        "start": 395.72,
+        "end": 396.2
+      },
+      {
+        "w": "of",
+        "start": 396.2,
+        "end": 396.56
+      },
+      {
+        "w": "nature",
+        "start": 396.56,
+        "end": 396.94
       },
       {
         "w": "and",
-        "start": 273.12,
-        "end": 273.92
+        "start": 396.94,
+        "end": 397.88
       },
       {
-        "w": "explore",
-        "start": 273.92,
-        "end": 274.32
+        "w": "are",
+        "start": 397.88,
+        "end": 398.24
       },
       {
-        "w": "rhythm",
-        "start": 274.32,
-        "end": 274.76
+        "w": "not",
+        "start": 398.24,
+        "end": 398.48
       },
       {
-        "w": "and",
-        "start": 274.76,
-        "end": 275.06
+        "w": "on",
+        "start": 398.48,
+        "end": 398.84
       },
       {
-        "w": "tempo",
-        "start": 275.06,
-        "end": 275.4
+        "w": "any",
+        "start": 398.84,
+        "end": 399.26
+      },
+      {
+        "w": "endangered",
+        "start": 399.26,
+        "end": 400.06
+      },
+      {
+        "w": "list",
+        "start": 400.06,
+        "end": 400.64
       }
     ],
     "matched": true
   },
   {
     "index": 37,
-    "text": "JOHN: That must be fun!",
-    "start": 275.86,
-    "end": 276.94,
+    "text": "Some researchers have described them as thriving.",
+    "start": 401.38,
+    "end": 404.98,
     "words": [
       {
-        "w": "that",
-        "start": 275.86,
-        "end": 276.2
+        "w": "some",
+        "start": 401.38,
+        "end": 401.76
       },
       {
-        "w": "must",
-        "start": 276.2,
-        "end": 276.38
+        "w": "researchers",
+        "start": 401.76,
+        "end": 402.5
       },
       {
-        "w": "be",
-        "start": 276.38,
-        "end": 276.6
+        "w": "have",
+        "start": 402.5,
+        "end": 403.04
       },
       {
-        "w": "fun",
-        "start": 276.6,
-        "end": 276.94
+        "w": "described",
+        "start": 403.04,
+        "end": 403.5
+      },
+      {
+        "w": "them",
+        "start": 403.5,
+        "end": 403.82
+      },
+      {
+        "w": "as",
+        "start": 403.82,
+        "end": 404.24
+      },
+      {
+        "w": "thriving",
+        "start": 404.24,
+        "end": 404.98
       }
     ],
     "matched": true
   },
   {
     "index": 38,
-    "text": "SALLY: Most children really enjoy it.",
-    "start": 277.38,
-    "end": 279.64,
+    "text": "Does anyone have any questions they'd like to ask?",
+    "start": 405.88,
+    "end": 409.26,
     "words": [
-      {
-        "w": "most",
-        "start": 277.38,
-        "end": 277.86
-      },
-      {
-        "w": "children",
-        "start": 277.86,
-        "end": 278.34
-      },
-      {
-        "w": "really",
-        "start": 278.34,
-        "end": 278.88
-      },
-      {
-        "w": "enjoy",
-        "start": 278.88,
-        "end": 279.32
-      },
-      {
-        "w": "it",
-        "start": 279.32,
-        "end": 279.64
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 39,
-    "text": "And of course, all the activities are educational, too.",
-    "start": 315.44,
-    "end": 320.22,
-    "words": [
-      {
-        "w": "and",
-        "start": 315.44,
-        "end": 316.32
-      },
-      {
-        "w": "of",
-        "start": 316.32,
-        "end": 316.54
-      },
-      {
-        "w": "course",
-        "start": 316.54,
-        "end": 316.84
-      },
-      {
-        "w": "all",
-        "start": 317.2,
-        "end": 317.64
-      },
-      {
-        "w": "the",
-        "start": 317.64,
-        "end": 317.8
-      },
-      {
-        "w": "activities",
-        "start": 317.8,
-        "end": 318.44
-      },
-      {
-        "w": "are",
-        "start": 318.44,
-        "end": 318.92
-      },
-      {
-        "w": "educational",
-        "start": 318.92,
-        "end": 319.82
-      },
-      {
-        "w": "too",
-        "start": 319.82,
-        "end": 320.22
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 40,
-    "text": "Learning outside the classroom encourages children to be creative, and to explore and discover for themselves.",
-    "start": 321.06,
-    "end": 328.88,
-    "words": [
-      {
-        "w": "learning",
-        "start": 321.06,
-        "end": 321.5
-      },
-      {
-        "w": "outside",
-        "start": 321.5,
-        "end": 322.12
-      },
-      {
-        "w": "the",
-        "start": 322.12,
-        "end": 322.46
-      },
-      {
-        "w": "classroom",
-        "start": 322.46,
-        "end": 322.98
-      },
-      {
-        "w": "encourages",
-        "start": 323.22,
-        "end": 324.02
-      },
-      {
-        "w": "children",
-        "start": 324.02,
-        "end": 324.46
-      },
-      {
-        "w": "to",
-        "start": 324.46,
-        "end": 324.82
-      },
-      {
-        "w": "be",
-        "start": 324.82,
-        "end": 325.04
-      },
-      {
-        "w": "creative",
-        "start": 325.04,
-        "end": 325.66
-      },
-      {
-        "w": "and",
-        "start": 325.66,
-        "end": 326.4
-      },
-      {
-        "w": "to",
-        "start": 326.4,
-        "end": 326.66
-      },
-      {
-        "w": "explore",
-        "start": 326.66,
-        "end": 327.2
-      },
-      {
-        "w": "and",
-        "start": 327.2,
-        "end": 327.58
-      },
-      {
-        "w": "discover",
-        "start": 327.58,
-        "end": 328.02
-      },
-      {
-        "w": "for",
-        "start": 328.02,
-        "end": 328.32
-      },
-      {
-        "w": "themselves",
-        "start": 328.32,
-        "end": 328.88
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 41,
-    "text": "JOHN: I would imagine they get a sense of freedom that might not be a normal part of their lives.",
-    "start": 329.46,
-    "end": 335.52,
-    "words": [
-      {
-        "w": "i",
-        "start": 329.46,
-        "end": 329.84
-      },
-      {
-        "w": "would",
-        "start": 329.84,
-        "end": 330.04
-      },
-      {
-        "w": "imagine",
-        "start": 330.04,
-        "end": 330.44
-      },
-      {
-        "w": "they",
-        "start": 330.44,
-        "end": 330.82
-      },
-      {
-        "w": "get",
-        "start": 330.82,
-        "end": 331.04
-      },
-      {
-        "w": "a",
-        "start": 331.04,
-        "end": 331.18
-      },
-      {
-        "w": "sense",
-        "start": 331.18,
-        "end": 331.44
-      },
-      {
-        "w": "of",
-        "start": 331.44,
-        "end": 331.72
-      },
-      {
-        "w": "freedom",
-        "start": 331.72,
-        "end": 332.18
-      },
-      {
-        "w": "that",
-        "start": 332.18,
-        "end": 332.66
-      },
-      {
-        "w": "might",
-        "start": 332.66,
-        "end": 333.1
-      },
-      {
-        "w": "not",
-        "start": 333.1,
-        "end": 333.38
-      },
-      {
-        "w": "be",
-        "start": 333.38,
-        "end": 333.72
-      },
-      {
-        "w": "a",
-        "start": 333.72,
-        "end": 333.88
-      },
-      {
-        "w": "normal",
-        "start": 333.88,
-        "end": 334.16
-      },
-      {
-        "w": "part",
-        "start": 334.16,
-        "end": 334.62
-      },
-      {
-        "w": "of",
-        "start": 334.62,
-        "end": 334.88
-      },
-      {
-        "w": "their",
-        "start": 334.88,
-        "end": 335.04
-      },
-      {
-        "w": "lives",
-        "start": 335.04,
-        "end": 335.52
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 42,
-    "text": "And very often the children discover that they can do things they didn’t know they could do, and they develop new skills.",
-    "start": 337.32,
-    "end": 344.9,
-    "words": [
-      {
-        "w": "and",
-        "start": 337.32,
-        "end": 337.52
-      },
-      {
-        "w": "very",
-        "start": 337.52,
-        "end": 337.76
-      },
-      {
-        "w": "often",
-        "start": 337.76,
-        "end": 338.18
-      },
-      {
-        "w": "the",
-        "start": 338.58,
-        "end": 338.74
-      },
-      {
-        "w": "children",
-        "start": 338.74,
-        "end": 339.04
-      },
-      {
-        "w": "discover",
-        "start": 339.04,
-        "end": 339.56
-      },
-      {
-        "w": "that",
-        "start": 339.56,
-        "end": 339.94
-      },
-      {
-        "w": "they",
-        "start": 339.94,
-        "end": 340.1
-      },
-      {
-        "w": "can",
-        "start": 340.1,
-        "end": 340.3
-      },
-      {
-        "w": "do",
-        "start": 340.3,
-        "end": 340.52
-      },
-      {
-        "w": "things",
-        "start": 340.52,
-        "end": 340.94
-      },
-      {
-        "w": "they",
-        "start": 340.94,
-        "end": 341.18
-      },
-      {
-        "w": "know",
-        "start": 341.5,
-        "end": 341.74
-      },
-      {
-        "w": "they",
-        "start": 341.74,
-        "end": 341.94
-      },
-      {
-        "w": "could",
-        "start": 341.94,
-        "end": 342.12
-      },
-      {
-        "w": "do",
-        "start": 342.12,
-        "end": 342.4
-      },
-      {
-        "w": "and",
-        "start": 342.4,
-        "end": 343.06
-      },
-      {
-        "w": "they",
-        "start": 343.06,
-        "end": 343.18
-      },
-      {
-        "w": "develop",
-        "start": 343.18,
-        "end": 343.62
-      },
-      {
-        "w": "new",
-        "start": 343.62,
-        "end": 344.3
-      },
-      {
-        "w": "skills",
-        "start": 344.3,
-        "end": 344.9
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 43,
-    "text": "This gives them greater self-confidence.",
-    "start": 345.76,
-    "end": 347.96,
-    "words": [
-      {
-        "w": "this",
-        "start": 345.76,
-        "end": 346.18
-      },
-      {
-        "w": "gives",
-        "start": 346.18,
-        "end": 346.4
-      },
-      {
-        "w": "them",
-        "start": 346.4,
-        "end": 346.72
-      },
-      {
-        "w": "greater",
-        "start": 346.72,
-        "end": 347.14
-      },
-      {
-        "w": "self",
-        "start": 347.14,
-        "end": 347.48
-      },
-      {
-        "w": "confidence",
-        "start": 347.48,
-        "end": 347.96
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 44,
-    "text": "JOHN: It sounds great.",
-    "start": 348.54,
-    "end": 349.68,
-    "words": [
-      {
-        "w": "it",
-        "start": 348.54,
-        "end": 348.86
-      },
-      {
-        "w": "sounds",
-        "start": 348.86,
-        "end": 349.3
-      },
-      {
-        "w": "great",
-        "start": 349.3,
-        "end": 349.68
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 45,
-    "text": "So, what about the practical side of it?",
-    "start": 349.68,
-    "end": 354.14,
-    "words": [
-      {
-        "w": "so",
-        "start": 349.68,
-        "end": 350.18
-      },
-      {
-        "w": "what",
-        "start": 350.18,
-        "end": 352.18
-      },
-      {
-        "w": "about",
-        "start": 352.18,
-        "end": 352.54
-      },
-      {
-        "w": "the",
-        "start": 352.54,
-        "end": 352.8
-      },
-      {
-        "w": "practical",
-        "start": 352.8,
-        "end": 353.4
-      },
-      {
-        "w": "side",
-        "start": 353.4,
-        "end": 353.82
-      },
-      {
-        "w": "of",
-        "start": 353.82,
-        "end": 353.98
-      },
-      {
-        "w": "it",
-        "start": 353.98,
-        "end": 354.14
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 46,
-    "text": "How much does it cost for a full-day visit?",
-    "start": 354.78,
-    "end": 357.56,
-    "words": [
-      {
-        "w": "how",
-        "start": 354.78,
-        "end": 355.12
-      },
-      {
-        "w": "much",
-        "start": 355.12,
-        "end": 355.42
-      },
       {
         "w": "does",
-        "start": 355.42,
-        "end": 355.64
+        "start": 405.88,
+        "end": 406.34
       },
       {
-        "w": "it",
-        "start": 355.64,
-        "end": 355.78
+        "w": "anyone",
+        "start": 406.34,
+        "end": 406.86
       },
       {
-        "w": "cost",
-        "start": 355.78,
-        "end": 356.12
+        "w": "have",
+        "start": 406.86,
+        "end": 407.3
       },
       {
-        "w": "for",
-        "start": 356.12,
-        "end": 356.46
+        "w": "any",
+        "start": 407.3,
+        "end": 407.56
       },
       {
-        "w": "a",
-        "start": 356.46,
-        "end": 356.66
+        "w": "questions",
+        "start": 407.56,
+        "end": 408.08
       },
       {
-        "w": "full",
-        "start": 356.66,
-        "end": 356.92
+        "w": "they'd",
+        "start": 408.08,
+        "end": 408.6
       },
       {
-        "w": "day",
-        "start": 356.92,
-        "end": 357.22
-      },
-      {
-        "w": "visit",
-        "start": 357.22,
-        "end": 357.56
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 47,
-    "text": "We would expect to bring between 30 and 40 children.",
-    "start": 358.28,
-    "end": 362.6,
-    "words": [
-      {
-        "w": "we",
-        "start": 358.28,
-        "end": 358.72
-      },
-      {
-        "w": "would",
-        "start": 358.72,
-        "end": 358.98
-      },
-      {
-        "w": "expect",
-        "start": 358.98,
-        "end": 359.36
+        "w": "like",
+        "start": 408.6,
+        "end": 408.72
       },
       {
         "w": "to",
-        "start": 359.36,
-        "end": 359.74
+        "start": 408.72,
+        "end": 408.96
       },
       {
-        "w": "bring",
-        "start": 359.74,
-        "end": 360.0
-      },
-      {
-        "w": "between",
-        "start": 360.0,
-        "end": 360.42
-      },
-      {
-        "w": "30",
-        "start": 360.42,
-        "end": 361.34
-      },
-      {
-        "w": "and",
-        "start": 361.34,
-        "end": 361.72
-      },
-      {
-        "w": "40",
-        "start": 361.72,
-        "end": 362.1
-      },
-      {
-        "w": "children",
-        "start": 362.1,
-        "end": 362.6
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 48,
-    "text": "SALLY: If there are over 30, it costs £4.95 for each child who attends on the day.",
-    "start": 363.06,
-    "end": 370.82,
-    "words": [
-      {
-        "w": "if",
-        "start": 363.06,
-        "end": 363.46
-      },
-      {
-        "w": "there",
-        "start": 363.46,
-        "end": 363.74
-      },
-      {
-        "w": "are",
-        "start": 363.74,
-        "end": 363.92
-      },
-      {
-        "w": "over",
-        "start": 363.92,
-        "end": 364.34
-      },
-      {
-        "w": "30",
-        "start": 364.34,
-        "end": 364.88
-      },
-      {
-        "w": "it",
-        "start": 365.46,
-        "end": 365.7
-      },
-      {
-        "w": "costs",
-        "start": 365.7,
-        "end": 366.14
-      },
-      {
-        "w": "4",
-        "start": 366.14,
-        "end": 367.0
-      },
-      {
-        "w": "95",
-        "start": 367.0,
-        "end": 367.9
-      },
-      {
-        "w": "for",
-        "start": 367.9,
-        "end": 368.52
-      },
-      {
-        "w": "each",
-        "start": 368.52,
-        "end": 368.8
-      },
-      {
-        "w": "child",
-        "start": 368.8,
-        "end": 369.36
-      },
-      {
-        "w": "who",
-        "start": 369.36,
-        "end": 369.7
-      },
-      {
-        "w": "attends",
-        "start": 369.7,
-        "end": 370.0
-      },
-      {
-        "w": "on",
-        "start": 370.0,
-        "end": 370.42
-      },
-      {
-        "w": "the",
-        "start": 370.42,
-        "end": 370.52
-      },
-      {
-        "w": "day",
-        "start": 370.52,
-        "end": 370.82
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 49,
-    "text": "We invoice you afterwards, so you don‘t pay for children who can’t come because of sickness, for example.",
-    "start": 371.5,
-    "end": 378.16,
-    "words": [
-      {
-        "w": "we",
-        "start": 371.5,
-        "end": 371.86
-      },
-      {
-        "w": "invoice",
-        "start": 371.86,
-        "end": 372.34
-      },
-      {
-        "w": "you",
-        "start": 372.34,
-        "end": 372.54
-      },
-      {
-        "w": "afterwards",
-        "start": 372.54,
-        "end": 373.12
-      },
-      {
-        "w": "so",
-        "start": 373.12,
-        "end": 373.96
-      },
-      {
-        "w": "you",
-        "start": 373.96,
-        "end": 374.12
-      },
-      {
-        "w": "pay",
-        "start": 374.34,
-        "end": 374.64
-      },
-      {
-        "w": "for",
-        "start": 374.64,
-        "end": 374.84
-      },
-      {
-        "w": "children",
-        "start": 374.84,
-        "end": 375.24
-      },
-      {
-        "w": "who",
-        "start": 375.24,
-        "end": 375.58
-      },
-      {
-        "w": "come",
-        "start": 375.98,
-        "end": 376.24
-      },
-      {
-        "w": "because",
-        "start": 376.24,
-        "end": 376.54
-      },
-      {
-        "w": "of",
-        "start": 376.54,
-        "end": 376.76
-      },
-      {
-        "w": "sickness",
-        "start": 376.76,
-        "end": 377.16
-      },
-      {
-        "w": "for",
-        "start": 377.6,
-        "end": 377.74
-      },
-      {
-        "w": "example",
-        "start": 377.74,
-        "end": 378.16
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 50,
-    "text": "There‘s no charge for leaders and other adults – as many as you want to bring.",
-    "start": 379.42,
-    "end": 384.58,
-    "words": [
-      {
-        "w": "no",
-        "start": 379.42,
-        "end": 379.64
-      },
-      {
-        "w": "charge",
-        "start": 379.64,
-        "end": 380.02
-      },
-      {
-        "w": "for",
-        "start": 380.02,
-        "end": 380.44
-      },
-      {
-        "w": "leaders",
-        "start": 380.44,
-        "end": 381.04
-      },
-      {
-        "w": "and",
-        "start": 381.04,
-        "end": 381.78
-      },
-      {
-        "w": "other",
-        "start": 381.78,
-        "end": 382.08
-      },
-      {
-        "w": "adults",
-        "start": 382.08,
-        "end": 382.66
-      },
-      {
-        "w": "as",
-        "start": 382.82,
-        "end": 383.36
-      },
-      {
-        "w": "many",
-        "start": 383.36,
-        "end": 383.62
-      },
-      {
-        "w": "as",
-        "start": 383.62,
-        "end": 383.8
-      },
-      {
-        "w": "you",
-        "start": 383.8,
-        "end": 383.92
-      },
-      {
-        "w": "want",
-        "start": 383.92,
-        "end": 384.1
-      },
-      {
-        "w": "to",
-        "start": 384.1,
-        "end": 384.3
-      },
-      {
-        "w": "bring",
-        "start": 384.3,
-        "end": 384.58
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 51,
-    "text": "JOHN: That sounds very fair.",
-    "start": 384.9,
-    "end": 386.48,
-    "words": [
-      {
-        "w": "that",
-        "start": 384.9,
-        "end": 385.32
-      },
-      {
-        "w": "sounds",
-        "start": 385.32,
-        "end": 385.74
-      },
-      {
-        "w": "very",
-        "start": 385.74,
-        "end": 386.06
-      },
-      {
-        "w": "fair",
-        "start": 386.06,
-        "end": 386.48
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 52,
-    "text": "Well, thanks for all the information.",
-    "start": 387.38,
-    "end": 389.7,
-    "words": [
-      {
-        "w": "well",
-        "start": 387.38,
-        "end": 387.7
-      },
-      {
-        "w": "thanks",
-        "start": 388.08,
-        "end": 388.48
-      },
-      {
-        "w": "for",
-        "start": 388.48,
-        "end": 388.78
-      },
-      {
-        "w": "all",
-        "start": 388.78,
-        "end": 389.04
-      },
-      {
-        "w": "the",
-        "start": 389.04,
-        "end": 389.18
-      },
-      {
-        "w": "information",
-        "start": 389.18,
-        "end": 389.7
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 53,
-    "text": "I’ll need to discuss it with my colleagues, and I hope to get back to you soon to make a booking.",
-    "start": 390.82,
-    "end": 396.16,
-    "words": [
-      {
-        "w": "need",
-        "start": 390.82,
-        "end": 390.98
-      },
-      {
-        "w": "to",
-        "start": 390.98,
-        "end": 391.16
-      },
-      {
-        "w": "discuss",
-        "start": 391.16,
-        "end": 391.46
-      },
-      {
-        "w": "it",
-        "start": 391.46,
-        "end": 391.74
-      },
-      {
-        "w": "with",
-        "start": 391.74,
-        "end": 391.9
-      },
-      {
-        "w": "my",
-        "start": 391.9,
-        "end": 392.08
-      },
-      {
-        "w": "colleagues",
-        "start": 392.08,
-        "end": 392.5
-      },
-      {
-        "w": "and",
-        "start": 392.5,
-        "end": 393.18
-      },
-      {
-        "w": "i",
-        "start": 393.18,
-        "end": 393.82
-      },
-      {
-        "w": "hope",
-        "start": 393.82,
-        "end": 394.02
-      },
-      {
-        "w": "to",
-        "start": 394.02,
-        "end": 394.2
-      },
-      {
-        "w": "get",
-        "start": 394.2,
-        "end": 394.34
-      },
-      {
-        "w": "back",
-        "start": 394.34,
-        "end": 394.56
-      },
-      {
-        "w": "to",
-        "start": 394.56,
-        "end": 394.76
-      },
-      {
-        "w": "you",
-        "start": 394.76,
-        "end": 394.92
-      },
-      {
-        "w": "soon",
-        "start": 394.92,
-        "end": 395.32
-      },
-      {
-        "w": "to",
-        "start": 395.32,
-        "end": 395.56
-      },
-      {
-        "w": "make",
-        "start": 395.56,
-        "end": 395.82
-      },
-      {
-        "w": "a",
-        "start": 395.82,
-        "end": 395.98
-      },
-      {
-        "w": "booking",
-        "start": 395.98,
-        "end": 396.16
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 54,
-    "text": "SALLY: We‘ll look forward to hearing from you.",
-    "start": 396.98,
-    "end": 398.58,
-    "words": [
-      {
-        "w": "look",
-        "start": 396.98,
-        "end": 397.18
-      },
-      {
-        "w": "forward",
-        "start": 397.18,
-        "end": 397.52
-      },
-      {
-        "w": "to",
-        "start": 397.52,
-        "end": 397.76
-      },
-      {
-        "w": "hearing",
-        "start": 397.76,
-        "end": 397.98
-      },
-      {
-        "w": "from",
-        "start": 397.98,
-        "end": 398.3
-      },
-      {
-        "w": "you",
-        "start": 398.3,
-        "end": 398.58
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 55,
-    "text": "Goodbye.",
-    "start": 399.18,
-    "end": 399.54,
-    "words": [
-      {
-        "w": "goodbye",
-        "start": 399.18,
-        "end": 399.54
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 56,
-    "text": "JOHN: Goodbye, and thank you.",
-    "start": 400.08,
-    "end": 401.96,
-    "words": [
-      {
-        "w": "goodbye",
-        "start": 400.08,
-        "end": 400.48
-      },
-      {
-        "w": "and",
-        "start": 400.48,
-        "end": 401.28
-      },
-      {
-        "w": "thank",
-        "start": 401.28,
-        "end": 401.66
-      },
-      {
-        "w": "you",
-        "start": 401.66,
-        "end": 401.96
+        "w": "ask",
+        "start": 408.96,
+        "end": 409.26
       }
     ],
     "matched": true

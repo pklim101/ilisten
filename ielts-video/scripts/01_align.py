@@ -34,8 +34,16 @@ GAP_THRESHOLD = float(os.environ.get("GAP_THRESHOLD", "4.0"))
 # 对齐合理性校验阈值（防"锚点错位"缺陷）：
 # 高频词（school/the/a 等）会被 SequenceMatcher 错配到几十秒外的同名位置，
 # 把句子边界错误拉长，导致成片出现"有字幕、无人声"的静音区段。
-MAX_SENT_SEC = float(os.environ.get("MAX_SENT_SEC", "15.0"))   # 单句最大合理时长
-MAX_WORD_GAP_SEC = float(os.environ.get("MAX_WORD_GAP_SEC", "2.0"))  # 句内相邻词最大间隔
+MAX_SENT_SEC = float(os.environ.get("MAX_SENT_SEC", "15.0"))   # 单句时长的绝对下限兜底
+MAX_WORD_GAP_SEC = float(os.environ.get("MAX_WORD_GAP_SEC", "5.0"))  # 句内相邻词最大间隔
+# 按词数估算句子合理时长上限：Part3 对话里 40~50 词的长句可达 20s 以上，
+# 不能一刀切按 15s 判异常（否则长句被误伤成"题目说明段"，内容丢失）。
+ALIGN_WPS = float(os.environ.get("ALIGN_WPS", "2.2"))          # 估计语速（词/秒）
+
+
+def sentence_max_sec(n_words: int) -> float:
+    """句子合理时长上限 = max(固定下限, 词数/语速 ×1.5 + 3s 余量)。"""
+    return max(MAX_SENT_SEC, n_words / ALIGN_WPS * 1.5 + 3.0)
 
 
 def normalize(s: str) -> str:
@@ -48,6 +56,13 @@ def normalize(s: str) -> str:
 def split_original_sentences(text: str) -> list[str]:
     text = re.sub(r"^#+\s*", "", text, flags=re.MULTILINE)
     text = re.sub(r"\s+", " ", text).strip()
+    # 官方 tapescript 常用 ". . ."（空格分隔）或 "..." 表示停顿 / 话没说完，
+    # 不是句末标点。若不先归一化，下面的 (?<=[.!?])\s+ 会在每个点后各切一刀，
+    # 产生大量 "." 碎片句：拉低对齐率，还会让 "BELLA: OK ." 这类碎片被 QA 判成
+    # 「完整内容静默丢失」。2026-11-09 c19_test2_part3 实测 BLOCK(69/78=88.5%)，
+    # 归一化后碎片 8→0。换成 Unicode 省略号后 normalize() 会把它当空格
+    # （省略号不发音，whisper 也不转写），不影响词级对齐。
+    text = re.sub(r"\.\s*\.\s*\.", "…", text)
     parts = re.split(r"(?<=[.!?])\s+", text)
     return [p.strip() for p in parts if p.strip()]
 
@@ -55,7 +70,13 @@ def split_original_sentences(text: str) -> list[str]:
 def load_original_text(path: str) -> str:
     content = Path(path).read_text(encoding="utf-8")
     lines = content.splitlines()
-    body = [l for l in lines if not re.match(r"^\s*(PART|SECTION|Test)\b", l, re.IGNORECASE)]
+    # 过滤题目说明行：
+    # - 以 PART/SECTION/Test 开头的标题行
+    # - 以 ANNOUNCER:/NARRATOR: 开头的考试指令行（Part4 常见，属于题目说明段，
+    #   不应作为正文句循环 3 遍加字幕，应由音频空隙自动识别为说明段）
+    body = [l for l in lines
+            if not re.match(r"^\s*(PART|SECTION|Test)\b", l, re.IGNORECASE)
+            and not re.match(r"^\s*(ANNOUNCER|NARRATOR)\s*:", l, re.IGNORECASE)]
     return "\n".join(body)
 
 
@@ -138,8 +159,10 @@ def align(orig_sents, whisper_segs):
             words = words[:cut]
             end = words[-1]["end"]
 
-        # 截断后仍超长（例如首词就错配到很远），整句判为未匹配，走插值兜底
-        if (end - start) > MAX_SENT_SEC:
+        # 截断后仍超长（例如首词就错配到很远），整句判为未匹配，走插值兜底。
+        # 上限按该句词数自适应，避免误伤 Part3 的长对话句。
+        orig_n_words = len(normalize(s).split())
+        if (end - start) > sentence_max_sec(orig_n_words):
             results.append({"index": sent_idx, "text": s, "start": None,
                             "end": None, "words": [], "matched": False})
             continue

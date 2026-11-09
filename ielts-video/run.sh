@@ -25,22 +25,22 @@ export DEEPSEEK_API_KEY="${DEEPSEEK_API_KEY:?请先设置 DEEPSEEK_API_KEY 环�
 
 cd "$(dirname "$0")/.."
 
-echo "==> [1/5] 音频对齐（词级时间戳）"
+echo "==> [1/7] 音频对齐（词级时间戳）"
 $PY ielts-video/scripts/01_align.py
 
-echo "==> [2/5] LLM 标注（翻译 + 考点词）"
+echo "==> [2/7] LLM 标注（翻译 + 考点词）"
 $PY ielts-video/scripts/02_annotate.py
 
-echo "==> [3/5] 音频重组（×3遍 + 3秒停顿）"
+echo "==> [3/7] 音频重组（×3遍 + 3秒停顿）"
 $PY ielts-video/scripts/03_rebuild_audio.py
 
-echo "==> [4/5] 生成三态字幕"
+echo "==> [4/7] 生成三态字幕"
 $PY ielts-video/scripts/04_subtitles.py
 
-echo "==> [5/5] 合成出片"
+echo "==> [5/7] 合成出片"
 OUT="$OUT_MP4" $PY ielts-video/scripts/05_compose.py
 
-echo "==> [6/6] 生成考点词表 PDF（B站引流资料）"
+echo "==> [6/7] 生成考点词表 PDF（B站引流资料）"
 BASE_NAME="$(basename "$OUT_MP4" .mp4)"
 MATERIAL_NAME="${MATERIAL_NAME:-$(echo "$BASE_NAME" | sed -E 's/c([0-9]+)_test([0-9]+)_part([0-9]+)/剑\1 Test\2 Part\3/I')}"
 MATERIAL_NAME="$MATERIAL_NAME" \
@@ -48,6 +48,14 @@ OUT_VOCAB_PDF="${OUT_MP4%.mp4}_vocab.pdf" \
 $PY ielts-video/scripts/06_vocab_pdf.py \
   || echo "⚠️  考点词 PDF 生成失败（不影响成片，可稍后单独重跑 06_vocab_pdf.py）"
 
+echo "==> [7/7] 生成 B站封面 PNG（沿用 assets/background.png 成片同款背景）"
+$PY .workbuddy/skills/ielts-listening-video/scripts/make_cover.py \
+  --stem "$BASE_NAME" \
+  --out "${OUT_MP4%.mp4}_cover.png" \
+  --background ielts-video/assets/background.png \
+  || echo "⚠️  封面生成失败（不影响成片，可稍后单独重跑 make_cover.py）"
+
 echo ""
 echo "完成！成片位于：$OUT_MP4"
 echo "考点词表：${OUT_MP4%.mp4}_vocab.pdf（发布后请设 VIDEO_REF=BV号 重新生成以回填）"
+echo "B站封面：${OUT_MP4%.mp4}_cover.png（投稿时上传；不上传则 B站自动抽帧，画面多为字幕会影响点击）"

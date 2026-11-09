@@ -2,10 +2,18 @@
 
 把「雅思听力音频 + 原文文本」自动生成「三遍循环学习视频」，完整还原考试音频节奏：
 
-> 📚 **完整文档**见上级目录 `docs/`：
-> - [`docs/01-产品需求文档.md`](../docs/01-产品需求文档.md) — 需求、验收标准、版本演进
-> - [`docs/02-技术架构文档.md`](../docs/02-技术架构文档.md) — 架构、模块设计、踩坑记录
-> - [`docs/03-维护文档.md`](../docs/03-维护文档.md) — 运维、参数调整、故障排查
+> 📚 **完整文档**见上级目录 `docs/`（共 7 份，按用途分组）：
+>
+> **工程与运维**
+> - [`docs/01-产品需求文档.md`](../docs/01-产品需求文档.md) — 产品范围、三遍循环设计、视觉规格与验收标准。
+> - [`docs/02-技术架构文档.md`](../docs/02-技术架构文档.md) — 流水线架构（01~06）、中间产物契约与踩坑记录。
+> - [`docs/03-维护文档.md`](../docs/03-维护文档.md) — 日常运维、参数速查、故障排查表与 QA 清单。
+> - [`docs/07-静音错位问题诊断.md`](../docs/07-静音错位问题诊断.md) — 「锚点错位」根因、自适应阈值修复与出片质检/抽帧规范（出片前必读）。
+>
+> **内容与运营**
+> - [`docs/04-B站运营策划方案.md`](../docs/04-B站运营策划方案.md) — 真题引流 70% + 原创信任 30% 的双轨内容与 90 天计划。
+> - [`docs/05-方法论文脚本与封面文案.md`](../docs/05-方法论文脚本与封面文案.md) — 信任轨首条视频《精听不是听写》完整脚本与封面模板。
+> - [`docs/06-账号名称标题钩子与衍生内容策划.md`](../docs/06-账号名称标题钩子与衍生内容策划.md) — 账号名、标题公式、考点词 PDF 钩子与 16 个衍生选题。
 
 ## 核心逻辑（V3）
 
@@ -31,22 +39,36 @@ ielts-video/
 │   ├── 02_annotate.py      # LLM 标注：DeepSeek 翻译 + 考点词
 │   ├── 03_rebuild_audio.py # 音频重组：指令一遍 + 正文×3遍（1s/3s停顿）
 │   ├── 04_subtitles.py     # 三态 ASS 字幕（深色文字 + 橙色高亮）
-│   └── 05_compose.py       # FFmpeg 合成出片（背景图，无片头片尾）
-├── assets/                 # 背景图等素材
+│   ├── 05_compose.py       # FFmpeg 合成出片（背景图，无片头片尾）
+│   └── 06_vocab_pdf.py     # 考点词表 PDF（本地复盘资料，不上传 B站）
+├── assets/                 # 素材库：生产背景 + A/B 配色 + 可复用底板 + 版式样张
+│   ├── background.png      # 蓝天白云原图，成片与封面共用（禁止覆盖）
+│   ├── cover_palettes.json # A 学术蓝 / B 剑桥红配色真值源
+│   ├── backgrounds/        # 5 张无文字底板
+│   └── covers/             # 3 张含文字版式样张
 ├── data/                   # 中间产物
-└── out/                    # 成片输出
+└── out/                    # <stem>.mp4 + <stem>_vocab.pdf + <stem>_cover.png
 ```
 
 ## 快速开始
 
 ```bash
-# 单篇
-export DEEPSEEK_API_KEY="sk-xxx"
-bash ielts-video/run.sh "resource/Test1 Part2.mp3" resource/c19_test1_part2.md out/c19_test1_part2.mp4
-
-# 批量（音频+同名原文放一个文件夹）
-bash ielts-video/batch.sh resource out
+# 单篇（必须显式传全 3 个参数；密钥从 ~/.bash_profile 读取，不要写进命令历史）
+source ~/.bash_profile
+bash ielts-video/run.sh \
+  resource/c19_test1_part2.mp3 \
+  resource/c19_test1_part2.md \
+  ielts-video/out/c19_test1_part2.mp4
 ```
+
+每篇产出 3 个文件（均在 `ielts-video/out/`）：
+- `<stem>.mp4` 成片
+- `<stem>_vocab.pdf` 考点词表（**本地复盘资料，PDF 不上传 B站**；资料闭环零载体依赖：逐句考点在视频第 2 遍高亮字幕，本期速览见置顶评论。自动回复需 1000 粉、专栏需 LV1+，均不作为链路一环）
+- `<stem>_cover.png` B站封面（1146×717，A 学术蓝 + `assets/background.png` 成片同款背景；由第 7 步生成，**不上传则 B站自动抽帧，多半抽到纯字幕画面**）
+
+> ⚠️ `batch.sh` 已废弃（`OUT` 变量冲突、会覆盖浅色背景图、PDF 标题退化），请勿使用。
+> 批量出片请用项目级 Skill：`.workbuddy/skills/ielts-listening-video/`
+> （自动扫描 `resource/` 未出片素材、串行出片、脚本质检 + 抽帧确认）。
 
 ## 环境依赖
 
@@ -75,8 +97,54 @@ pip install faster-whisper "av==13.1.0" openai imageio-ffmpeg pillow
 2. **模型选择**：`small` 模型在雅思听力"正文↔题目说明"边界处比 `medium` 转写更完整（medium 会漏掉边界处的短句）。
 3. **字幕配色**：清新浅色背景 → 深色文字 + 白色描边 + 橙色高亮（浅色背景上比黄色更醒目）。
 
+## 素材库 `assets/`
+
+> 2026-11-09 归档：`out/` 被 `.gitignore` 整体忽略，封面样张放那里会随清理丢失；
+> 统一收进 `assets/` 随仓库长期保存。生产背景图保持原名原路径、内容一字未动。
+
+| 文件 | 规格 | 用途 |
+|---|---|---|
+| `background.png` | 1536×1024 | **生产唯一默认背景**：淡蓝天空 + 白云 + 田野，已手工去水印。`05_compose.py` 与 `make_cover.py` 都读它，**禁止覆盖/替换**，绝不运行 `00_background.py` |
+| `intro_bg.png` | 1920×1080 | 深蓝片头卡片（历史素材，当前流水线无片头） |
+| `A_serene__fresh_and_calming_st_*.png` | 1536×1024 | 与 `background.png` 完全同内容的 AI 生图原名副本（md5 一致），已被 `.gitignore` 忽略，不入库 |
+| `cover_palettes.json` | — | **配色真值源**：A 学术蓝 / B 剑桥红全套 RGB + HEX，源自 [`docs/05`](../docs/05-方法论文脚本与封面文案.md)；`make_cover.py` 优先读它，缺失或损坏才回退内置值 |
+| `backgrounds/bg_sky_original.png` | 1536×1024 | 蓝天白云原图归档副本（与 `background.png` 同 md5） |
+| `backgrounds/bg_sky_academic_blue.png` | 1146×717 | **2026-11-08 定稿背景**：风景 + 左侧深蓝渐变蒙版（无文字） |
+| `backgrounds/bg_sky_cambridge_red.png` | 1146×717 | 同版式 B 剑桥红蒙版，A/B 对照备用 |
+| `backgrounds/bg_academic_blue_flat.png` | 1146×717 | A 学术蓝纯色渐变底板（无文字） |
+| `backgrounds/bg_cambridge_red_flat.png` | 1146×717 | B 剑桥红纯色渐变底板（无文字） |
+| `covers/sample_*_academic_blue_flat.png` | 1146×717 | A 版式样张（含文字） |
+| `covers/sample_*_cambridge_red_flat.png` | 1146×717 | B 版式样张（含文字） |
+| `covers/sample_*_final_photo_blue.png` | 1146×717 | **已发布定稿封面**样张（风景 + A 学术蓝） |
+
+### 复用方式
+
+```bash
+cd /Users/sofia/libo/personknowlege/ilisten
+PY=/Users/sofia/.workbuddy/binaries/python/versions/3.13.12/bin/python3
+SKILL=.workbuddy/skills/ielts-listening-video/scripts
+
+# 重建全部底板与样张（幂等；改完色卡后加 --force 覆盖）
+$PY "$SKILL/make_asset_plates.py" --root "$PWD"
+
+# 换配色：只改 assets/cover_palettes.json，再重出底板，不要改代码
+# 用素材库已合成底板直接出封面（必须加 --no-mask，防二次叠加蒙版）
+$PY "$SKILL/make_cover.py" --stem c19_test2_part2 \
+  --out ielts-video/out/c19_test2_part2_cover.png \
+  --background ielts-video/assets/backgrounds/bg_sky_academic_blue.png --no-mask
+
+# 剑桥红 A/B 对照（纯色渐变）
+$PY "$SKILL/make_cover.py" --stem c19_test2_part2 --out /tmp/cover_red.png --palette red --flat
+```
+
+> ⚠️ 传给 `--background` 的若是**原始风景图**（`background.png` / `bg_sky_original.png`），
+> 不要加 `--no-mask`——脚本自己叠蒙版托住白字；若是 `backgrounds/` 里已合成好的底板，必须加。
+> `backgrounds/` 是无文字底板，主要给 Figma / 稿定 / 剪辑工具复用；`covers/` 是含文字的版式参考。
+> 已验证：用 `bg_sky_academic_blue.png --no-mask` 直出的封面与已发布定稿**像素完全一致**。
+
 ## 版本记录
 
 - **V1**：MVP 初版（small 模型、纯色背景、每句×3遍+3秒停顿，无指令区分）
 - **V2**：优化挖空 + 批量脚本 + medium 模型 + 渐变背景 + 片头片尾（后按用户要求废弃）
 - **V3**：区分题目说明/正文、指令一遍+正文三遍循环（1s/3s停顿）、清新背景图、深色字幕、无片头片尾、small 模型
+- **2026-11-09**：封面生成接入流水线（第 7 步），A 学术蓝 / B 剑桥红配色与 5 张背景底板、3 张版式样张归档进 `assets/` 素材库
