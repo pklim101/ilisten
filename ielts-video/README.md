@@ -96,6 +96,11 @@ pip install faster-whisper "av==13.1.0" openai imageio-ffmpeg pillow
 1. **区分题目说明与正文**：用 `difflib.SequenceMatcher` 把原文（纯正文）对齐到 whisper 转写，正文之外 > `GAP_THRESHOLD` 的空隙识别为题目说明段。
 2. **模型选择**：`small` 模型在雅思听力"正文↔题目说明"边界处比 `medium` 转写更完整（medium 会漏掉边界处的短句）。
 3. **字幕配色**：清新浅色背景 → 深色文字 + 白色描边 + 橙色高亮（浅色背景上比黄色更醒目）。
+4. **句尾尾音保护**：faster-whisper 词级 `end` 系统性偏早（误拆词时可达 1s 以上），`03_rebuild_audio.py`
+   按原音频能量把播放右边界延到真实语音结束点（+0.10~1.50s，clamp 到下一正文句），并给正文片段
+   末尾加 40ms 淡出。**出片后必须跑**项目级 Skill 的 `tail_check.py`（句尾尾音验收，17 项 QA 之外）
+   ——17 项全 PASS 也看不出音频被硬切；判据与基线见
+   `.workbuddy/skills/ielts-listening-video/references/02-qa-rules.md`。
 
 ## 素材库 `assets/`
 
@@ -148,3 +153,4 @@ $PY "$SKILL/make_cover.py" --stem c19_test2_part2 --out /tmp/cover_red.png --pal
 - **V2**：优化挖空 + 批量脚本 + medium 模型 + 渐变背景 + 片头片尾（后按用户要求废弃）
 - **V3**：区分题目说明/正文、指令一遍+正文三遍循环（1s/3s停顿）、清新背景图、深色字幕、无片头片尾、small 模型
 - **2026-11-09**：封面生成接入流水线（第 7 步），A 学术蓝 / B 剑桥红配色与 5 张背景底板、3 张版式样张归档进 `assets/` 素材库
+- **2026-11-14**：修复「每句末尾丢半个音节」（whisper 词级 `end` 偏早），新增 `tail_check.py` 句尾尾音验收；剑17 16 篇按最终参数全量重出

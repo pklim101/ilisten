@@ -186,6 +186,20 @@ def align(orig_sents, whisper_segs):
                 r["end"] = round(nxt["start"] - 0.1, 3)
                 r["matched"] = True
                 r["interpolated"] = True
+        elif prev and prev["matched"] and nxt is None:
+            # 末句兜底：whisper 整文件转写偶尔会吞掉紧邻结束指令前的最后一句
+            # 短句（2026-11-10 c19_test3_part2 末句 "Well Jenny, I think
+            # that's really useful…." 被吞；截取末 27s 单独转写可复核到
+            # 354~356s 确实有人声）。此时按词数估时长、从上一句末顺延，
+            # 保证最后一句不缺字幕。仅限 ≤12 词的短句，且上限 6s，
+            # 避免给真正不存在的句子造出幻影字幕。
+            n = len(normalize(r["text"]).split())
+            if 0 < n <= 12:
+                est = min(6.0, n / ALIGN_WPS + 0.5)
+                r["start"] = round(prev["end"] + 0.1, 3)
+                r["end"] = round(prev["end"] + 0.1 + est, 3)
+                r["matched"] = True
+                r["interpolated"] = "trailing"
     return results
 
 

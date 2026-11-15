@@ -1,6 +1,6 @@
 ---
 name: ielts-listening-video
-version: 2.9.1
+version: 2.9.7
 display_name: "雅思听力三遍精听成片流水线"
 display_name_en: "IELTS Listening Triple-Pass Video Pipeline"
 description_zh: "把 resource/ 下新增的剑桥雅思听力音频做成三遍循环精听成片（.mp4）与配套考点词表 PDF（_vocab.pdf）。素材可以是成对的 .mp3+.md，也可以【只有 .mp3】：缺原文时自动用 DeepSeek 深度思考+内置联网搜索检索权威 tapescript，结构化抽取后用 faster-whisper 音频转写做双源交叉校验，PASS 才落盘原文、BLOCK 阻断出片。默认自动扫描、对比 ielts-video/out/ 找出未出片或需重跑的篇目串行一次全做；用户点名「生成 test2 part1」时只处理指定篇。唯一入口 ielts-video/run.sh，必须显式传全 3 个参数。出片后跑脚本质检（锚点错位超长事件、未匹配句内容静默丢失、说明段异常、事件数口径、成片规格）并抽 3 帧由 ViewImage 视觉确认，不合格阻断交付。阶段 6 默认产出「手动发布交付包」（成片 / 封面 / 考点词 PDF / 置顶评论 / 发布清单，含投稿页自检 8 项），一次交付给用户，由账号本人上传发布；agent 默认不填表、不存草稿、不发布。浏览器草稿链路（编号 3 workbuddy-browser-use）降级为显式可选，只在用户明确要求「走草稿链路 / 用浏览器投稿 / 存草稿」时启用，终点仍只存草稿、绝不发布，登录态不外泄。当用户说「新增了剑19 testX partY 的听力音频」「只给了音频，原文自己找」「放在 resource 目录下了」「生成 test2 part1 的视频」「出片」「跑一下」「把没做的都做了」「投稿B站」「把物料发我」「交付包」「手动发布」「走草稿链路」「存草稿」时使用。"
@@ -65,7 +65,7 @@ PASS/WARN 才允许进阶段 2 出片；BLOCK 立即停止。详见 [05](referen
 4. **密钥**：每个 Bash 调用都是新的非登录 shell，`DEEPSEEK_API_KEY` 不会自动继承，必须在同一条命令里 `source ~/.bash_profile`。阶段 1.5 与阶段 2 都需要它。密钥**绝不回显、绝不写入任何文件、绝不出现在日志/命令回显/文档**，只由 `run.sh` 的 `:?` 校验存在。
 5. **输出 stem 必须严格匹配 `^c\d+_test\d+_part\d+$`（统一小写）**，否则 `MATERIAL_NAME` 的 sed 派生失效，`_vocab.pdf` 标题会退化成原始 stem。
 6. **多篇必须串行、绝不并发**：`ielts-video/data/` 下 `sentences.json` / `instructions.json` / `annotated.json` / `rebuilt_audio.mp3` / `timeline.json` / `subtitles.ass` 路径固定共享。
-7. **逐篇闭环**：每篇「补原文（如需）→ 出片 → 立即 `qa_check.py` → 立即 `qa_frames.py` + 3 次 ViewImage 确认 → 才允许开始下一篇」。下一篇会覆盖 `data/*.json`，质检不能延后批量做。
+7. **逐篇闭环**：每篇「补原文（如需）→ 出片 → 立即 `qa_check.py` → 立即 `tail_check.py`（句尾尾音验收）→ 立即 `qa_frames.py` + 3 次 ViewImage 确认 → 才允许开始下一篇」。下一篇会覆盖 `data/*.json`，质检不能延后批量做。17 项 QA 看不出音频片段被硬切，尾音验收是独立且必需的一环。
 8. **后台运行**：`05_compose.py` 内存高，历史前台 OOM（exit 137）。用 Bash 工具 `run_in_background: true`，禁止 `&` / `nohup` / `setsid` / `disown`。单篇约 5 分钟，硬超时 900s。
 9. **QA 返回 BLOCK 时不得宣布交付、不得开始下一篇**；成片保留不删不覆盖，打印原因，等用户决定。
 10. **常规交付物只有 2 个**：`<stem>.mp4` + `<stem>_vocab.pdf`。`<stem>_cover.png` 由第 7 步顺带产出，属**投稿物料**而非交付文档。不往 `docs/` 写发布文案或质检报告；QA 摘要只到 stdout。阶段 6 的 `/tmp/ielts_publish_<stem>.json` 是接口入参（机器读）；**v2.8.0 起阶段 6 默认额外产出 `ielts-video/publish/<stem>/` 交付包目录**（给人用：01_视频.mp4 硬链接 / 02_封面.png / 03_考点词表.pdf / 04_置顶评论.txt / 发布清单.md）。该目录与 `out/` 隔离，绝不在 `out/` 或 `resource/` 里放中文名素材，不污染扫描域。
@@ -89,6 +89,17 @@ PASS/WARN 才允许进阶段 2 出片；BLOCK 立即停止。详见 [05](referen
  **绝不为了过质检而直接放宽阈值**。
 25. **【联网原文的版权拒答兜底】** DeepSeek `deepseek-v4-pro` 可能对「逐词官方 tapescript」直接拒答（2026-11-09 `c19_test2_part4` 实测：0 个联网来源、返回 745 字符版权声明，阶段 B 抽取为空）。这**不是瞬时故障，禁止盲目重试**。此时由 agent 用联网检索多来源交叉（带时间戳的逐词稿优先）整理出结构化 `segments` JSON，再用 `fetch_transcript.py --segments-file <JSON> --source-url <URL>`（至少 1 个来源）注入：**阶段 C 音频 ASR 双源校验与 PASS/WARN/BLOCK 闸门完全不跳过**，无来源一律 BLOCK，禁止与 `--skip-asr` 同用；注入内容不经 LLM 改写，避免二次引入错词。注入≠`--reuse-raw`：前者是本次新抓的权威素材，后者是旧缓存。若用户手上有官方原文，**人工提供永远优先**，直接覆盖注入稿。详见 [05](references/05-transcript-fetch.md) 第九节。
 26. **【发布物料单一目录（2026-11-09 用户确认）】** 所有**给人用**的发布物料唯一落在 `ielts-video/publish/<stem>/`：成片 / 封面 / 考点词 PDF / 置顶评论 / 发布清单（清单内含标题、分区、标签、简介全文、自检 8 项），每篇独立子目录、可整目录复制去投稿。**绝不在 `out/`、`resource/`、`docs/`、`/tmp` 另存一份给人用的文案副本**，也不把发布文案散落多篇混放；`/tmp/ielts_publish_<stem>.json`、`/tmp/ielts_description_<stem>.txt`、`/tmp/ielts_comment_<stem>.txt` 只是生成期的机器入参 / 输入副本，交付后不得再引用，**真值只认交付包**（清单 = 字段真值源，`04_置顶评论.txt` = 评论真值源）。新增物料类型时扩 `write_bundle()`，不要另起目录；`.gitignore` 已忽略 `ielts-video/publish/`。
+27. **【句尾尾音保护：禁止把 whisper 词级 `end` 直接当播放边界】** 2026-11-14 用户验收发现「每句末尾丢半个音节」。根因：`01_align.py` 用 faster-whisper 词级 `end` 作句子右边界，该时间戳系统性偏早——剑18 Test4 Part3 实测 **77.4%** 的句子在 `end` 之后仍有人声（残留中位 140ms / P90 340ms / 最大 400ms），`03_rebuild_audio.py` 按 `[start,end]` 切片即硬切尾音。切片编码本身保真（受控实验 1/2/3/5s 片段时长误差 **0ms**、尾部波形逐样本一致），**不是 ffmpeg/MP3 的锅，禁止去调 `-ss`/`-t` 或换编码器**。已修 `03_rebuild_audio.py`：`TailFitter` 把原音频解码为 16k mono、按能量把右边界延到真实语音结束点（至少 +0.10s、**最多 +1.50s**，扫描上限 1.80s、连续 **6 个** 20ms 静音窗才判语音结束，clamp 到**所有正文句（含 <0.5s 被过滤的短句）**中下一句的 `start−0.02s`；说明段起点让位避免重复播放），并同步 `timeline` 事件时长与 `tail_pad_sec`；正文片段末尾加 40ms `afade` 消除零空隙句的「咔」感。**绝不在 `01_align.py` 改 `end`**（对齐真值要保持词级精度），也**不要一刀切加固定余量**（实测固定 300ms 仍留 7 句、多耗 11s）。验收口径见 [02](references/02-qa-rules.md)：原音频残留 >50ms 句数 43→0；成片音轨「末尾30ms/句中RMS」中位 0.908→0.039、`>0.8` 的 35→0 句；QA 17 PASS、三帧像素一致。回归：48 篇素材（32 立体声 / 16 单声道）格式探测 + 抽样 12 篇解码与极端边界零异常。
+
+**二次校准（2026-11-14，用户补充的实例）**：用户截图指出「…he landed there in 1855.」末尾丢半个音节，该句出自**剑18 Test4 Part4**（Victor Hugo 独白），不是上一轮验证的 Part3。实测 small 模型把 `1855` 词尾标在 184.160s，原音频高能量人声到 184.52s、低电平尾音到 184.62s，medium 模型给 184.580s —— 旧 0.45s 上限恰好把真实结束点（+490ms）截断；而 Part4 旧片是 11-10 用**未修复**逻辑生成的，所以用户仍听到丢音。同篇还发现第 15 句「…to be a 'work of art'.」因引号让 whisper 漏匹配尾部词，`end` 落在 242.780、把整个 "art."（242.88~243.36）砍掉；3 窗(60ms)静音判定会被词间辅音闭塞/引号停顿骗到，故放宽到 6 窗。**绝不为这类缺陷去改 `01_align.py` 的 `end` 或把 small 换成 medium**（铁律 3）；字幕文本始终取自完整原文，`words` 只用于词级时间戳，不会缺字。修复后 Part4：33/33 句补尾音、平均 +255ms / 最大 +600ms，`1855` 句补 +490ms 且右边界后残留 **0ms**，`art.` 句残留降到 80ms；17 PASS / 0 BLOCK、尾音验收 PASS、4 帧全部通过，交付包已按 20:57 重出。**凡动过切片边界必须立即跑 `scripts/tail_check.py`**：它把「原音频残留 + 成片末尾硬切 + 片段重叠」自动化（旧片 22/33 句残留、16 句硬切 → BLOCK；新片 0 句硬切 → PASS），17 项 QA 全 PASS 不等于尾音没问题。详见 [02](references/02-qa-rules.md)、[04](references/04-troubleshooting.md)。
+
+**三次校准（2026-11-14，剑17 全量重出）**：首篇 `c17_test1_part3` 被 `tail_check.py` 判「1 句成片末尾硬切」BLOCK，批量按逐篇闭环铁律停批，未带着问题开下一篇。定点排查：该句 `Yes, dairy cows.` 的 `end=218.780` 与下一句 `start=218.780` **零空隙**，`tail_pad_sec=0` 物理上补不了尾音；成片末 30ms 取到的是 **40ms 淡出斜坡**（648.79→648.83 从 0.27 平滑降到 0.009，之后静音），而该句句中段偏轻，算出 `tail_ratio=1.055` 虚高，**不是硬切**。`tail_check.py` 增加 `fade_ratio = RMS(end−10ms,end) / RMS(end−40ms,end−30ms)`：淡出生效应 <0.35，真硬切 ≈1；只有 `tail_ratio>0.8` **且** `fade_ratio>0.35` 才 BLOCK，前者单独偏高打 WARN「淡出豁免」。回归：该篇 PASS、旧缺陷片仍 BLOCK（16 句真硬切、fade 中位 0.724）、剑18 T4 P3 基准仍 PASS。**禁止为了消掉这类 WARN 去改音频或放宽 `HARD_CUT_RATIO`**；零空隙句靠淡出即可，绝不允许让相邻片段重叠。
+
+**四次校准（2026-11-14，剑17 全量重出再遇两种真缺陷）**：`c17_test2_part1` 连拦两次，都是**真丢音、不是误判**，批量按铁律停批正确。① `"In fact, there's Mrs Carroll."`：能量检测算出真实结束点约 +740ms，被 0.60s 上限截断，播放右边界后仍有 ~140ms 强人声（RMS 0.16 ≈ 句内 0.14），成片 `tail_ratio=0.826` 且无淡出 → BLOCK。② `"I'm used to working on a computer - I presume they're computerised?"`：whisper 把 `computerised` 误拆成 `"computer eyes"`，词级 `end` 只标到 151.780，实际语音到 **152.920**（偏早 **1.14s**）；上限提到 0.90s 仍会砍掉半个词，更隐蔽的是 **40ms 淡出会把成片末尾 `tail_ratio` 压成「淡出豁免」，成片硬切检查看不出来**。故上限/扫描定到 **1.50/1.80s**，并在 `tail_check.py` 增加第 [4] 项「补到硬上限且上限后仍有本句人声」判据（残留 >100ms 且明显早于下一句 `start` → BLOCK），杜绝「淡出掩盖上限截断」。两道兜底不变：6 窗静音 break + `hard_cap = 下一正文句 start−0.02s`，实测该篇 0 重叠、0 硬切、0 触顶（最大补 +1250ms）。回归三场景：新片 PASS / 旧缺陷片仍 BLOCK / 剑18 T4 P3 基准仍 PASS；并用「把 idx15 缩回 0.90s 上限」的模拟时间轴验证第 [4] 项确实 BLOCK。**whisper 词级 `end` 偏早可达 1s 以上，禁止用「最多补 0.3~0.6s」这类经验上限**；但也不允许取消 clamp 让相邻片段重叠。
+
+**五次校准（2026-11-14，剑17 全量重出第 1 篇再停批）**：`c17_test1_part1` 被第 [4] 项判「补尾音触顶」，但定点排查发现是**clamp 口径错了，不是上限不够**。idx67 `"It's on the 17th, from 10 a.m."` 之后紧接短句 idx68 `"until 3."`（0.46s < `MIN_SENT_SEC=0.5`，被过滤、**不参与重组**），而 `03_rebuild_audio.py` 原来用「参与重组的下一句 start」当 clamp，于是直接跳到 idx69 的 360.20，补尾音从 358.08 一路吞到 359.58，把整句 `"until 3."` 混进上一句（whisper 转写证实：`10am` 358.06→358.76、`until` 358.76→359.20、`3am.` 359.20→360.30 是连续语音）。修法：**clamp 改用 `annotated` 里所有正文句的 `start`（含被过滤短句）**，`tail_check.py` 的 `next_start` 同步改成全部 `sentences.json`（原先用只有 timeline 事件的 `first`，既漏报重叠、又会把短句人声误扫成本句残留）。回归：旧 clamp 成片被新判据抓到「1 句片段重叠 0.84s」→ BLOCK；剑18 T4 P4 旧缺陷片仍 BLOCK、剑18 T4 P3 基准仍 PASS。**短句被 `MIN_SENT_SEC` 过滤导致内容不播是既有行为，不在本次修复范围**；但绝不允许补尾音跨过它去吞下一句。`data/*.json` 留档（`/tmp/ielts_c17_data/<stem>/`）后，只调 03/04/05 可从留档恢复，不必重跑 whisper + LLM 标注。
+
+**六次校准（2026-11-14，剑17 T4 P2 篇末误判）**：`c17_test4_part2` 最后一句 idx41 被第 [4] 项判「补到 1.50s 上限且上限后仍有 360ms 人声」BLOCK。定点排查：whisper 把**考试结束语** `"You now have half a minute to check your answers to part 2."`（438.18~442.14）错配成正文句 `"OK, now I'd like to …"`，而 `instructions.json` 里 (440.34, 472.63) 正是该说明段；补尾音扫到的全是**读题人声**，不是本句尾音。修法：`tail_check.py` 读 `instructions.json`，第 [4] 项对 `play_end` 落在说明段区间内的句子只记 WARN「说明段人声已排除」，不 BLOCK；`03_rebuild_audio.py` 不动（避免已完成的 13 篇口径变化）。回归四场景：该篇 PASS、0.90s 上限真缺陷模拟仍 BLOCK、剑18 T4 P4 旧缺陷片仍 BLOCK、剑18 T4 P3 基准仍 PASS。**已知局限**：这类错配的最后一句补尾音会混入少量读题人声（旧片同样如此，且本句不丢音），属 `01_align.py` 对齐误差，不在本次句尾修复范围；禁止为了消这个 WARN 去放宽硬上限或取消 clamp。
 
 ## 八阶段流程
 
@@ -175,7 +186,7 @@ ilisten/
 ├── references/                 # 01 契约 / 02 质检 / 03 抽帧 / 04 排障 / 05 原文获取 /
 │                               # 06 投稿候选 / 07 浏览器草稿手册 / qa_baseline.json
 └── scripts/                    # scan_materials.py / fetch_transcript.py / run_one.sh /
-                                # qa_check.py / qa_frames.py / make_cover.py /
+                                # qa_check.py / tail_check.py / qa_frames.py / make_cover.py /
                                 # make_publish_kit.py / publish_browser_use.py
 /tmp/                           # 所有缓存、报告、抽帧、投稿物料（绝不进仓库）
 ```
@@ -188,6 +199,7 @@ ilisten/
 | `fetch_transcript.py` | 联网检索原文 + 抽取 + 音频交叉校验 | `--root --stem [--force] [--dry-run] [--reuse-raw] [--skip-asr] [--json]` | [05](references/05-transcript-fetch.md) |
 | `run_one.sh` | 单篇执行包装（取密钥、校验、cd） | 3 个绝对路径 | [01](references/01-pipeline-contract.md) |
 | `qa_check.py` | 自动质检，输出摘要与退出码 | `--root --stem [--baseline]` | [02](references/02-qa-rules.md) |
+| `tail_check.py` | **句尾尾音验收**（17 项之外）：原音频残留 / 成片末尾硬切 + 淡出检测 / 片段重叠 / 补尾音触顶截断 | `--root --stem [--data] [--audio] [--mp4]` | [02](references/02-qa-rules.md) |
 | `qa_frames.py` | 选帧 + 抽帧到 `/tmp` | `--root --stem [--outdir] [--with-highlight]` | [03](references/03-frames-and-viewimage.md) |
 | `make_cover.py` | 出 B站封面 PNG（配色读 `assets/cover_palettes.json`，默认 A 学术蓝 + `assets/background.png` 成片同款背景，1146×717） | `--stem` 或 `--kit`、`--out`、`--background`、`--palette`、`--flat`、`--no-mask` | [06](references/06-publish.md) |
 | `make_asset_plates.py` | 归档/重建素材库底板与样张；幂等、绝不写回 `background.png` | `--root [--stem] [--force]` | `ielts-video/README.md` 素材库节 |
@@ -329,6 +341,7 @@ BLOCK 时退出码 2 并打印「不得交付、不得开始下一篇」。
 - [ ] （若阶段 1.5 执行过）原文校验为 PASS，或 WARN 的差异已向用户展示并取得确认；
       若走了 `--segments-file` 兜底，须有 ≥1 个来源 URL、报告里 `injected=true` 且 ASR 闸门 PASS
 - [ ] QA 摘要为 PASS（0 BLOCK），WARN 已向用户说明
+- [ ] `tail_check.py` 句尾尾音验收为 PASS（无淡出的硬切 0 句、片段重叠 0 句、残留 >100ms 占比 ≤20%、**补尾音触顶 0 句**）；WARN 明细（下一句起音 / 说明段人声 / 淡出豁免）已逐条判读
 - [ ] 3 张抽帧全部经 ViewImage 确认通过
 - [ ] 常规交付物为 `<stem>.mp4` + `<stem>_vocab.pdf`；阶段 6 额外产出 `ielts-video/publish/<stem>/` 交付包（不写 `docs/`、不污染 `out/` 扫描域）
 - [ ] 未运行 `batch.sh` / `00_background.py`；未用 `--skip-asr` / `--reuse-raw` 走正式任务

@@ -38,6 +38,10 @@ MIN_MARGIN = 50
 MP4_MIN_BYTES = 1_000_000
 PDF_MIN_BYTES = 10_000
 WARN_LONG_VIDEO_SEC = 20 * 60
+# B4 说明段相似度判定：短于该字符数的说明段文本视为分段边界噪声，不参与
+# difflib 短串比较（否则 "OK." 与正文短应答 "OK." 相似度恒为 1.00 而误报）。
+# 2026-11-15 剑18 Test2 Part1 校准，详见 B4 处注释。
+SHORT_INSTR_TEXT_CHARS = 12
 
 
 def event_max_sec(n_words: int) -> float:
@@ -276,9 +280,18 @@ def main() -> int:
 
     sents_norm = [norm(s.get("text", "")) for s in sentences if norm(s.get("text", ""))]
     max_ratio, worst = 0.0, ""
+    short_skipped = 0
     for ins in instructions:
         ni = norm(ins.get("text", ""))
         if not ni:
+            continue
+        # 极短说明段文本多为分段边界噪声（如读题空隙尾部抓到的 "OK." / "Thank you."），
+        # 与正文同样短的应答做 difflib 比较时相似度天然接近 1.00，但不可能构成
+        # 「整段正文被误判为说明段」。2026-11-15 剑18 Test2 Part1 实测：40s 读题空隙
+        # 的 text 抓到边界 "OK."，与正文短应答 "OK." 相似度 1.00 → 误报 BLOCK。
+        # 真正的正文丢失由 B1/B2 未匹配句、B3 段数、C 类时间轴事件共同兜底。
+        if len(ni) < SHORT_INSTR_TEXT_CHARS:
+            short_skipped += 1
             continue
         for sn in sents_norm:
             r = difflib.SequenceMatcher(None, ni, sn).ratio()
@@ -287,12 +300,13 @@ def main() -> int:
     long_no_keyword = [ins for ins in instructions
                        if len(ins.get("text", "").split()) > 120
                        and not any(k in ins.get("text", "").lower() for k in INSTR_KEYWORDS)]
+    skip_note = f"，跳过 {short_skipped} 段 <{SHORT_INSTR_TEXT_CHARS} 字符的边界噪声文本" if short_skipped else ""
     if max_ratio > 0.80:
-        rep.add("BLOCK", "B4", "说明段文本", f"与正文句相似度 {max_ratio:.2f} > 0.80：{worst}")
+        rep.add("BLOCK", "B4", "说明段文本", f"与正文句相似度 {max_ratio:.2f} > 0.80：{worst}{skip_note}")
     elif long_no_keyword:
-        rep.add("WARN", "B4", "说明段文本", f"{len(long_no_keyword)} 段超长且无指令关键词，请人工确认")
+        rep.add("WARN", "B4", "说明段文本", f"{len(long_no_keyword)} 段超长且无指令关键词，请人工确认{skip_note}")
     else:
-        rep.add("PASS", "B4", "说明段文本", f"无正文句混入（最高相似度 {max_ratio:.2f}）")
+        rep.add("PASS", "B4", "说明段文本", f"无正文句混入（最高相似度 {max_ratio:.2f}{skip_note}）")
 
     # ---- C 时间轴与字幕 ----
     durs = [float(e["end"]) - float(e["start"]) for e in events]
