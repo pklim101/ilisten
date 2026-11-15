@@ -1,6 +1,6 @@
 ---
 name: ielts-listening-video
-version: 2.9.7
+version: 2.9.8
 display_name: "雅思听力三遍精听成片流水线"
 display_name_en: "IELTS Listening Triple-Pass Video Pipeline"
 description_zh: "把 resource/ 下新增的剑桥雅思听力音频做成三遍循环精听成片（.mp4）与配套考点词表 PDF（_vocab.pdf）。素材可以是成对的 .mp3+.md，也可以【只有 .mp3】：缺原文时自动用 DeepSeek 深度思考+内置联网搜索检索权威 tapescript，结构化抽取后用 faster-whisper 音频转写做双源交叉校验，PASS 才落盘原文、BLOCK 阻断出片。默认自动扫描、对比 ielts-video/out/ 找出未出片或需重跑的篇目串行一次全做；用户点名「生成 test2 part1」时只处理指定篇。唯一入口 ielts-video/run.sh，必须显式传全 3 个参数。出片后跑脚本质检（锚点错位超长事件、未匹配句内容静默丢失、说明段异常、事件数口径、成片规格）并抽 3 帧由 ViewImage 视觉确认，不合格阻断交付。阶段 6 默认产出「手动发布交付包」（成片 / 封面 / 考点词 PDF / 置顶评论 / 发布清单，含投稿页自检 8 项），一次交付给用户，由账号本人上传发布；agent 默认不填表、不存草稿、不发布。浏览器草稿链路（编号 3 workbuddy-browser-use）降级为显式可选，只在用户明确要求「走草稿链路 / 用浏览器投稿 / 存草稿」时启用，终点仍只存草稿、绝不发布，登录态不外泄。当用户说「新增了剑19 testX partY 的听力音频」「只给了音频，原文自己找」「放在 resource 目录下了」「生成 test2 part1 的视频」「出片」「跑一下」「把没做的都做了」「投稿B站」「把物料发我」「交付包」「手动发布」「走草稿链路」「存草稿」时使用。"
@@ -100,6 +100,8 @@ PASS/WARN 才允许进阶段 2 出片；BLOCK 立即停止。详见 [05](referen
 **五次校准（2026-11-14，剑17 全量重出第 1 篇再停批）**：`c17_test1_part1` 被第 [4] 项判「补尾音触顶」，但定点排查发现是**clamp 口径错了，不是上限不够**。idx67 `"It's on the 17th, from 10 a.m."` 之后紧接短句 idx68 `"until 3."`（0.46s < `MIN_SENT_SEC=0.5`，被过滤、**不参与重组**），而 `03_rebuild_audio.py` 原来用「参与重组的下一句 start」当 clamp，于是直接跳到 idx69 的 360.20，补尾音从 358.08 一路吞到 359.58，把整句 `"until 3."` 混进上一句（whisper 转写证实：`10am` 358.06→358.76、`until` 358.76→359.20、`3am.` 359.20→360.30 是连续语音）。修法：**clamp 改用 `annotated` 里所有正文句的 `start`（含被过滤短句）**，`tail_check.py` 的 `next_start` 同步改成全部 `sentences.json`（原先用只有 timeline 事件的 `first`，既漏报重叠、又会把短句人声误扫成本句残留）。回归：旧 clamp 成片被新判据抓到「1 句片段重叠 0.84s」→ BLOCK；剑18 T4 P4 旧缺陷片仍 BLOCK、剑18 T4 P3 基准仍 PASS。**短句被 `MIN_SENT_SEC` 过滤导致内容不播是既有行为，不在本次修复范围**；但绝不允许补尾音跨过它去吞下一句。`data/*.json` 留档（`/tmp/ielts_c17_data/<stem>/`）后，只调 03/04/05 可从留档恢复，不必重跑 whisper + LLM 标注。
 
 **六次校准（2026-11-14，剑17 T4 P2 篇末误判）**：`c17_test4_part2` 最后一句 idx41 被第 [4] 项判「补到 1.50s 上限且上限后仍有 360ms 人声」BLOCK。定点排查：whisper 把**考试结束语** `"You now have half a minute to check your answers to part 2."`（438.18~442.14）错配成正文句 `"OK, now I'd like to …"`，而 `instructions.json` 里 (440.34, 472.63) 正是该说明段；补尾音扫到的全是**读题人声**，不是本句尾音。修法：`tail_check.py` 读 `instructions.json`，第 [4] 项对 `play_end` 落在说明段区间内的句子只记 WARN「说明段人声已排除」，不 BLOCK；`03_rebuild_audio.py` 不动（避免已完成的 13 篇口径变化）。回归四场景：该篇 PASS、0.90s 上限真缺陷模拟仍 BLOCK、剑18 T4 P4 旧缺陷片仍 BLOCK、剑18 T4 P3 基准仍 PASS。**已知局限**：这类错配的最后一句补尾音会混入少量读题人声（旧片同样如此，且本句不丢音），属 `01_align.py` 对齐误差，不在本次句尾修复范围；禁止为了消这个 WARN 去放宽硬上限或取消 clamp。
+
+**七次校准（2026-11-15，剑19 全量重出 · 质检判据 B2）**：`c19_test1_part1` 的官方 mp3 缺开场 6 句对话，联网核验三个独立来源（本地 mp3 / ieltsxpress 剑桥 CD 翻录 / B站完整 Test1 音轨）**全部从同一句「…two of our classes.」半截接上**，确认公开流通的该真题音频本身就不含开场；经用户确认改用「裁剪原文」方案，删去原文里音频不存在的开头 6 句（裁剪前原文备份到 `/tmp/ielts_c19_backup/`），字幕与音频逐句一致。裁剪后首句 `SALLY: OK.` 是孤立短应答、whisper 未匹配，而 `qa_check.py` 的 B2 `is_residual()` 直接 `t.split()`，把**说话人标签** `SALLY:` 算作正文词（2 词）→ 误报「完整内容静默丢失」BLOCK。修法：B2 判残片前先剥 `^[A-Z][A-Za-z]+\s*:\s*`（标签由 A2 单独校验、属元数据），只按正文词数判定；单篇闭环闸门同步同口径。回归：该篇 17 项 QA `17 PASS / 0 BLOCK`，剑19 其余 15 篇留档「完整句未匹配」为 0，判据未掩盖真实丢失；**B1 对齐率、B3 段数、C 类时间轴兜底一律未放宽**。另：抽帧判据「深色文字 **或** 红色占位符」、QA B4 <12 字符边界噪声豁免沿用剑18 校准。详见 [02](references/02-qa-rules.md)、[03](references/03-frames-and-viewimage.md)。
 
 ## 八阶段流程
 

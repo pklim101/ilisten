@@ -260,7 +260,10 @@ def main() -> int:
 
     unmatched = [s.get("text", "") for s in sentences if not s.get("matched")]
     def is_residual(t: str) -> bool:
-        return not re.sub(r"[\W_]+", "", t) or len(t.split()) <= 1
+        # 说话人标签（SALLY: / JOHN:）是元数据，不是正文词；否则 "SALLY: OK."
+        # 会被按空格算成 2 词，把孤立短应答误判为「完整内容静默丢失」。
+        body = re.sub(r"^\s*[A-Z][A-Za-z]+\s*:\s*", "", t)
+        return not re.sub(r"[\W_]+", "", body) or len(body.split()) <= 1
     bad_unmatched = [t for t in unmatched if not is_residual(t)]
     if bad_unmatched:
         rep.add("BLOCK", "B2", "未匹配句", f"{len(bad_unmatched)} 句是完整内容（静默丢失）：{bad_unmatched[0][:55]}")

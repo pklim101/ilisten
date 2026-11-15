@@ -1,9 +1,5 @@
 PART 1
 
-SALLY: Good morning. Hinchingbrooke Country Park, Sally speaking. I‘m one of the rangers.
-
-JOHN: Oh hello. My name’s John Chapman, and I‘m a teaching assistant at a local primary school. I’ve been asked to arrange a visit to the park for two of our classes.
-
 SALLY: OK. What would you like to know?
 
 JOHN: Well, I‘m new to this area, so perhaps you could tell me something about the park first, please.
