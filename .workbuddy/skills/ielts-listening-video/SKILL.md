@@ -1,6 +1,6 @@
 ---
 name: ielts-listening-video
-version: 2.9.9
+version: 2.9.10
 display_name: "雅思听力三遍精听成片流水线"
 display_name_en: "IELTS Listening Triple-Pass Video Pipeline"
 description_zh: "把 resource/ 下新增的剑桥雅思听力音频做成三遍循环精听成片（.mp4）与配套考点词表 PDF（_vocab.pdf）。素材可以是成对的 .mp3+.md，也可以【只有 .mp3】：缺原文时自动用 DeepSeek 深度思考+内置联网搜索检索权威 tapescript，结构化抽取后用 faster-whisper 音频转写做双源交叉校验，PASS 才落盘原文、BLOCK 阻断出片。默认自动扫描、对比 ielts-video/out/ 找出未出片或需重跑的篇目串行一次全做；用户点名「生成 test2 part1」时只处理指定篇。唯一入口 ielts-video/run.sh，必须显式传全 3 个参数。出片后跑脚本质检（锚点错位超长事件、未匹配句内容静默丢失、说明段异常、事件数口径、成片规格）并抽 3 帧由 ViewImage 视觉确认，不合格阻断交付。阶段 6 默认产出「手动发布交付包」（成片 / 封面 / 考点词 PDF / 置顶评论 / 发布清单，含投稿页自检 8 项），一次交付给用户，由账号本人上传发布；agent 默认不填表、不存草稿、不发布。浏览器草稿链路（编号 3 workbuddy-browser-use）降级为显式可选，只在用户明确要求「走草稿链路 / 用浏览器投稿 / 存草稿」时启用，终点仍只存草稿、绝不发布，登录态不外泄。当用户说「新增了剑19 testX partY 的听力音频」「只给了音频，原文自己找」「放在 resource 目录下了」「生成 test2 part1 的视频」「出片」「跑一下」「把没做的都做了」「投稿B站」「把物料发我」「交付包」「手动发布」「走草稿链路」「存草稿」时使用。"
@@ -102,6 +102,8 @@ PASS/WARN 才允许进阶段 2 出片；BLOCK 立即停止。详见 [05](referen
 **六次校准（2026-11-14，剑17 T4 P2 篇末误判）**：`c17_test4_part2` 最后一句 idx41 被第 [4] 项判「补到 1.50s 上限且上限后仍有 360ms 人声」BLOCK。定点排查：whisper 把**考试结束语** `"You now have half a minute to check your answers to part 2."`（438.18~442.14）错配成正文句 `"OK, now I'd like to …"`，而 `instructions.json` 里 (440.34, 472.63) 正是该说明段；补尾音扫到的全是**读题人声**，不是本句尾音。修法：`tail_check.py` 读 `instructions.json`，第 [4] 项对 `play_end` 落在说明段区间内的句子只记 WARN「说明段人声已排除」，不 BLOCK；`03_rebuild_audio.py` 不动（避免已完成的 13 篇口径变化）。回归四场景：该篇 PASS、0.90s 上限真缺陷模拟仍 BLOCK、剑18 T4 P4 旧缺陷片仍 BLOCK、剑18 T4 P3 基准仍 PASS。**已知局限**：这类错配的最后一句补尾音会混入少量读题人声（旧片同样如此，且本句不丢音），属 `01_align.py` 对齐误差，不在本次句尾修复范围；禁止为了消这个 WARN 去放宽硬上限或取消 clamp。
 
 **八次校准（2026-11-17，句尾字幕停留 · 仅改字幕、不动音频）**：用户验收发现「每句话末尾还有半个音节没读完时字幕就消失了」。先实测排除音频丢音：`04` 的字幕 `end` 与音频片段右边界严格相等，成片在该时刻之后 **0 语音残留**、词级 `end` 全部 ≤ `play_end`（c17 T3 P1 61 句全验证），上一轮 TailFitter 补尾音有效。**真因是字幕停留策略**：`04_subtitles.py` 用 `fmt_time(ev["end"])` 精确取音频右边界，尾音渐弱的最后一刻字幕被硬切移除；而 `03_rebuild_audio.py` 第 8 行设计注释明确写「三遍之间停顿 1 秒（**停顿期间字幕保持显示**）」，实现与注释脱节。修法：`04_subtitles.py` 新增 `SUBTITLE_HOLD_SEC`（默认 **0.8s**），字幕 `end = ev["end"] + hold`，三重 clamp——① 不越过下一事件 `start − 0.10s`（遍间 1s / 句间 3s，绝不重叠）、② 不越片尾 `total_duration`、③ 不侵入 ≥4s 说明段间隙（与 `qa_check.uncovered_gaps` / C6 同源）。**回归**：48 篇 7218 事件，0 缩短 / 0 重叠 / 0 侵入说明段，98.6% 事件 gain 0.8s（100 条紧邻说明段的正确 clamp 为 0）。c17 T3 P1 重出验证：17 项 QA `17 PASS / 0 BLOCK`、尾音四项全 PASS、`subhold_accept` 停留中位 0.80s / 0 重叠 / 0 侵入，抽帧「音频已停但字幕仍在停留期完整显示」肉眼确认。**绝不为消这个观感去改音频切片 / tail_pad / 淡出参数**——那部分已验收通过；这是纯字幕层的显示时长修复。详见 [02](references/02-qa-rules.md)。
+
+**九次校准（2026-11-17，读题段显示英文字幕 · 推翻旧「读题无字幕」设计）**：用户要求「读题时也显示读题字幕，只读一遍、不挖空」，AskUserQuestion 确认显示**英文原文即可**（不翻译）。诊断：读题音频本来就原样播一遍（`03` 的 `instr` 分支），只是没进字幕时间轴，开头 / 中段 / 结尾读题期画面全空；而旧设计把读题段当「≥4s 无字幕间隙」写进 C6 / subtitle_hold_check / qa_frames，一加字幕就 BLOCK。修法：`03.build()` 新增 `instruction_events`（读题段在**重组时间轴**上的 cursor 区间 + text，非原音频 start）写进 `timeline.json`；`04` 据此生成 `EN_INSTR` 样式完整英文字幕（不挖空 / 不高亮 / 不翻译、显示区间严格 = 播放区间、不加 hold），独立样式便于验收精确识别，正文 7218 事件回归基线零变化。同步改验收：`parse_ass` 返回加 style、C2 期望 = 正文 + 读题段数、C4 三态只统计正文、C5 `\an5` 含全部、C6 只查正文不侵入（读题字幕合法落在间隙）、`subtitle_hold_check` 按 style 分离读题字幕、`qa_frames` 第 3 帧改为读题段中点。**c17 T3 P2 单篇验证**：44/44 对齐、132 正文事件 + 3 读题字幕，QA `17 PASS / 0 BLOCK`、尾音四项全 PASS、字幕停留中位 0.8s，三帧肉眼确认读题帧 = 完整英文字幕无挖空无高亮、挖空 / 双语态未受影响。**本轮仅 1 篇验证，其余篇目与是否全量套用待用户确认；不得在用户确认前把其余篇目标成已套用**。详见 [02](references/02-qa-rules.md)。
 
 **七次校准（2026-11-15，剑19 全量重出 · 质检判据 B2）**：`c19_test1_part1` 的官方 mp3 缺开场 6 句对话，联网核验三个独立来源（本地 mp3 / ieltsxpress 剑桥 CD 翻录 / B站完整 Test1 音轨）**全部从同一句「…two of our classes.」半截接上**，确认公开流通的该真题音频本身就不含开场；经用户确认改用「裁剪原文」方案，删去原文里音频不存在的开头 6 句（裁剪前原文备份到 `/tmp/ielts_c19_backup/`），字幕与音频逐句一致。裁剪后首句 `SALLY: OK.` 是孤立短应答、whisper 未匹配，而 `qa_check.py` 的 B2 `is_residual()` 直接 `t.split()`，把**说话人标签** `SALLY:` 算作正文词（2 词）→ 误报「完整内容静默丢失」BLOCK。修法：B2 判残片前先剥 `^[A-Z][A-Za-z]+\s*:\s*`（标签由 A2 单独校验、属元数据），只按正文词数判定；单篇闭环闸门同步同口径。回归：该篇 17 项 QA `17 PASS / 0 BLOCK`，剑19 其余 15 篇留档「完整句未匹配」为 0，判据未掩盖真实丢失；**B1 对齐率、B3 段数、C 类时间轴兜底一律未放宽**。另：抽帧判据「深色文字 **或** 红色占位符」、QA B4 <12 字符边界噪声豁免沿用剑18 校准。详见 [02](references/02-qa-rules.md)、[03](references/03-frames-and-viewimage.md)。
 
@@ -351,6 +353,7 @@ BLOCK 时退出码 2 并打印「不得交付、不得开始下一篇」。
 - [ ] QA 摘要为 PASS（0 BLOCK），WARN 已向用户说明
 - [ ] `tail_check.py` 句尾尾音验收为 PASS（无淡出的硬切 0 句、片段重叠 0 句、残留 >100ms 占比 ≤20%、**补尾音触顶 0 句**）；WARN 明细（下一句起音 / 说明段人声 / 淡出豁免）已逐条判读
 - [ ] `subtitle_hold_check.py` 句尾字幕停留验收为 PASS（中位停留 >0.5s、字幕不重叠下一句、不侵入说明段）；抽帧确认「音频边界后字幕仍在停留期完整显示、停留后才撤」
+- [ ] （v2.9.10）读题段字幕：QA C2 显示「正文 N + 读题 M」、C6 显示读题字幕为正常显示；`qa_frames` 第 3 帧（读题段中点）经 ViewImage 确认显示**完整英文字幕、无挖空、无高亮**；正文三态不受影响
 - [ ] 3 张抽帧全部经 ViewImage 确认通过
 - [ ] 常规交付物为 `<stem>.mp4` + `<stem>_vocab.pdf`；阶段 6 额外产出 `ielts-video/publish/<stem>/` 交付包（不写 `docs/`、不污染 `out/` 扫描域）
 - [ ] 未运行 `batch.sh` / `00_background.py`；未用 `--skip-asr` / `--reuse-raw` 走正式任务

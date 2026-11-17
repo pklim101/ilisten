@@ -42,12 +42,13 @@ VIDEO_H = int(os.environ.get("VIDEO_H", "1080"))
 #   ① 不越过下一字幕事件 start - GUARD（遍间 1s / 句间 3s，绝不重叠、不吞下一句）；
 #   ② 不越过片尾 total_duration；
 #   ③ 不侵入 >=4s 的未覆盖间隙（说明段），与 qa_check.uncovered_gaps / C6 同源，
-#      否则「说明段无字幕」会 BLOCK。
+#      否则「正文字幕侵入说明段」会 BLOCK（读题字幕 EN_INSTR 是合法例外，见下）。
 # 回归基线：48 篇 7218 事件，end→下一事件最小空隙 1.0s，0 个 <0.30s 紧邻事件。
 # 绝不改音频切片 / tail_pad / 淡出参数——那部分已经验收通过。
 SUBTITLE_HOLD_SEC = float(os.environ.get("SUBTITLE_HOLD_SEC", "0.8"))
 SUBTITLE_HOLD_GUARD_SEC = float(os.environ.get("SUBTITLE_HOLD_GUARD_SEC", "0.10"))
-# 与 qa_check.py 的 GAP_SEC 同源；说明段（读题/结束语）间隙必须全程无字幕。
+# 与 qa_check.py 的 GAP_SEC 同源；说明段（读题/结束语）的正文 hold 间隙不得侵入。
+# 注意：v2.9.10 起读题段自身有 EN_INSTR 完整字幕（不算「无字幕」），此处只约束正文 hold。
 INSTR_GAP_SEC = float(os.environ.get("INSTR_GAP_SEC", "4.0"))
 
 

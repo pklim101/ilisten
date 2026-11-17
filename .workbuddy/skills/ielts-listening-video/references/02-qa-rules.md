@@ -30,11 +30,11 @@
 | B3 | 说明段数量 | `count > instruction_max`（基线；无基线默认 6）→ B；`count > instruction_typical` → W | B/W |
 | B4 | 说明段混入正文 | 与任一正文句 `SequenceMatcher ratio > 0.80` → B；词数 >120 且无指令关键词 → W。合法说明段实测可达 ~90 词，**不能只按词数判**。**说明段文本 <12 字符（norm 后）视为分段边界噪声，不参与相似度比较**（2026-11-15 校准，见「关键算法」） | B/W |
 | C1 | 锚点错位 / 超长事件 | **按原文词数自适应**：`limit = max(20, n_words/2.2×1.5+3)`（与 `01_align.py` 的 `sentence_max_sec()` 同源）；任一 event `end-start > limit` → B。取不到词数退化为固定 20s。**20s 下限保留**，短句被异常拉长照样 BLOCK | B |
-| C2 | 事件数口径 | `count(annotated 中 start/end 非空且 end-start>=0.5) * repeats == len(timeline.events) == ASS Dialogue 行数`。**禁止用 `matched*3`**（实测 matched=81 但 events=237=79×3） | B |
+| C2 | 事件数口径 | `count(annotated 中 start/end 非空且 end-start>=0.5) * repeats == len(timeline.events)`；ASS Dialogue 行数 == 正文事件数 + 读题字幕段数（`EN_INSTR` 样式，v2.9.10）。**禁止用 `matched*3`**（实测 matched=81 但 events=237=79×3） | B |
 | C3 | 时长一致 | `abs(timeline.total_duration - ffprobe.duration) <= 1.0s` | B |
-| C4 | 三态字幕齐备 | `\u1` >0、`\c&H000080FF&` >0、`\rZH` 数 == 有 `translation` 的 repeat=2 事件数，且 `\u1` 数 == 橙色标签数 | B |
-| C5 | 版式 | `MarginL>=50` 且 `MarginR>=50`（实测 120）；`\an5` 数 == Dialogue 数 | B |
-| C6 | 说明段无字幕 | 计算 `>=4.0s` 的未覆盖间隙，断言无 Dialogue 时间区间与之重叠（`03` 根本不为说明段建 event） | B |
+| C4 | 三态字幕齐备 | 只统计正文字幕（排除 `EN_INSTR`）：`\u1` >0、`\c&H000080FF&` >0、`\rZH` 数 == 有 `translation` 的 repeat=2 事件数，且 `\u1` 数 == 橙色标签数。读题字幕无这三类标签，不参与 | B |
+| C5 | 版式 | `MarginL>=50` 且 `MarginR>=50`（实测 120）；`\an5` 数 == 全部 Dialogue 数（含 `EN_INSTR` 读题字幕） | B |
+| C6 | 说明段无正文字幕 | 计算 `>=4.0s` 的未覆盖间隙，断言无**正文字幕**（style != `EN_INSTR`）与之重叠；读题字幕合法落在说明段间隙内（`03` 把读题段区间写进 `timeline.instruction_events`，不建正文 event）| B |
 | C7 | 有字幕无人声兜底 | 对最长且 >12s 的事件跑 `volumedetect`，`max_volume < -35dB` → W（C1 已覆盖已知根因，此项不阻断） | W |
 | D1 | 成片规格 | ffprobe：`1920x1080` / `h264` / `aac` / duration 可读；ffprobe 缺失时解析 `ffmpeg -i` stderr 兜底 | B |
 | D2 | 成片非空 | mp4 `size > 1_000_000` 字节 | B |
@@ -94,7 +94,7 @@ $PY .workbuddy/skills/ielts-listening-video/scripts/tail_check.py --root <项目
 1. 不越过下一事件 `start − SUBTITLE_HOLD_GUARD_SEC`（默认 0.10s）；遍间 1s / 句间 3s，绝不重叠；
 2. 不越过片尾 `total_duration`；
 3. 不侵入 `≥INSTR_GAP_SEC`（默认 4.0s，与本节 `uncovered_gaps` / C6 同源）的说明段间隙——
-   gap 起点落在 `(base, end]` 时收在 gap 起点前，保证「说明段无字幕」。
+   gap 起点落在 `(base, end]` 时收在 gap 起点前，保证**正文**字幕不侵入说明段（读题字幕 `EN_INSTR` 是合法例外，见下节）。
 
 **回归基线**：48 篇留档 7218 事件，0 end 缩短 / 0 重叠 / 0 侵入说明段；
 98.6% 事件 gain 0.8s，100 条紧邻说明段的正确 clamp 为 0。
@@ -118,9 +118,29 @@ $PY .workbuddy/skills/ielts-listening-video/scripts/tail_check.py --root <项目
 
 判读注意：句间零空隙（`end == 下一句 start`）的句子物理上补不了尾音，允许 `tail_pad_sec=0`，靠 40ms 淡出消除突兀感；这类句子 `tail_ratio` 可能 **>0.8**（淡出斜坡被误读成满幅人声），以 `fade_ratio` 判定，淡出生效即放行，**禁止为消 WARN 去改音频或放宽 `HARD_CUT_RATIO`**。**不要为了把指标压到 0 而让相邻片段重叠**——那会把前句尾音混进后句开头，干扰听写。
 
+## 读题段字幕验收（v2.9.10，2026-11-17）
+
+用户要求「读题时也显示读题字幕，只读一遍、不挖空」。确认口径：**英文原文即可**（不翻译）。
+旧版读题音频本来就原样播一遍（`03` 的 `instr` 分支），但没进字幕时间轴，开头 / 中段 / 结尾的
+读题期画面全空；且旧设计把读题段当「≥4s 无字幕间隙」写进 C6 / subtitle_hold_check / qa_frames，
+一旦加字幕就 BLOCK。这次推翻该假设，读题段合法显示字幕。
+
+**数据流**：`03_rebuild_audio.build()` 记录 `instruction_events`（读题段在**重组时间轴**上的 cursor
+区间 + text，不是原音频 start）写进 `timeline.json` 新字段 → `04_subtitles.py` 为每段生成一条
+`EN_INSTR` 样式的完整英文字幕（不挖空 / 不高亮 / 不翻译；显示区间严格 = 播放区间，不加 hold，
+因为只读一遍）。用独立样式让验收脚本精确识别，正文事件回归基线零变化。
+
+**验收改动**：`parse_ass` 返回加 style 字段；C2 期望 = 正文事件 + 读题段数；C4 三态只统计正文；
+C5 `\an5` 含全部；C6 只查正文字幕不侵入间隙；`subtitle_hold_check` 按 style 分离读题字幕、
+不参与停留判定；`qa_frames` 第 3 帧改为读题段中点，确认「完整英文字幕、无挖空、无高亮」。
+
+**验证**：c17 T3 P2 单篇重出，44/44 对齐、132 正文事件 + 3 读题字幕；QA `17 PASS / 0 BLOCK`、
+尾音四项全 PASS、字幕停留中位 0.8s；三帧肉眼确认读题帧 = 完整英文字幕、挖空态 / 双语态未受影响。
+本轮仅此 1 篇验证，其余篇目是否全量套用待用户确认。
+
 ## 关键算法
 
-**未覆盖间隙（C6 与抽帧帧 3 共用）**：把 `timeline.events` 的 `(start, end)` 排序合并，从 `cur=0` 扫到 `total_duration`，
+**未覆盖间隙（C6 用；抽帧帧 3 在 v2.9.10 起改为读题段中点，不再取间隙中点）**：把 `timeline.events` 的 `(start, end)` 排序合并，从 `cur=0` 扫到 `total_duration`，
 凡 `s - cur >= 4.0` 记为一个间隙。1s / 3s 停顿均 <4s 被排除，实测 test2 P1 恰好只剩 3 个说明段
 （91.5s / 36.4s / 12.9s）。
 
@@ -172,6 +192,8 @@ B1/B2 未匹配句、B3 段数、C 类时间轴事件兜底，**不放宽这些�
  下一步: qa_frames.py 抽 3 帧 → 逐张 ViewImage 确认 → 全部通过才进入下一篇
 ========================================================
 ```
+
+> 以上为 v2.9.9 及更早的历史输出样例；v2.9.10 起 C6 文案变为「N 段大间隙无正文字幕（读题字幕 M 段为正常显示）」，判定对象由「全部 Dialogue」收窄为「正文 Dialogue」。
 
 BLOCK 时把对应行换成 `[BLOCK]` 并在末尾打印：
 `结论: BLOCK —— 不得交付、不得开始下一篇；成片已保留，请按 references/04 处置`。
