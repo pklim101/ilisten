@@ -99,7 +99,8 @@ def parse_ass(text: str):
             parts = line.split(",", 9)
             if len(parts) >= 10:
                 try:
-                    dialogues.append((ass_time_to_sec(parts[1]), ass_time_to_sec(parts[2]), parts[9]))
+                    style = parts[3].strip() if len(parts) > 3 else ""
+                    dialogues.append((ass_time_to_sec(parts[1]), ass_time_to_sec(parts[2]), parts[9], style))
                 except (ValueError, IndexError):
                     pass
     return dialogues, margins
@@ -342,12 +343,16 @@ def main() -> int:
                    if a.get("start") is not None and a.get("end") is not None
                    and float(a["end"]) - float(a["start"]) >= 0.5)
     expected = eligible * repeats
+    n_instr_sub = sum(1 for d in dialogues if d[3] == "EN_INSTR")
+    # 2026-11-17：读题段也出字幕（EN_INSTR 样式），故 ASS = 正文事件 + 读题段数。
     n_dlg = len(dialogues)
-    if not (expected == len(events) == n_dlg):
+    if not (expected == len(events) and n_dlg == expected + n_instr_sub):
         rep.add("BLOCK", "C2", "事件数口径",
-                f"{eligible}句 x {repeats} = {expected}，timeline={len(events)}，ASS={n_dlg}（三者须相等）")
+                f"{eligible}句 x {repeats} = {expected}，timeline={len(events)}，"
+                f"ASS={n_dlg}（正文 {n_dlg - n_instr_sub} + 读题 {n_instr_sub}）")
     else:
-        rep.add("PASS", "C2", "事件数口径", f"{expected} = {eligible}句 x {repeats} = ASS {n_dlg} 行")
+        rep.add("PASS", "C2", "事件数口径",
+                f"{expected} = {eligible}句 x {repeats} = ASS 正文 {n_dlg - n_instr_sub} + 读题 {n_instr_sub}")
 
     media = probe_media(mp4)
     if media.get("duration") is None or abs(total - float(media["duration"])) > MAX_DURATION_DELTA_SEC:
@@ -357,10 +362,11 @@ def main() -> int:
         rep.add("PASS", "C3", "时长一致",
                 f"timeline {total:.1f}s ≈ 成片 {float(media['duration']):.1f}s (Δ {abs(total - float(media['duration'])):.2f}s)")
 
-    all_dlg_text = "\n".join(d[2] for d in dialogues)
-    n_u1 = len(re.findall(r"\\u1(?!\d)", all_dlg_text))
-    n_orange = len(re.findall(r"\\c&H000080FF&", all_dlg_text, re.IGNORECASE))
-    n_zh = len(re.findall(r"\\rZH", all_dlg_text, re.IGNORECASE))
+    # 读题字幕（EN_INSTR）无挖空/高亮/双语标签，三态计数只统计正文字幕。
+    body_dlg_text = "\n".join(d[2] for d in dialogues if d[3] != "EN_INSTR")
+    n_u1 = len(re.findall(r"\\u1(?!\d)", body_dlg_text))
+    n_orange = len(re.findall(r"\\c&H000080FF&", body_dlg_text, re.IGNORECASE))
+    n_zh = len(re.findall(r"\\rZH", body_dlg_text, re.IGNORECASE))
     exp_zh = sum(1 for e in events if e.get("repeat") == repeats - 1 and e.get("translation"))
     if not (n_u1 > 0 and n_orange > 0 and n_zh == exp_zh and n_u1 == n_orange):
         rep.add("BLOCK", "C4", "三态字幕",
@@ -369,23 +375,27 @@ def main() -> int:
         rep.add("PASS", "C4", "三态字幕", f"挖空 {n_u1} / 橙高亮 {n_orange} / 双语 {n_zh}")
 
     ml, mr = margins.get("MarginL"), margins.get("MarginR")
+    all_dlg_text = "\n".join(d[2] for d in dialogues)
     n_an5 = len(re.findall(r"\\an5", all_dlg_text))
     if (ml is None or mr is None or min(ml, mr) < MIN_MARGIN or n_an5 != n_dlg):
         rep.add("BLOCK", "C5", "版式", f"MarginL/R={ml}/{mr}，\\an5 {n_an5} 行 vs Dialogue {n_dlg} 行")
     else:
         rep.add("PASS", "C5", "版式", f"MarginL/R={ml}/{mr}px, \\an5 居中({n_an5})")
 
+    # 读题字幕（EN_INSTR）合法地落在说明段间隙，C6 只检查正文字幕不得侵入。
     gaps = uncovered_gaps(events, total)
     overlap = 0
-    for ds, de, _ in dialogues:
+    for ds, de, _txt, style in dialogues:
+        if style == "EN_INSTR":
+            continue
         for gs, ge in gaps:
             if ds < ge - 0.05 and de > gs + 0.05:
                 overlap += 1
                 break
     if overlap:
-        rep.add("BLOCK", "C6", "说明段字幕", f"{overlap} 条 Dialogue 落在 {len(gaps)} 段说明段间隙内")
+        rep.add("BLOCK", "C6", "说明段字幕", f"{overlap} 条正文字幕落在 {len(gaps)} 段说明段间隙内")
     else:
-        rep.add("PASS", "C6", "说明段字幕", f"{len(gaps)} 段大间隙无 Dialogue 覆盖")
+        rep.add("PASS", "C6", "说明段字幕", f"{len(gaps)} 段大间隙无正文字幕（读题字幕 {n_instr_sub} 段为正常显示）")
 
     if args.skip_volume or max_dur <= 12.0 or not events:
         rep.add("PASS", "C7", "人声兜底", "跳过（无 >12s 事件或 --skip-volume）")

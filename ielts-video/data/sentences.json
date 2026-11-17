@@ -1,3734 +1,4281 @@
 [
   {
     "index": 0,
-    "text": "Jack, I'm thinking of taking the kids to the seaside on a surfing holiday this summer and I wanted to ask your advice - as I know you're such an expert.",
-    "start": 86.76,
-    "end": 98.46,
+    "text": "Good afternoon.",
+    "start": 60.0,
+    "end": 61.28,
     "words": [
       {
-        "w": "jack",
-        "start": 86.76,
-        "end": 87.92
+        "w": "good",
+        "start": 60.0,
+        "end": 60.64
       },
       {
-        "w": "i'm",
-        "start": 87.92,
-        "end": 88.6
-      },
-      {
-        "w": "thinking",
-        "start": 88.6,
-        "end": 89.06
-      },
-      {
-        "w": "of",
-        "start": 89.06,
-        "end": 89.3
-      },
-      {
-        "w": "taking",
-        "start": 89.3,
-        "end": 89.58
-      },
-      {
-        "w": "the",
-        "start": 89.58,
-        "end": 89.84
-      },
-      {
-        "w": "kids",
-        "start": 89.84,
-        "end": 90.16
-      },
-      {
-        "w": "to",
-        "start": 90.16,
-        "end": 90.46
-      },
-      {
-        "w": "the",
-        "start": 90.46,
-        "end": 90.64
-      },
-      {
-        "w": "seaside",
-        "start": 90.64,
-        "end": 90.94
-      },
-      {
-        "w": "on",
-        "start": 91.32,
-        "end": 91.56
-      },
-      {
-        "w": "a",
-        "start": 91.56,
-        "end": 91.72
-      },
-      {
-        "w": "surfing",
-        "start": 91.72,
-        "end": 92.08
-      },
-      {
-        "w": "holiday",
-        "start": 92.08,
-        "end": 92.6
-      },
-      {
-        "w": "this",
-        "start": 92.6,
-        "end": 93.0
-      },
-      {
-        "w": "summer",
-        "start": 93.0,
-        "end": 93.34
-      },
-      {
-        "w": "and",
-        "start": 93.34,
-        "end": 94.28
-      },
-      {
-        "w": "i",
-        "start": 94.28,
-        "end": 94.66
-      },
-      {
-        "w": "wanted",
-        "start": 94.66,
-        "end": 94.92
-      },
-      {
-        "w": "to",
-        "start": 94.92,
-        "end": 95.16
-      },
-      {
-        "w": "ask",
-        "start": 95.16,
-        "end": 95.44
-      },
-      {
-        "w": "your",
-        "start": 95.44,
-        "end": 95.74
-      },
-      {
-        "w": "advice",
-        "start": 95.74,
-        "end": 96.22
-      },
-      {
-        "w": "as",
-        "start": 96.82,
-        "end": 97.08
-      },
-      {
-        "w": "i",
-        "start": 97.08,
-        "end": 97.2
-      },
-      {
-        "w": "know",
-        "start": 97.2,
-        "end": 97.44
-      },
-      {
-        "w": "you're",
-        "start": 97.44,
-        "end": 97.82
-      },
-      {
-        "w": "such",
-        "start": 97.82,
-        "end": 98.0
-      },
-      {
-        "w": "an",
-        "start": 98.0,
-        "end": 98.16
-      },
-      {
-        "w": "expert",
-        "start": 98.16,
-        "end": 98.46
+        "w": "afternoon",
+        "start": 60.64,
+        "end": 61.28
       }
     ],
     "matched": true
   },
   {
     "index": 1,
-    "text": "Well, I don't know about that, but yes, I've done a bit of surfing over the years.",
-    "start": 98.98,
-    "end": 103.76,
+    "text": "My name's Mrs Carter and I run the before and after school extended hours childcare service.",
+    "start": 61.84,
+    "end": 68.26,
     "words": [
       {
-        "w": "well",
-        "start": 98.98,
-        "end": 99.28
+        "w": "my",
+        "start": 61.84,
+        "end": 62.18
+      },
+      {
+        "w": "name's",
+        "start": 62.18,
+        "end": 62.68
+      },
+      {
+        "w": "mrs",
+        "start": 62.68,
+        "end": 62.94
+      },
+      {
+        "w": "carter",
+        "start": 62.94,
+        "end": 63.28
+      },
+      {
+        "w": "and",
+        "start": 63.28,
+        "end": 64.0
       },
       {
         "w": "i",
-        "start": 99.28,
-        "end": 99.6
+        "start": 64.0,
+        "end": 64.24
       },
       {
-        "w": "don't",
-        "start": 99.6,
-        "end": 99.8
-      },
-      {
-        "w": "know",
-        "start": 99.8,
-        "end": 99.98
-      },
-      {
-        "w": "about",
-        "start": 99.98,
-        "end": 100.22
-      },
-      {
-        "w": "that",
-        "start": 100.22,
-        "end": 100.52
-      },
-      {
-        "w": "but",
-        "start": 100.52,
-        "end": 101.32
-      },
-      {
-        "w": "yes",
-        "start": 101.32,
-        "end": 101.7
-      },
-      {
-        "w": "i've",
-        "start": 101.7,
-        "end": 102.12
-      },
-      {
-        "w": "done",
-        "start": 102.12,
-        "end": 102.26
-      },
-      {
-        "w": "a",
-        "start": 102.26,
-        "end": 102.38
-      },
-      {
-        "w": "bit",
-        "start": 102.38,
-        "end": 102.52
-      },
-      {
-        "w": "of",
-        "start": 102.52,
-        "end": 102.66
-      },
-      {
-        "w": "surfing",
-        "start": 102.66,
-        "end": 103.02
-      },
-      {
-        "w": "over",
-        "start": 103.02,
-        "end": 103.32
+        "w": "run",
+        "start": 64.24,
+        "end": 64.48
       },
       {
         "w": "the",
-        "start": 103.32,
-        "end": 103.46
+        "start": 64.48,
+        "end": 64.62
       },
       {
-        "w": "years",
-        "start": 103.46,
-        "end": 103.76
+        "w": "before",
+        "start": 64.62,
+        "end": 64.92
+      },
+      {
+        "w": "and",
+        "start": 64.92,
+        "end": 65.28
+      },
+      {
+        "w": "after",
+        "start": 65.28,
+        "end": 65.64
+      },
+      {
+        "w": "school",
+        "start": 65.64,
+        "end": 65.98
+      },
+      {
+        "w": "extended",
+        "start": 65.98,
+        "end": 66.56
+      },
+      {
+        "w": "hours",
+        "start": 66.56,
+        "end": 67.0
+      },
+      {
+        "w": "childcare",
+        "start": 67.0,
+        "end": 67.64
+      },
+      {
+        "w": "service",
+        "start": 67.64,
+        "end": 68.26
       }
     ],
     "matched": true
   },
   {
     "index": 2,
-    "text": "I'd thoroughly recommend it.",
-    "start": 104.54,
-    "end": 105.94,
+    "text": "I hope you've had a chance to have a good look around the school and talk to staff and pupils.",
+    "start": 68.82,
+    "end": 73.7,
     "words": [
       {
-        "w": "thoroughly",
-        "start": 104.54,
-        "end": 105.06
+        "w": "i",
+        "start": 68.82,
+        "end": 68.96
       },
       {
-        "w": "recommend",
-        "start": 105.06,
-        "end": 105.58
+        "w": "hope",
+        "start": 68.96,
+        "end": 69.16
       },
       {
-        "w": "it",
-        "start": 105.58,
-        "end": 105.94
+        "w": "you've",
+        "start": 69.16,
+        "end": 69.44
+      },
+      {
+        "w": "had",
+        "start": 69.44,
+        "end": 69.56
+      },
+      {
+        "w": "a",
+        "start": 69.56,
+        "end": 69.66
+      },
+      {
+        "w": "chance",
+        "start": 69.66,
+        "end": 69.9
+      },
+      {
+        "w": "to",
+        "start": 69.9,
+        "end": 70.14
+      },
+      {
+        "w": "have",
+        "start": 70.14,
+        "end": 70.28
+      },
+      {
+        "w": "a",
+        "start": 70.28,
+        "end": 70.4
+      },
+      {
+        "w": "good",
+        "start": 70.4,
+        "end": 70.58
+      },
+      {
+        "w": "look",
+        "start": 70.58,
+        "end": 70.74
+      },
+      {
+        "w": "around",
+        "start": 70.74,
+        "end": 71.12
+      },
+      {
+        "w": "the",
+        "start": 71.12,
+        "end": 71.28
+      },
+      {
+        "w": "school",
+        "start": 71.28,
+        "end": 71.6
+      },
+      {
+        "w": "and",
+        "start": 71.6,
+        "end": 72.16
+      },
+      {
+        "w": "talk",
+        "start": 72.16,
+        "end": 72.5
+      },
+      {
+        "w": "to",
+        "start": 72.5,
+        "end": 72.72
+      },
+      {
+        "w": "staff",
+        "start": 72.72,
+        "end": 73.04
+      },
+      {
+        "w": "and",
+        "start": 73.04,
+        "end": 73.3
+      },
+      {
+        "w": "pupils",
+        "start": 73.3,
+        "end": 73.7
       }
     ],
     "matched": true
   },
   {
     "index": 3,
-    "text": "I think it's the kind of holiday all the family can enjoy together.",
-    "start": 106.4,
-    "end": 110.22,
+    "text": "I know that many of you are interested in using our childcare service when your child joins the school, and perhaps you already know something about it, but for those that don't, I'll go through the main details now.",
+    "start": 74.64,
+    "end": 88.0,
     "words": [
       {
         "w": "i",
-        "start": 106.4,
-        "end": 106.68
+        "start": 74.64,
+        "end": 74.86
       },
       {
-        "w": "think",
-        "start": 106.68,
-        "end": 106.88
+        "w": "know",
+        "start": 74.86,
+        "end": 74.98
       },
       {
-        "w": "it's",
-        "start": 106.88,
-        "end": 107.1
+        "w": "that",
+        "start": 74.98,
+        "end": 75.14
       },
       {
-        "w": "the",
-        "start": 107.1,
-        "end": 107.22
-      },
-      {
-        "w": "kind",
-        "start": 107.22,
-        "end": 107.5
+        "w": "many",
+        "start": 75.14,
+        "end": 75.38
       },
       {
         "w": "of",
-        "start": 107.5,
-        "end": 107.62
+        "start": 75.38,
+        "end": 75.62
       },
       {
-        "w": "holiday",
-        "start": 107.62,
-        "end": 107.94
+        "w": "you",
+        "start": 75.62,
+        "end": 75.8
       },
       {
-        "w": "all",
-        "start": 107.94,
-        "end": 108.44
+        "w": "are",
+        "start": 75.8,
+        "end": 75.92
+      },
+      {
+        "w": "interested",
+        "start": 75.92,
+        "end": 76.5
+      },
+      {
+        "w": "in",
+        "start": 76.5,
+        "end": 76.94
+      },
+      {
+        "w": "using",
+        "start": 76.94,
+        "end": 77.32
+      },
+      {
+        "w": "our",
+        "start": 77.32,
+        "end": 77.6
+      },
+      {
+        "w": "childcare",
+        "start": 77.6,
+        "end": 78.06
+      },
+      {
+        "w": "service",
+        "start": 78.06,
+        "end": 78.78
+      },
+      {
+        "w": "when",
+        "start": 78.78,
+        "end": 79.26
+      },
+      {
+        "w": "your",
+        "start": 79.26,
+        "end": 79.46
+      },
+      {
+        "w": "child",
+        "start": 79.46,
+        "end": 79.86
+      },
+      {
+        "w": "joins",
+        "start": 79.86,
+        "end": 80.26
       },
       {
         "w": "the",
-        "start": 108.44,
-        "end": 108.62
+        "start": 80.26,
+        "end": 80.5
       },
       {
-        "w": "family",
-        "start": 108.62,
-        "end": 108.98
+        "w": "school",
+        "start": 80.5,
+        "end": 80.8
       },
       {
-        "w": "can",
-        "start": 108.98,
-        "end": 109.28
+        "w": "and",
+        "start": 80.8,
+        "end": 81.48
       },
       {
-        "w": "enjoy",
-        "start": 109.28,
-        "end": 109.72
+        "w": "perhaps",
+        "start": 81.48,
+        "end": 81.78
       },
       {
-        "w": "together",
-        "start": 109.72,
-        "end": 110.22
+        "w": "you",
+        "start": 81.78,
+        "end": 82.04
+      },
+      {
+        "w": "already",
+        "start": 82.04,
+        "end": 82.48
+      },
+      {
+        "w": "know",
+        "start": 82.48,
+        "end": 82.72
+      },
+      {
+        "w": "something",
+        "start": 82.72,
+        "end": 83.08
+      },
+      {
+        "w": "about",
+        "start": 83.08,
+        "end": 83.44
+      },
+      {
+        "w": "it",
+        "start": 83.44,
+        "end": 83.82
+      },
+      {
+        "w": "but",
+        "start": 83.82,
+        "end": 84.64
+      },
+      {
+        "w": "for",
+        "start": 84.64,
+        "end": 85.1
+      },
+      {
+        "w": "those",
+        "start": 85.1,
+        "end": 85.3
+      },
+      {
+        "w": "that",
+        "start": 85.3,
+        "end": 85.54
+      },
+      {
+        "w": "don't",
+        "start": 85.54,
+        "end": 85.98
+      },
+      {
+        "w": "i'll",
+        "start": 85.98,
+        "end": 86.5
+      },
+      {
+        "w": "go",
+        "start": 86.5,
+        "end": 86.66
+      },
+      {
+        "w": "through",
+        "start": 86.66,
+        "end": 86.88
+      },
+      {
+        "w": "the",
+        "start": 86.88,
+        "end": 87.04
+      },
+      {
+        "w": "main",
+        "start": 87.04,
+        "end": 87.22
+      },
+      {
+        "w": "details",
+        "start": 87.22,
+        "end": 87.6
+      },
+      {
+        "w": "now",
+        "start": 87.6,
+        "end": 88.0
       }
     ],
     "matched": true
   },
   {
     "index": 4,
-    "text": "The thing about surfing is that it's great for all ages and all abilities.",
-    "start": 111.24,
-    "end": 115.6,
+    "text": "We offer childcare for children from the ages of four to eleven both before and after school.",
+    "start": 88.8,
+    "end": 95.78,
     "words": [
       {
-        "w": "the",
-        "start": 111.24,
-        "end": 111.5
+        "w": "we",
+        "start": 88.8,
+        "end": 89.3
       },
       {
-        "w": "thing",
-        "start": 111.5,
-        "end": 111.66
+        "w": "offer",
+        "start": 89.3,
+        "end": 89.52
       },
       {
-        "w": "about",
-        "start": 111.66,
-        "end": 111.88
-      },
-      {
-        "w": "surfing",
-        "start": 111.88,
-        "end": 112.3
-      },
-      {
-        "w": "is",
-        "start": 112.3,
-        "end": 112.7
-      },
-      {
-        "w": "that",
-        "start": 112.7,
-        "end": 112.84
-      },
-      {
-        "w": "it's",
-        "start": 112.84,
-        "end": 113.0
-      },
-      {
-        "w": "great",
-        "start": 113.0,
-        "end": 113.28
+        "w": "childcare",
+        "start": 89.52,
+        "end": 90.02
       },
       {
         "w": "for",
-        "start": 113.28,
-        "end": 113.58
+        "start": 90.02,
+        "end": 90.52
       },
       {
-        "w": "all",
-        "start": 113.58,
-        "end": 113.94
+        "w": "children",
+        "start": 90.52,
+        "end": 90.82
+      },
+      {
+        "w": "from",
+        "start": 90.82,
+        "end": 91.2
+      },
+      {
+        "w": "the",
+        "start": 91.2,
+        "end": 91.34
       },
       {
         "w": "ages",
-        "start": 113.94,
-        "end": 114.4
+        "start": 91.34,
+        "end": 91.66
+      },
+      {
+        "w": "of",
+        "start": 91.66,
+        "end": 92.08
+      },
+      {
+        "w": "four",
+        "start": 92.08,
+        "end": 92.46
+      },
+      {
+        "w": "to",
+        "start": 92.46,
+        "end": 92.82
+      },
+      {
+        "w": "eleven",
+        "start": 92.82,
+        "end": 93.22
+      },
+      {
+        "w": "both",
+        "start": 93.22,
+        "end": 93.92
+      },
+      {
+        "w": "before",
+        "start": 93.92,
+        "end": 94.34
       },
       {
         "w": "and",
-        "start": 114.4,
-        "end": 114.9
+        "start": 94.34,
+        "end": 94.9
       },
       {
-        "w": "all",
-        "start": 114.9,
-        "end": 115.2
+        "w": "after",
+        "start": 94.9,
+        "end": 95.28
       },
       {
-        "w": "abilities",
-        "start": 115.2,
-        "end": 115.6
+        "w": "school",
+        "start": 95.28,
+        "end": 95.78
       }
     ],
     "matched": true
   },
   {
     "index": 5,
-    "text": "My youngest started when he was only three!",
-    "start": 115.6,
-    "end": 118.66,
+    "text": "I know that many parents who work find this service invaluable.",
+    "start": 96.48,
+    "end": 100.28,
     "words": [
       {
-        "w": "my",
-        "start": 115.6,
-        "end": 116.56
+        "w": "i",
+        "start": 96.48,
+        "end": 96.8
       },
       {
-        "w": "youngest",
-        "start": 116.56,
-        "end": 116.9
+        "w": "know",
+        "start": 96.8,
+        "end": 96.96
       },
       {
-        "w": "started",
-        "start": 116.9,
-        "end": 117.42
+        "w": "that",
+        "start": 96.96,
+        "end": 97.1
       },
       {
-        "w": "when",
-        "start": 117.42,
-        "end": 117.7
+        "w": "many",
+        "start": 97.1,
+        "end": 97.36
       },
       {
-        "w": "he",
-        "start": 117.7,
-        "end": 117.86
+        "w": "parents",
+        "start": 97.36,
+        "end": 97.86
       },
       {
-        "w": "was",
-        "start": 117.86,
-        "end": 118.02
+        "w": "who",
+        "start": 97.86,
+        "end": 98.16
       },
       {
-        "w": "only",
-        "start": 118.02,
-        "end": 118.28
+        "w": "work",
+        "start": 98.16,
+        "end": 98.56
       },
       {
-        "w": "three",
-        "start": 118.28,
-        "end": 118.66
+        "w": "find",
+        "start": 98.56,
+        "end": 99.02
+      },
+      {
+        "w": "this",
+        "start": 99.02,
+        "end": 99.34
+      },
+      {
+        "w": "service",
+        "start": 99.34,
+        "end": 99.74
+      },
+      {
+        "w": "invaluable",
+        "start": 99.74,
+        "end": 100.28
       }
     ],
     "matched": true
   },
   {
     "index": 6,
-    "text": "Wow!",
-    "start": 119.08,
-    "end": 119.54,
+    "text": "You can leave your child with us safe in the knowledge that they will be extremely well cared for.",
+    "start": 101.26,
+    "end": 107.08,
     "words": [
       {
-        "w": "wow",
-        "start": 119.08,
-        "end": 119.54
+        "w": "you",
+        "start": 101.26,
+        "end": 101.54
+      },
+      {
+        "w": "can",
+        "start": 101.54,
+        "end": 101.72
+      },
+      {
+        "w": "leave",
+        "start": 101.72,
+        "end": 101.88
+      },
+      {
+        "w": "your",
+        "start": 101.88,
+        "end": 102.08
+      },
+      {
+        "w": "child",
+        "start": 102.08,
+        "end": 102.44
+      },
+      {
+        "w": "with",
+        "start": 102.44,
+        "end": 102.66
+      },
+      {
+        "w": "us",
+        "start": 102.66,
+        "end": 102.94
+      },
+      {
+        "w": "safe",
+        "start": 102.94,
+        "end": 103.5
+      },
+      {
+        "w": "in",
+        "start": 103.5,
+        "end": 103.68
+      },
+      {
+        "w": "the",
+        "start": 103.68,
+        "end": 103.78
+      },
+      {
+        "w": "knowledge",
+        "start": 103.78,
+        "end": 104.24
+      },
+      {
+        "w": "that",
+        "start": 104.24,
+        "end": 104.54
+      },
+      {
+        "w": "they",
+        "start": 104.54,
+        "end": 104.7
+      },
+      {
+        "w": "will",
+        "start": 104.7,
+        "end": 104.86
+      },
+      {
+        "w": "be",
+        "start": 104.86,
+        "end": 105.06
+      },
+      {
+        "w": "extremely",
+        "start": 105.06,
+        "end": 105.94
+      },
+      {
+        "w": "well",
+        "start": 105.94,
+        "end": 106.48
+      },
+      {
+        "w": "cared",
+        "start": 106.48,
+        "end": 106.76
+      },
+      {
+        "w": "for",
+        "start": 106.76,
+        "end": 107.08
       }
     ],
     "matched": true
   },
   {
     "index": 7,
-    "text": "But it's quite physically demanding, isn't it?",
-    "start": 119.54,
-    "end": 123.76,
+    "text": "We are insured to provide care for up to 70 children, although we rarely have this many attending at any one session.",
+    "start": 107.92,
+    "end": 115.96,
     "words": [
       {
-        "w": "but",
-        "start": 119.54,
-        "end": 120.8
+        "w": "we",
+        "start": 107.92,
+        "end": 108.56
       },
       {
-        "w": "it's",
-        "start": 120.8,
-        "end": 121.6
+        "w": "are",
+        "start": 108.56,
+        "end": 108.66
       },
       {
-        "w": "quite",
-        "start": 121.6,
-        "end": 121.88
+        "w": "to",
+        "start": 109.12,
+        "end": 109.42
       },
       {
-        "w": "physically",
-        "start": 121.88,
-        "end": 122.42
+        "w": "provide",
+        "start": 109.42,
+        "end": 109.72
       },
       {
-        "w": "demanding",
-        "start": 122.42,
-        "end": 123.04
+        "w": "care",
+        "start": 109.72,
+        "end": 110.22
       },
       {
-        "w": "isn't",
-        "start": 123.04,
-        "end": 123.46
+        "w": "for",
+        "start": 110.22,
+        "end": 110.46
       },
       {
-        "w": "it",
-        "start": 123.46,
-        "end": 123.76
+        "w": "up",
+        "start": 110.46,
+        "end": 110.64
+      },
+      {
+        "w": "to",
+        "start": 110.64,
+        "end": 110.8
+      },
+      {
+        "w": "70",
+        "start": 110.8,
+        "end": 111.22
+      },
+      {
+        "w": "children",
+        "start": 111.22,
+        "end": 111.72
+      },
+      {
+        "w": "although",
+        "start": 111.72,
+        "end": 112.5
+      },
+      {
+        "w": "we",
+        "start": 112.5,
+        "end": 112.86
+      },
+      {
+        "w": "rarely",
+        "start": 112.86,
+        "end": 113.26
+      },
+      {
+        "w": "have",
+        "start": 113.26,
+        "end": 113.64
+      },
+      {
+        "w": "this",
+        "start": 113.64,
+        "end": 113.9
+      },
+      {
+        "w": "many",
+        "start": 113.9,
+        "end": 114.2
+      },
+      {
+        "w": "attending",
+        "start": 114.2,
+        "end": 114.72
+      },
+      {
+        "w": "at",
+        "start": 114.72,
+        "end": 115.08
+      },
+      {
+        "w": "any",
+        "start": 115.08,
+        "end": 115.34
+      },
+      {
+        "w": "one",
+        "start": 115.34,
+        "end": 115.58
+      },
+      {
+        "w": "session",
+        "start": 115.58,
+        "end": 115.96
       }
     ],
     "matched": true
   },
   {
     "index": 8,
-    "text": "I've heard you need to be pretty fit.",
-    "start": 124.46,
-    "end": 126.38,
+    "text": "I think we generally expect around 50-60 children for the afternoon sessions and about half that number for the breakfast sessions.",
+    "start": 116.88,
+    "end": 126.16,
     "words": [
       {
-        "w": "i've",
-        "start": 124.46,
-        "end": 124.66
+        "w": "i",
+        "start": 116.88,
+        "end": 117.4
       },
       {
-        "w": "heard",
-        "start": 124.66,
-        "end": 124.9
+        "w": "think",
+        "start": 117.4,
+        "end": 117.54
       },
       {
-        "w": "you",
-        "start": 124.9,
-        "end": 125.16
+        "w": "we",
+        "start": 117.54,
+        "end": 117.74
       },
       {
-        "w": "need",
-        "start": 125.16,
-        "end": 125.34
+        "w": "generally",
+        "start": 117.74,
+        "end": 118.06
       },
       {
-        "w": "to",
-        "start": 125.34,
+        "w": "expect",
+        "start": 118.06,
+        "end": 118.54
+      },
+      {
+        "w": "around",
+        "start": 118.54,
+        "end": 119.04
+      },
+      {
+        "w": "50",
+        "start": 119.04,
+        "end": 119.7
+      },
+      {
+        "w": "60",
+        "start": 119.94,
+        "end": 120.34
+      },
+      {
+        "w": "children",
+        "start": 120.34,
+        "end": 120.86
+      },
+      {
+        "w": "for",
+        "start": 120.86,
+        "end": 121.22
+      },
+      {
+        "w": "the",
+        "start": 121.22,
+        "end": 121.36
+      },
+      {
+        "w": "afternoon",
+        "start": 121.36,
+        "end": 121.76
+      },
+      {
+        "w": "sessions",
+        "start": 121.76,
+        "end": 122.16
+      },
+      {
+        "w": "and",
+        "start": 122.16,
+        "end": 123.2
+      },
+      {
+        "w": "about",
+        "start": 123.2,
+        "end": 123.42
+      },
+      {
+        "w": "half",
+        "start": 123.42,
+        "end": 123.94
+      },
+      {
+        "w": "that",
+        "start": 123.94,
+        "end": 124.22
+      },
+      {
+        "w": "number",
+        "start": 124.22,
+        "end": 124.64
+      },
+      {
+        "w": "for",
+        "start": 124.64,
+        "end": 124.96
+      },
+      {
+        "w": "the",
+        "start": 124.96,
+        "end": 125.1
+      },
+      {
+        "w": "breakfast",
+        "start": 125.1,
         "end": 125.48
       },
       {
-        "w": "be",
+        "w": "sessions",
         "start": 125.48,
-        "end": 125.6
-      },
-      {
-        "w": "pretty",
-        "start": 125.6,
-        "end": 126.0
-      },
-      {
-        "w": "fit",
-        "start": 126.0,
-        "end": 126.38
+        "end": 126.16
       }
     ],
     "matched": true
   },
   {
     "index": 9,
-    "text": "Yes.",
-    "start": 126.88,
-    "end": 127.14,
+    "text": "Although we currently do have 70 children registered with us, not all of these attend every day.",
+    "start": 127.14,
+    "end": 133.92,
     "words": [
       {
-        "w": "yes",
-        "start": 126.88,
-        "end": 127.14
+        "w": "although",
+        "start": 127.14,
+        "end": 127.8
+      },
+      {
+        "w": "we",
+        "start": 127.8,
+        "end": 128.14
+      },
+      {
+        "w": "currently",
+        "start": 128.14,
+        "end": 128.58
+      },
+      {
+        "w": "do",
+        "start": 128.58,
+        "end": 128.94
+      },
+      {
+        "w": "have",
+        "start": 128.94,
+        "end": 129.26
+      },
+      {
+        "w": "70",
+        "start": 129.26,
+        "end": 129.68
+      },
+      {
+        "w": "children",
+        "start": 129.68,
+        "end": 130.16
+      },
+      {
+        "w": "registered",
+        "start": 130.16,
+        "end": 130.6
+      },
+      {
+        "w": "with",
+        "start": 130.6,
+        "end": 131.02
+      },
+      {
+        "w": "us",
+        "start": 131.02,
+        "end": 131.36
+      },
+      {
+        "w": "not",
+        "start": 131.36,
+        "end": 131.96
+      },
+      {
+        "w": "all",
+        "start": 131.96,
+        "end": 132.46
+      },
+      {
+        "w": "of",
+        "start": 132.46,
+        "end": 132.64
+      },
+      {
+        "w": "these",
+        "start": 132.64,
+        "end": 132.82
+      },
+      {
+        "w": "attend",
+        "start": 132.82,
+        "end": 133.2
+      },
+      {
+        "w": "every",
+        "start": 133.2,
+        "end": 133.54
+      },
+      {
+        "w": "day",
+        "start": 133.54,
+        "end": 133.92
       }
     ],
     "matched": true
   },
   {
     "index": 10,
-    "text": "You'll certainly learn more quickly and won't tire as easily.",
-    "start": 127.14,
-    "end": 131.0,
+    "text": "It's ten years since we began offering an extended hours service and we've come a long way during that time.",
+    "start": 134.68,
+    "end": 141.42,
     "words": [
       {
-        "w": "you'll",
-        "start": 127.14,
-        "end": 127.72
+        "w": "it's",
+        "start": 134.68,
+        "end": 135.16
       },
       {
-        "w": "certainly",
-        "start": 127.72,
-        "end": 128.12
+        "w": "ten",
+        "start": 135.16,
+        "end": 135.4
       },
       {
-        "w": "learn",
-        "start": 128.12,
-        "end": 128.48
+        "w": "years",
+        "start": 135.4,
+        "end": 135.76
       },
       {
-        "w": "more",
-        "start": 128.48,
-        "end": 128.72
+        "w": "since",
+        "start": 135.76,
+        "end": 136.02
       },
       {
-        "w": "quickly",
-        "start": 128.72,
-        "end": 129.14
+        "w": "we",
+        "start": 136.02,
+        "end": 136.26
+      },
+      {
+        "w": "began",
+        "start": 136.26,
+        "end": 136.58
+      },
+      {
+        "w": "offering",
+        "start": 136.58,
+        "end": 137.1
+      },
+      {
+        "w": "an",
+        "start": 137.1,
+        "end": 137.36
+      },
+      {
+        "w": "extended",
+        "start": 137.36,
+        "end": 137.86
+      },
+      {
+        "w": "hours",
+        "start": 137.86,
+        "end": 138.24
+      },
+      {
+        "w": "service",
+        "start": 138.24,
+        "end": 138.84
       },
       {
         "w": "and",
-        "start": 129.14,
-        "end": 129.64
+        "start": 138.84,
+        "end": 139.76
       },
       {
-        "w": "won't",
-        "start": 129.64,
-        "end": 129.96
+        "w": "we've",
+        "start": 139.76,
+        "end": 139.92
       },
       {
-        "w": "tire",
-        "start": 129.96,
-        "end": 130.36
+        "w": "come",
+        "start": 139.92,
+        "end": 140.06
       },
       {
-        "w": "as",
-        "start": 130.36,
-        "end": 130.64
+        "w": "a",
+        "start": 140.06,
+        "end": 140.16
       },
       {
-        "w": "easily",
-        "start": 130.64,
-        "end": 131.0
+        "w": "long",
+        "start": 140.16,
+        "end": 140.3
+      },
+      {
+        "w": "way",
+        "start": 140.3,
+        "end": 140.56
+      },
+      {
+        "w": "during",
+        "start": 140.56,
+        "end": 140.82
+      },
+      {
+        "w": "that",
+        "start": 140.82,
+        "end": 141.06
+      },
+      {
+        "w": "time",
+        "start": 141.06,
+        "end": 141.42
       }
     ],
     "matched": true
   },
   {
     "index": 11,
-    "text": "Well - that should be OK for us.",
-    "start": 131.54,
-    "end": 133.76,
+    "text": "When we first opened, we only had about 20 children attending regularly.",
+    "start": 142.1,
+    "end": 146.66,
     "words": [
       {
-        "w": "well",
-        "start": 131.54,
-        "end": 131.9
+        "w": "when",
+        "start": 142.1,
+        "end": 142.42
       },
       {
-        "w": "that",
-        "start": 131.9,
-        "end": 132.6
+        "w": "we",
+        "start": 142.42,
+        "end": 142.56
       },
       {
-        "w": "should",
-        "start": 132.6,
-        "end": 132.78
+        "w": "first",
+        "start": 142.56,
+        "end": 142.8
       },
       {
-        "w": "be",
-        "start": 132.78,
-        "end": 132.94
+        "w": "opened",
+        "start": 142.8,
+        "end": 143.18
       },
       {
-        "w": "for",
-        "start": 133.24,
-        "end": 133.48
+        "w": "we",
+        "start": 143.18,
+        "end": 143.74
       },
       {
-        "w": "us",
-        "start": 133.48,
-        "end": 133.76
+        "w": "only",
+        "start": 143.74,
+        "end": 144.0
+      },
+      {
+        "w": "had",
+        "start": 144.0,
+        "end": 144.2
+      },
+      {
+        "w": "about",
+        "start": 144.2,
+        "end": 144.38
+      },
+      {
+        "w": "20",
+        "start": 144.38,
+        "end": 144.94
+      },
+      {
+        "w": "children",
+        "start": 144.94,
+        "end": 145.52
+      },
+      {
+        "w": "attending",
+        "start": 145.52,
+        "end": 146.04
+      },
+      {
+        "w": "regularly",
+        "start": 146.04,
+        "end": 146.66
       }
     ],
     "matched": true
   },
   {
     "index": 12,
-    "text": "You've been surfing a few times in Ireland, haven't you?",
-    "start": 134.5,
-    "end": 137.78,
+    "text": "We try to keep our costs as low as we can and we think we provide very good value for money.",
+    "start": 147.68,
+    "end": 154.04,
     "words": [
       {
-        "w": "you've",
-        "start": 134.5,
-        "end": 134.92
+        "w": "we",
+        "start": 147.68,
+        "end": 148.28
       },
       {
-        "w": "been",
-        "start": 134.92,
-        "end": 135.02
+        "w": "try",
+        "start": 148.28,
+        "end": 148.54
       },
       {
-        "w": "surfing",
-        "start": 135.02,
-        "end": 135.42
+        "w": "to",
+        "start": 148.54,
+        "end": 148.72
       },
       {
-        "w": "a",
-        "start": 135.42,
-        "end": 135.78
+        "w": "keep",
+        "start": 148.72,
+        "end": 148.9
       },
       {
-        "w": "few",
-        "start": 135.78,
-        "end": 135.92
+        "w": "our",
+        "start": 148.9,
+        "end": 149.08
       },
       {
-        "w": "times",
-        "start": 135.92,
-        "end": 136.28
+        "w": "costs",
+        "start": 149.08,
+        "end": 149.48
       },
       {
-        "w": "in",
-        "start": 136.28,
-        "end": 136.62
+        "w": "as",
+        "start": 149.48,
+        "end": 149.76
       },
       {
-        "w": "ireland",
-        "start": 136.62,
-        "end": 137.06
+        "w": "low",
+        "start": 149.76,
+        "end": 150.06
       },
       {
-        "w": "haven't",
-        "start": 137.06,
-        "end": 137.58
+        "w": "as",
+        "start": 150.06,
+        "end": 150.2
       },
       {
-        "w": "you",
-        "start": 137.58,
-        "end": 137.78
+        "w": "we",
+        "start": 150.2,
+        "end": 150.32
+      },
+      {
+        "w": "can",
+        "start": 150.32,
+        "end": 150.62
+      },
+      {
+        "w": "and",
+        "start": 150.62,
+        "end": 151.46
+      },
+      {
+        "w": "we",
+        "start": 151.46,
+        "end": 151.6
+      },
+      {
+        "w": "think",
+        "start": 151.6,
+        "end": 151.8
+      },
+      {
+        "w": "we",
+        "start": 151.8,
+        "end": 152.02
+      },
+      {
+        "w": "provide",
+        "start": 152.02,
+        "end": 152.4
+      },
+      {
+        "w": "very",
+        "start": 152.4,
+        "end": 152.96
+      },
+      {
+        "w": "good",
+        "start": 152.96,
+        "end": 153.26
+      },
+      {
+        "w": "value",
+        "start": 153.26,
+        "end": 153.54
+      },
+      {
+        "w": "for",
+        "start": 153.54,
+        "end": 153.76
+      },
+      {
+        "w": "money",
+        "start": 153.76,
+        "end": 154.04
       }
     ],
     "matched": true
   },
   {
     "index": 13,
-    "text": "Yes.",
-    "start": 138.0,
-    "end": 138.44,
+    "text": "For the afternoon sessions, which run from 3.30 until 6 p.m., it's £7.20.",
+    "start": 154.66,
+    "end": 159.76,
     "words": [
       {
-        "w": "yes",
-        "start": 138.0,
-        "end": 138.44
+        "w": "for",
+        "start": 154.66,
+        "end": 155.06
+      },
+      {
+        "w": "the",
+        "start": 155.06,
+        "end": 155.16
+      },
+      {
+        "w": "afternoon",
+        "start": 155.16,
+        "end": 155.46
+      },
+      {
+        "w": "sessions",
+        "start": 155.46,
+        "end": 155.8
+      },
+      {
+        "w": "which",
+        "start": 155.8,
+        "end": 156.34
+      },
+      {
+        "w": "run",
+        "start": 156.34,
+        "end": 156.64
+      },
+      {
+        "w": "from",
+        "start": 156.64,
+        "end": 156.94
+      },
+      {
+        "w": "until",
+        "start": 157.74,
+        "end": 158.18
+      },
+      {
+        "w": "p",
+        "start": 158.46,
+        "end": 158.7
+      },
+      {
+        "w": "m",
+        "start": 158.7,
+        "end": 158.96
+      },
+      {
+        "w": "it's",
+        "start": 159.36,
+        "end": 159.76
       }
     ],
     "matched": true
   },
   {
     "index": 14,
-    "text": "There's some great surfing there, which people don't always realise.",
-    "start": 138.44,
-    "end": 142.62,
+    "text": "But if you prefer, you can pay for one hour only, which costs £3.50, or two hours which costs £5.70.",
+    "start": 160.8,
+    "end": 169.42,
     "words": [
       {
-        "w": "there's",
-        "start": 138.44,
-        "end": 139.18
+        "w": "but",
+        "start": 160.8,
+        "end": 161.78
       },
       {
-        "w": "some",
-        "start": 139.18,
-        "end": 139.36
+        "w": "if",
+        "start": 161.78,
+        "end": 162.18
       },
       {
-        "w": "great",
-        "start": 139.36,
-        "end": 139.76
+        "w": "you",
+        "start": 162.18,
+        "end": 162.32
       },
       {
-        "w": "surfing",
-        "start": 139.76,
-        "end": 140.22
+        "w": "prefer",
+        "start": 162.32,
+        "end": 162.72
       },
       {
-        "w": "there",
-        "start": 140.22,
-        "end": 140.52
+        "w": "you",
+        "start": 162.72,
+        "end": 163.36
+      },
+      {
+        "w": "can",
+        "start": 163.36,
+        "end": 163.58
+      },
+      {
+        "w": "pay",
+        "start": 163.58,
+        "end": 163.78
+      },
+      {
+        "w": "for",
+        "start": 163.78,
+        "end": 163.96
+      },
+      {
+        "w": "one",
+        "start": 163.96,
+        "end": 164.24
+      },
+      {
+        "w": "hour",
+        "start": 164.24,
+        "end": 164.44
+      },
+      {
+        "w": "only",
+        "start": 164.44,
+        "end": 164.96
       },
       {
         "w": "which",
-        "start": 140.52,
-        "end": 140.82
+        "start": 164.96,
+        "end": 165.64
       },
       {
-        "w": "people",
-        "start": 140.82,
-        "end": 141.26
+        "w": "costs",
+        "start": 165.64,
+        "end": 166.16
       },
       {
-        "w": "don't",
-        "start": 141.26,
-        "end": 141.7
+        "w": "or",
+        "start": 167.18,
+        "end": 167.92
       },
       {
-        "w": "always",
-        "start": 141.7,
-        "end": 142.18
+        "w": "two",
+        "start": 167.92,
+        "end": 168.18
       },
       {
-        "w": "realise",
-        "start": 142.18,
-        "end": 142.62
+        "w": "hours",
+        "start": 168.18,
+        "end": 168.52
+      },
+      {
+        "w": "which",
+        "start": 168.52,
+        "end": 168.96
+      },
+      {
+        "w": "costs",
+        "start": 168.96,
+        "end": 169.42
       }
     ],
     "matched": true
   },
   {
     "index": 15,
-    "text": "And which locations would you recommend?",
-    "start": 142.62,
-    "end": 146.2,
+    "text": "The cost of the childcare includes food and snacks.",
+    "start": 171.84,
+    "end": 175.2,
     "words": [
       {
+        "w": "the",
+        "start": 171.84,
+        "end": 172.06
+      },
+      {
+        "w": "cost",
+        "start": 172.06,
+        "end": 172.44
+      },
+      {
+        "w": "of",
+        "start": 172.44,
+        "end": 172.64
+      },
+      {
+        "w": "the",
+        "start": 172.64,
+        "end": 172.74
+      },
+      {
+        "w": "childcare",
+        "start": 172.74,
+        "end": 173.16
+      },
+      {
+        "w": "includes",
+        "start": 173.16,
+        "end": 173.98
+      },
+      {
+        "w": "food",
+        "start": 173.98,
+        "end": 174.5
+      },
+      {
         "w": "and",
-        "start": 142.62,
-        "end": 143.74
+        "start": 174.5,
+        "end": 174.86
       },
       {
-        "w": "which",
-        "start": 143.74,
-        "end": 144.5
-      },
-      {
-        "w": "locations",
-        "start": 144.5,
-        "end": 145.28
-      },
-      {
-        "w": "would",
-        "start": 145.28,
-        "end": 145.6
-      },
-      {
-        "w": "you",
-        "start": 145.6,
-        "end": 145.76
-      },
-      {
-        "w": "recommend",
-        "start": 145.76,
-        "end": 146.2
+        "w": "snacks",
+        "start": 174.86,
+        "end": 175.2
       }
     ],
     "matched": true
   },
   {
     "index": 16,
-    "text": "- there seem to be quite a few.",
-    "start": 147.06,
-    "end": 148.36,
+    "text": "They'll be given breakfast in the morning and in the afternoon, a healthy snack as soon as they finish school.",
+    "start": 175.2,
+    "end": 182.78,
     "words": [
       {
-        "w": "there",
-        "start": 147.06,
-        "end": 147.28
-      },
-      {
-        "w": "seem",
-        "start": 147.28,
-        "end": 147.48
-      },
-      {
-        "w": "to",
-        "start": 147.48,
-        "end": 147.64
+        "w": "they'll",
+        "start": 175.2,
+        "end": 176.32
       },
       {
         "w": "be",
-        "start": 147.64,
-        "end": 147.74
+        "start": 176.32,
+        "end": 176.42
       },
       {
-        "w": "quite",
-        "start": 147.74,
-        "end": 147.98
+        "w": "given",
+        "start": 176.42,
+        "end": 176.68
+      },
+      {
+        "w": "breakfast",
+        "start": 176.68,
+        "end": 177.16
+      },
+      {
+        "w": "in",
+        "start": 177.16,
+        "end": 177.52
+      },
+      {
+        "w": "the",
+        "start": 177.52,
+        "end": 177.6
+      },
+      {
+        "w": "morning",
+        "start": 177.6,
+        "end": 177.86
+      },
+      {
+        "w": "and",
+        "start": 177.86,
+        "end": 178.66
+      },
+      {
+        "w": "in",
+        "start": 178.66,
+        "end": 178.88
+      },
+      {
+        "w": "the",
+        "start": 178.88,
+        "end": 178.98
+      },
+      {
+        "w": "afternoon",
+        "start": 178.98,
+        "end": 179.48
       },
       {
         "w": "a",
-        "start": 147.98,
-        "end": 148.14
+        "start": 179.48,
+        "end": 180.12
       },
       {
-        "w": "few",
-        "start": 148.14,
-        "end": 148.36
+        "w": "healthy",
+        "start": 180.12,
+        "end": 180.42
+      },
+      {
+        "w": "snack",
+        "start": 180.42,
+        "end": 180.78
+      },
+      {
+        "w": "as",
+        "start": 180.78,
+        "end": 181.28
+      },
+      {
+        "w": "soon",
+        "start": 181.28,
+        "end": 181.58
+      },
+      {
+        "w": "as",
+        "start": 181.58,
+        "end": 181.72
+      },
+      {
+        "w": "they",
+        "start": 181.72,
+        "end": 181.86
+      },
+      {
+        "w": "finish",
+        "start": 181.86,
+        "end": 182.18
+      },
+      {
+        "w": "school",
+        "start": 182.18,
+        "end": 182.78
       }
     ],
     "matched": true
   },
   {
     "index": 17,
-    "text": "Yes, there are loads.",
-    "start": 148.8,
-    "end": 149.78,
+    "text": "At 5 p.m.",
+    "start": 183.68,
+    "end": 184.64,
     "words": [
       {
-        "w": "yes",
-        "start": 148.8,
-        "end": 149.02
+        "w": "at",
+        "start": 183.68,
+        "end": 183.94
       },
       {
-        "w": "there",
-        "start": 149.02,
-        "end": 149.32
+        "w": "p",
+        "start": 184.2,
+        "end": 184.44
       },
       {
-        "w": "are",
-        "start": 149.32,
-        "end": 149.44
-      },
-      {
-        "w": "loads",
-        "start": 149.44,
-        "end": 149.78
+        "w": "m",
+        "start": 184.44,
+        "end": 184.64
       }
     ],
     "matched": true
   },
   {
     "index": 18,
-    "text": "Last year we went to County Donegal.",
-    "start": 150.32,
-    "end": 152.22,
+    "text": "children are given something more substantial, such as pasta or a casserole.",
+    "start": 185.0,
+    "end": 189.98,
     "words": [
       {
-        "w": "last",
-        "start": 150.32,
-        "end": 150.58
+        "w": "children",
+        "start": 185.0,
+        "end": 185.16
       },
       {
-        "w": "year",
-        "start": 150.58,
-        "end": 150.9
+        "w": "are",
+        "start": 185.16,
+        "end": 185.5
       },
       {
-        "w": "we",
-        "start": 150.9,
-        "end": 151.04
+        "w": "given",
+        "start": 185.5,
+        "end": 185.66
       },
       {
-        "w": "went",
-        "start": 151.04,
-        "end": 151.22
+        "w": "something",
+        "start": 185.66,
+        "end": 186.08
       },
       {
-        "w": "to",
-        "start": 151.22,
-        "end": 151.46
+        "w": "more",
+        "start": 186.08,
+        "end": 186.4
       },
       {
-        "w": "county",
-        "start": 151.46,
-        "end": 151.72
+        "w": "substantial",
+        "start": 186.4,
+        "end": 187.04
       },
       {
-        "w": "donegal",
-        "start": 151.72,
-        "end": 152.22
+        "w": "such",
+        "start": 187.04,
+        "end": 187.72
+      },
+      {
+        "w": "as",
+        "start": 187.72,
+        "end": 188.0
+      },
+      {
+        "w": "pasta",
+        "start": 188.0,
+        "end": 188.52
+      },
+      {
+        "w": "or",
+        "start": 188.52,
+        "end": 189.08
+      },
+      {
+        "w": "a",
+        "start": 189.08,
+        "end": 189.26
+      },
+      {
+        "w": "casserole",
+        "start": 189.26,
+        "end": 189.98
       }
     ],
     "matched": true
   },
   {
     "index": 19,
-    "text": "There are several great places to surf there.",
-    "start": 152.82,
-    "end": 155.42,
+    "text": "Please inform us of any allergies that your child might have and we'll make sure they're offered a suitable alternative.",
+    "start": 190.36,
+    "end": 197.96,
     "words": [
       {
-        "w": "there",
-        "start": 152.82,
-        "end": 153.12
+        "w": "please",
+        "start": 190.36,
+        "end": 191.08
       },
       {
-        "w": "are",
-        "start": 153.12,
-        "end": 153.26
+        "w": "inform",
+        "start": 191.08,
+        "end": 191.56
       },
       {
-        "w": "several",
-        "start": 153.26,
-        "end": 153.64
+        "w": "us",
+        "start": 191.56,
+        "end": 191.98
       },
       {
-        "w": "great",
-        "start": 153.64,
-        "end": 153.96
+        "w": "of",
+        "start": 191.98,
+        "end": 192.26
       },
       {
-        "w": "places",
-        "start": 153.96,
-        "end": 154.48
+        "w": "any",
+        "start": 192.26,
+        "end": 192.56
       },
       {
-        "w": "to",
-        "start": 154.48,
-        "end": 154.74
+        "w": "allergies",
+        "start": 192.56,
+        "end": 192.96
       },
       {
-        "w": "surf",
-        "start": 154.74,
-        "end": 155.02
+        "w": "that",
+        "start": 192.96,
+        "end": 193.34
       },
       {
-        "w": "there",
-        "start": 155.02,
-        "end": 155.42
+        "w": "your",
+        "start": 193.34,
+        "end": 193.48
+      },
+      {
+        "w": "child",
+        "start": 193.48,
+        "end": 193.82
+      },
+      {
+        "w": "might",
+        "start": 193.82,
+        "end": 194.08
+      },
+      {
+        "w": "have",
+        "start": 194.08,
+        "end": 194.44
+      },
+      {
+        "w": "and",
+        "start": 194.44,
+        "end": 195.14
+      },
+      {
+        "w": "we'll",
+        "start": 195.14,
+        "end": 195.32
+      },
+      {
+        "w": "make",
+        "start": 195.32,
+        "end": 195.54
+      },
+      {
+        "w": "sure",
+        "start": 195.54,
+        "end": 195.88
+      },
+      {
+        "w": "they're",
+        "start": 195.88,
+        "end": 196.2
+      },
+      {
+        "w": "offered",
+        "start": 196.2,
+        "end": 196.5
+      },
+      {
+        "w": "a",
+        "start": 196.5,
+        "end": 196.78
+      },
+      {
+        "w": "suitable",
+        "start": 196.78,
+        "end": 197.18
+      },
+      {
+        "w": "alternative",
+        "start": 197.18,
+        "end": 197.96
       }
     ],
     "matched": true
   },
   {
     "index": 20,
-    "text": "What about in County Clare?",
-    "start": 156.4,
-    "end": 158.28,
+    "text": "As you may know, the childcare service runs through the school holidays from 8 a.m.",
+    "start": 199.28,
+    "end": 204.66,
     "words": [
       {
-        "w": "what",
-        "start": 156.4,
-        "end": 156.76
+        "w": "as",
+        "start": 199.28,
+        "end": 199.84
       },
       {
-        "w": "about",
-        "start": 156.76,
-        "end": 157.02
+        "w": "you",
+        "start": 199.84,
+        "end": 199.98
       },
       {
-        "w": "in",
-        "start": 157.02,
-        "end": 157.36
+        "w": "may",
+        "start": 199.98,
+        "end": 200.12
       },
       {
-        "w": "county",
-        "start": 157.36,
-        "end": 157.8
+        "w": "know",
+        "start": 200.12,
+        "end": 200.38
       },
       {
-        "w": "clare",
-        "start": 157.8,
-        "end": 158.28
+        "w": "the",
+        "start": 200.38,
+        "end": 201.0
+      },
+      {
+        "w": "childcare",
+        "start": 201.0,
+        "end": 201.32
+      },
+      {
+        "w": "service",
+        "start": 201.32,
+        "end": 201.98
+      },
+      {
+        "w": "runs",
+        "start": 201.98,
+        "end": 202.4
+      },
+      {
+        "w": "through",
+        "start": 202.4,
+        "end": 202.68
+      },
+      {
+        "w": "the",
+        "start": 202.68,
+        "end": 202.84
+      },
+      {
+        "w": "school",
+        "start": 202.84,
+        "end": 203.06
+      },
+      {
+        "w": "holidays",
+        "start": 203.06,
+        "end": 203.54
+      },
+      {
+        "w": "from",
+        "start": 203.54,
+        "end": 203.94
+      },
+      {
+        "w": "a",
+        "start": 204.24,
+        "end": 204.42
+      },
+      {
+        "w": "m",
+        "start": 204.42,
+        "end": 204.66
       }
     ],
     "matched": true
   },
   {
     "index": 21,
-    "text": "I read that's also really good for surfing.",
-    "start": 159.0,
-    "end": 161.66,
+    "text": "to 6 p.m.",
+    "start": 204.92,
+    "end": 205.84,
     "words": [
       {
-        "w": "i",
-        "start": 159.0,
-        "end": 159.3
+        "w": "to",
+        "start": 204.92,
+        "end": 205.12
       },
       {
-        "w": "read",
-        "start": 159.3,
-        "end": 159.56
+        "w": "p",
+        "start": 205.34,
+        "end": 205.6
       },
       {
-        "w": "that's",
-        "start": 159.56,
-        "end": 160.14
-      },
-      {
-        "w": "also",
-        "start": 160.14,
-        "end": 160.5
-      },
-      {
-        "w": "really",
-        "start": 160.5,
-        "end": 160.82
-      },
-      {
-        "w": "good",
-        "start": 160.82,
-        "end": 161.06
-      },
-      {
-        "w": "for",
-        "start": 161.06,
-        "end": 161.3
-      },
-      {
-        "w": "surfing",
-        "start": 161.3,
-        "end": 161.66
+        "w": "m",
+        "start": 205.6,
+        "end": 205.84
       }
     ],
     "matched": true
   },
   {
     "index": 22,
-    "text": "Yes, it is.",
-    "start": 162.36,
-    "end": 163.26,
+    "text": "We offer a really varied and exciting programme to keep the children entertained - we don't want them to feel as if they are still at school!",
+    "start": 206.28,
+    "end": 214.62,
     "words": [
       {
-        "w": "yes",
-        "start": 162.36,
-        "end": 162.72
+        "w": "we",
+        "start": 206.28,
+        "end": 206.84
       },
       {
-        "w": "it",
-        "start": 162.72,
-        "end": 163.0
+        "w": "offer",
+        "start": 206.84,
+        "end": 207.1
       },
       {
-        "w": "is",
-        "start": 163.0,
-        "end": 163.26
+        "w": "a",
+        "start": 207.1,
+        "end": 207.32
+      },
+      {
+        "w": "really",
+        "start": 207.32,
+        "end": 207.64
+      },
+      {
+        "w": "varied",
+        "start": 207.64,
+        "end": 208.2
+      },
+      {
+        "w": "and",
+        "start": 208.2,
+        "end": 208.5
+      },
+      {
+        "w": "exciting",
+        "start": 208.5,
+        "end": 209.1
+      },
+      {
+        "w": "programme",
+        "start": 209.1,
+        "end": 209.64
+      },
+      {
+        "w": "to",
+        "start": 209.64,
+        "end": 209.92
+      },
+      {
+        "w": "keep",
+        "start": 209.92,
+        "end": 210.06
+      },
+      {
+        "w": "the",
+        "start": 210.06,
+        "end": 210.2
+      },
+      {
+        "w": "children",
+        "start": 210.2,
+        "end": 210.54
+      },
+      {
+        "w": "entertained",
+        "start": 210.54,
+        "end": 211.24
+      },
+      {
+        "w": "we",
+        "start": 212.0,
+        "end": 212.24
+      },
+      {
+        "w": "don't",
+        "start": 212.24,
+        "end": 212.42
+      },
+      {
+        "w": "want",
+        "start": 212.42,
+        "end": 212.6
+      },
+      {
+        "w": "them",
+        "start": 212.6,
+        "end": 212.74
+      },
+      {
+        "w": "to",
+        "start": 212.74,
+        "end": 212.9
+      },
+      {
+        "w": "feel",
+        "start": 212.9,
+        "end": 213.14
+      },
+      {
+        "w": "as",
+        "start": 213.14,
+        "end": 213.38
+      },
+      {
+        "w": "if",
+        "start": 213.38,
+        "end": 213.54
+      },
+      {
+        "w": "they",
+        "start": 213.54,
+        "end": 213.7
+      },
+      {
+        "w": "are",
+        "start": 213.7,
+        "end": 213.84
+      },
+      {
+        "w": "still",
+        "start": 213.84,
+        "end": 214.06
+      },
+      {
+        "w": "at",
+        "start": 214.06,
+        "end": 214.24
+      },
+      {
+        "w": "school",
+        "start": 214.24,
+        "end": 214.62
       }
     ],
     "matched": true
   },
   {
     "index": 23,
-    "text": "I've been there a few times.",
-    "start": 163.76,
-    "end": 165.0,
+    "text": "It will also feel different because they'll get the chance to make new friends with children from other schools - spaces are available for them because a lot of our term-time children don't always attend during the holiday.",
+    "start": 215.26,
+    "end": 228.56,
     "words": [
       {
-        "w": "i've",
-        "start": 163.76,
-        "end": 164.06
+        "w": "it",
+        "start": 215.26,
+        "end": 215.82
       },
       {
-        "w": "been",
-        "start": 164.06,
-        "end": 164.22
+        "w": "will",
+        "start": 215.82,
+        "end": 215.96
       },
       {
-        "w": "there",
-        "start": 164.22,
-        "end": 164.4
+        "w": "also",
+        "start": 215.96,
+        "end": 216.26
+      },
+      {
+        "w": "feel",
+        "start": 216.26,
+        "end": 216.52
+      },
+      {
+        "w": "different",
+        "start": 216.52,
+        "end": 217.02
+      },
+      {
+        "w": "because",
+        "start": 217.02,
+        "end": 217.54
+      },
+      {
+        "w": "they'll",
+        "start": 217.54,
+        "end": 217.92
+      },
+      {
+        "w": "get",
+        "start": 217.92,
+        "end": 218.08
+      },
+      {
+        "w": "the",
+        "start": 218.08,
+        "end": 218.26
+      },
+      {
+        "w": "chance",
+        "start": 218.26,
+        "end": 218.56
+      },
+      {
+        "w": "to",
+        "start": 218.56,
+        "end": 218.82
+      },
+      {
+        "w": "make",
+        "start": 218.82,
+        "end": 219.02
+      },
+      {
+        "w": "new",
+        "start": 219.02,
+        "end": 219.34
+      },
+      {
+        "w": "friends",
+        "start": 219.34,
+        "end": 219.74
+      },
+      {
+        "w": "with",
+        "start": 219.74,
+        "end": 220.04
+      },
+      {
+        "w": "children",
+        "start": 220.04,
+        "end": 220.36
+      },
+      {
+        "w": "from",
+        "start": 220.36,
+        "end": 220.66
+      },
+      {
+        "w": "other",
+        "start": 220.66,
+        "end": 221.04
+      },
+      {
+        "w": "schools",
+        "start": 221.04,
+        "end": 221.56
+      },
+      {
+        "w": "spaces",
+        "start": 222.36,
+        "end": 222.78
+      },
+      {
+        "w": "are",
+        "start": 222.78,
+        "end": 223.04
+      },
+      {
+        "w": "available",
+        "start": 223.04,
+        "end": 223.46
+      },
+      {
+        "w": "for",
+        "start": 223.46,
+        "end": 223.8
+      },
+      {
+        "w": "them",
+        "start": 223.8,
+        "end": 224.02
+      },
+      {
+        "w": "because",
+        "start": 224.02,
+        "end": 224.56
       },
       {
         "w": "a",
-        "start": 164.4,
-        "end": 164.54
+        "start": 224.56,
+        "end": 224.76
       },
       {
-        "w": "few",
-        "start": 164.54,
-        "end": 164.66
+        "w": "lot",
+        "start": 224.76,
+        "end": 224.92
       },
       {
-        "w": "times",
-        "start": 164.66,
-        "end": 165.0
+        "w": "of",
+        "start": 224.92,
+        "end": 225.1
+      },
+      {
+        "w": "our",
+        "start": 225.1,
+        "end": 225.26
+      },
+      {
+        "w": "term",
+        "start": 225.26,
+        "end": 225.52
+      },
+      {
+        "w": "time",
+        "start": 225.52,
+        "end": 225.76
+      },
+      {
+        "w": "children",
+        "start": 225.76,
+        "end": 226.12
+      },
+      {
+        "w": "don't",
+        "start": 226.12,
+        "end": 226.7
+      },
+      {
+        "w": "always",
+        "start": 226.7,
+        "end": 227.16
+      },
+      {
+        "w": "attend",
+        "start": 227.16,
+        "end": 227.56
+      },
+      {
+        "w": "during",
+        "start": 227.56,
+        "end": 228.04
+      },
+      {
+        "w": "the",
+        "start": 228.04,
+        "end": 228.24
+      },
+      {
+        "w": "holiday",
+        "start": 228.24,
+        "end": 228.56
       }
     ],
     "matched": true
   },
   {
     "index": 24,
-    "text": "Most people go to Lahinch.",
-    "start": 165.54,
-    "end": 166.5,
+    "text": "In the past, parents have asked if children over the age of 11 are allowed to come with their younger brothers and sisters - but I'm afraid we're unable to do this because of the type of insurance we have.",
+    "start": 229.46,
+    "end": 242.62,
     "words": [
       {
-        "w": "most",
-        "start": 165.54,
-        "end": 165.76
+        "w": "in",
+        "start": 229.46,
+        "end": 230.08
       },
       {
-        "w": "people",
-        "start": 165.76,
-        "end": 166.04
+        "w": "the",
+        "start": 230.08,
+        "end": 230.18
       },
       {
-        "w": "go",
-        "start": 166.04,
-        "end": 166.28
+        "w": "past",
+        "start": 230.18,
+        "end": 230.56
+      },
+      {
+        "w": "parents",
+        "start": 230.56,
+        "end": 231.22
+      },
+      {
+        "w": "have",
+        "start": 231.22,
+        "end": 231.48
+      },
+      {
+        "w": "asked",
+        "start": 231.48,
+        "end": 231.86
+      },
+      {
+        "w": "if",
+        "start": 231.86,
+        "end": 232.08
+      },
+      {
+        "w": "children",
+        "start": 232.08,
+        "end": 232.48
+      },
+      {
+        "w": "over",
+        "start": 232.48,
+        "end": 233.02
+      },
+      {
+        "w": "the",
+        "start": 233.02,
+        "end": 233.18
+      },
+      {
+        "w": "age",
+        "start": 233.18,
+        "end": 233.4
+      },
+      {
+        "w": "of",
+        "start": 233.4,
+        "end": 233.52
+      },
+      {
+        "w": "are",
+        "start": 233.78,
+        "end": 234.12
+      },
+      {
+        "w": "allowed",
+        "start": 234.12,
+        "end": 234.32
       },
       {
         "w": "to",
-        "start": 166.28,
-        "end": 166.5
+        "start": 234.32,
+        "end": 234.58
+      },
+      {
+        "w": "come",
+        "start": 234.58,
+        "end": 234.8
+      },
+      {
+        "w": "with",
+        "start": 234.8,
+        "end": 235.02
+      },
+      {
+        "w": "their",
+        "start": 235.02,
+        "end": 235.18
+      },
+      {
+        "w": "younger",
+        "start": 235.18,
+        "end": 235.46
+      },
+      {
+        "w": "brothers",
+        "start": 235.46,
+        "end": 235.86
+      },
+      {
+        "w": "and",
+        "start": 235.86,
+        "end": 236.24
+      },
+      {
+        "w": "sisters",
+        "start": 236.24,
+        "end": 236.66
+      },
+      {
+        "w": "but",
+        "start": 236.66,
+        "end": 237.62
+      },
+      {
+        "w": "i'm",
+        "start": 237.62,
+        "end": 237.94
+      },
+      {
+        "w": "afraid",
+        "start": 237.94,
+        "end": 238.36
+      },
+      {
+        "w": "we're",
+        "start": 238.36,
+        "end": 238.82
+      },
+      {
+        "w": "unable",
+        "start": 238.82,
+        "end": 239.22
+      },
+      {
+        "w": "to",
+        "start": 239.22,
+        "end": 239.52
+      },
+      {
+        "w": "do",
+        "start": 239.52,
+        "end": 239.76
+      },
+      {
+        "w": "this",
+        "start": 239.76,
+        "end": 240.1
+      },
+      {
+        "w": "because",
+        "start": 240.1,
+        "end": 240.76
+      },
+      {
+        "w": "of",
+        "start": 240.76,
+        "end": 241.0
+      },
+      {
+        "w": "the",
+        "start": 241.0,
+        "end": 241.1
+      },
+      {
+        "w": "type",
+        "start": 241.1,
+        "end": 241.38
+      },
+      {
+        "w": "of",
+        "start": 241.38,
+        "end": 241.54
+      },
+      {
+        "w": "insurance",
+        "start": 241.54,
+        "end": 241.9
+      },
+      {
+        "w": "we",
+        "start": 241.9,
+        "end": 242.32
+      },
+      {
+        "w": "have",
+        "start": 242.32,
+        "end": 242.62
       }
     ],
     "matched": true
   },
   {
     "index": 25,
-    "text": "My kids love it there.",
-    "start": 167.54,
-    "end": 168.8,
+    "text": "So now let me tell you about some of the activities that your child can do during the after- school sessions.",
+    "start": 284.6,
+    "end": 291.32,
     "words": [
       {
-        "w": "my",
-        "start": 167.54,
-        "end": 167.84
+        "w": "so",
+        "start": 284.6,
+        "end": 285.28
       },
       {
-        "w": "kids",
-        "start": 167.84,
-        "end": 168.16
+        "w": "now",
+        "start": 285.28,
+        "end": 285.52
       },
       {
-        "w": "love",
-        "start": 168.16,
-        "end": 168.46
+        "w": "let",
+        "start": 285.52,
+        "end": 285.9
       },
       {
-        "w": "it",
-        "start": 168.46,
-        "end": 168.58
+        "w": "me",
+        "start": 285.9,
+        "end": 286.08
       },
       {
-        "w": "there",
-        "start": 168.58,
-        "end": 168.8
+        "w": "tell",
+        "start": 286.08,
+        "end": 286.34
+      },
+      {
+        "w": "you",
+        "start": 286.34,
+        "end": 286.52
+      },
+      {
+        "w": "about",
+        "start": 286.52,
+        "end": 286.8
+      },
+      {
+        "w": "some",
+        "start": 286.8,
+        "end": 287.12
+      },
+      {
+        "w": "of",
+        "start": 287.12,
+        "end": 287.24
+      },
+      {
+        "w": "the",
+        "start": 287.24,
+        "end": 287.34
+      },
+      {
+        "w": "activities",
+        "start": 287.34,
+        "end": 287.98
+      },
+      {
+        "w": "that",
+        "start": 287.98,
+        "end": 288.4
+      },
+      {
+        "w": "your",
+        "start": 288.4,
+        "end": 288.54
+      },
+      {
+        "w": "child",
+        "start": 288.54,
+        "end": 288.88
+      },
+      {
+        "w": "can",
+        "start": 288.88,
+        "end": 289.14
+      },
+      {
+        "w": "do",
+        "start": 289.14,
+        "end": 289.42
+      },
+      {
+        "w": "during",
+        "start": 289.42,
+        "end": 289.84
+      },
+      {
+        "w": "the",
+        "start": 289.84,
+        "end": 290.04
+      },
+      {
+        "w": "after",
+        "start": 290.04,
+        "end": 290.38
+      },
+      {
+        "w": "school",
+        "start": 290.38,
+        "end": 290.74
+      },
+      {
+        "w": "sessions",
+        "start": 290.74,
+        "end": 291.32
       }
     ],
     "matched": true
   },
   {
     "index": 26,
-    "text": "The waves aren't too challenging and the town is very lively.",
-    "start": 168.8,
-    "end": 172.44,
+    "text": "As well as being able to use the playground equipment, computers and /12 /12 the library, there is usually at least one 'special' activity that children can do each day.",
+    "start": 291.84,
+    "end": 302.22,
     "words": [
       {
+        "w": "as",
+        "start": 291.84,
+        "end": 292.52
+      },
+      {
+        "w": "well",
+        "start": 292.52,
+        "end": 292.76
+      },
+      {
+        "w": "as",
+        "start": 292.76,
+        "end": 292.92
+      },
+      {
+        "w": "being",
+        "start": 292.92,
+        "end": 293.1
+      },
+      {
+        "w": "able",
+        "start": 293.1,
+        "end": 293.38
+      },
+      {
+        "w": "to",
+        "start": 293.38,
+        "end": 293.54
+      },
+      {
+        "w": "use",
+        "start": 293.54,
+        "end": 293.78
+      },
+      {
         "w": "the",
-        "start": 168.8,
-        "end": 169.34
+        "start": 293.78,
+        "end": 293.92
       },
       {
-        "w": "waves",
-        "start": 169.34,
-        "end": 169.72
+        "w": "playground",
+        "start": 293.92,
+        "end": 294.36
       },
       {
-        "w": "aren't",
-        "start": 169.72,
-        "end": 170.02
+        "w": "equipment",
+        "start": 294.36,
+        "end": 294.84
       },
       {
-        "w": "too",
-        "start": 170.02,
-        "end": 170.2
-      },
-      {
-        "w": "challenging",
-        "start": 170.2,
-        "end": 170.62
+        "w": "computers",
+        "start": 295.38,
+        "end": 295.76
       },
       {
         "w": "and",
-        "start": 170.62,
-        "end": 170.92
+        "start": 295.76,
+        "end": 296.52
       },
       {
         "w": "the",
-        "start": 170.92,
-        "end": 171.02
+        "start": 296.52,
+        "end": 296.72
       },
       {
-        "w": "town",
-        "start": 171.02,
-        "end": 171.4
+        "w": "library",
+        "start": 296.72,
+        "end": 297.06
+      },
+      {
+        "w": "there",
+        "start": 297.06,
+        "end": 297.94
       },
       {
         "w": "is",
-        "start": 171.4,
-        "end": 171.6
+        "start": 297.94,
+        "end": 298.1
       },
       {
-        "w": "very",
-        "start": 171.6,
-        "end": 171.96
+        "w": "usually",
+        "start": 298.1,
+        "end": 298.44
       },
       {
-        "w": "lively",
-        "start": 171.96,
-        "end": 172.44
+        "w": "at",
+        "start": 298.44,
+        "end": 298.72
+      },
+      {
+        "w": "least",
+        "start": 298.72,
+        "end": 298.94
+      },
+      {
+        "w": "one",
+        "start": 298.94,
+        "end": 299.2
+      },
+      {
+        "w": "activity",
+        "start": 299.78,
+        "end": 300.46
+      },
+      {
+        "w": "that",
+        "start": 300.46,
+        "end": 300.76
+      },
+      {
+        "w": "children",
+        "start": 300.76,
+        "end": 301.08
+      },
+      {
+        "w": "can",
+        "start": 301.08,
+        "end": 301.42
+      },
+      {
+        "w": "do",
+        "start": 301.42,
+        "end": 301.62
+      },
+      {
+        "w": "each",
+        "start": 301.62,
+        "end": 301.88
+      },
+      {
+        "w": "day",
+        "start": 301.88,
+        "end": 302.22
       }
     ],
     "matched": true
   },
   {
     "index": 27,
-    "text": "Are there good hotels there?",
-    "start": 173.0,
-    "end": 174.98,
+    "text": "For example, Spanish.",
+    "start": 302.92,
+    "end": 304.28,
     "words": [
       {
-        "w": "are",
-        "start": 173.0,
-        "end": 173.36
+        "w": "for",
+        "start": 302.92,
+        "end": 303.4
       },
       {
-        "w": "there",
-        "start": 173.36,
-        "end": 173.68
+        "w": "example",
+        "start": 303.4,
+        "end": 303.78
       },
       {
-        "w": "good",
-        "start": 173.68,
-        "end": 173.98
-      },
-      {
-        "w": "hotels",
-        "start": 173.98,
-        "end": 174.54
-      },
-      {
-        "w": "there",
-        "start": 174.54,
-        "end": 174.98
+        "w": "spanish",
+        "start": 303.78,
+        "end": 304.28
       }
     ],
     "matched": true
   },
   {
     "index": 28,
-    "text": "Yes - some very nice ones and there are also a few basic hostels and campsites.",
-    "start": 175.46,
-    "end": 181.38,
+    "text": "We have a specialist teacher coming in every Thursday to give a basic introduction to the language through games and songs.",
+    "start": 305.16,
+    "end": 312.52,
     "words": [
       {
-        "w": "yes",
-        "start": 175.46,
-        "end": 175.7
+        "w": "we",
+        "start": 305.16,
+        "end": 305.42
       },
       {
-        "w": "some",
-        "start": 175.7,
-        "end": 176.38
-      },
-      {
-        "w": "very",
-        "start": 176.38,
-        "end": 176.82
-      },
-      {
-        "w": "nice",
-        "start": 176.82,
-        "end": 177.1
-      },
-      {
-        "w": "ones",
-        "start": 177.1,
-        "end": 177.44
-      },
-      {
-        "w": "and",
-        "start": 178.1,
-        "end": 178.22
-      },
-      {
-        "w": "there",
-        "start": 178.22,
-        "end": 178.34
-      },
-      {
-        "w": "are",
-        "start": 178.34,
-        "end": 178.44
-      },
-      {
-        "w": "also",
-        "start": 178.44,
-        "end": 178.86
+        "w": "have",
+        "start": 305.42,
+        "end": 305.62
       },
       {
         "w": "a",
-        "start": 178.86,
-        "end": 179.1
+        "start": 305.62,
+        "end": 305.72
       },
       {
-        "w": "few",
-        "start": 179.1,
-        "end": 179.24
+        "w": "specialist",
+        "start": 305.72,
+        "end": 306.12
+      },
+      {
+        "w": "teacher",
+        "start": 306.12,
+        "end": 306.78
+      },
+      {
+        "w": "coming",
+        "start": 306.78,
+        "end": 307.16
+      },
+      {
+        "w": "in",
+        "start": 307.16,
+        "end": 307.4
+      },
+      {
+        "w": "every",
+        "start": 307.4,
+        "end": 307.84
+      },
+      {
+        "w": "thursday",
+        "start": 307.84,
+        "end": 308.32
+      },
+      {
+        "w": "to",
+        "start": 308.32,
+        "end": 308.98
+      },
+      {
+        "w": "give",
+        "start": 308.98,
+        "end": 309.12
+      },
+      {
+        "w": "a",
+        "start": 309.12,
+        "end": 309.26
       },
       {
         "w": "basic",
-        "start": 179.24,
-        "end": 179.74
+        "start": 309.26,
+        "end": 309.64
       },
       {
-        "w": "hostels",
-        "start": 179.74,
-        "end": 180.42
+        "w": "introduction",
+        "start": 309.64,
+        "end": 310.1
+      },
+      {
+        "w": "to",
+        "start": 310.1,
+        "end": 310.56
+      },
+      {
+        "w": "the",
+        "start": 310.56,
+        "end": 310.68
+      },
+      {
+        "w": "language",
+        "start": 310.68,
+        "end": 311.06
+      },
+      {
+        "w": "through",
+        "start": 311.06,
+        "end": 311.4
+      },
+      {
+        "w": "games",
+        "start": 311.4,
+        "end": 311.82
       },
       {
         "w": "and",
-        "start": 180.42,
-        "end": 180.7
+        "start": 311.82,
+        "end": 312.16
       },
       {
-        "w": "campsites",
-        "start": 180.7,
-        "end": 181.38
+        "w": "songs",
+        "start": 312.16,
+        "end": 312.52
       }
     ],
     "matched": true
   },
   {
     "index": 29,
-    "text": "It's great if you need lessons as the surf schools are excellent.",
-    "start": 182.08,
-    "end": 185.56,
+    "text": "She does two one for the over 8s and one for the younger children.",
+    "start": 313.28,
+    "end": 318.18,
     "words": [
       {
-        "w": "it's",
-        "start": 182.08,
-        "end": 182.38
+        "w": "she",
+        "start": 313.28,
+        "end": 313.54
       },
       {
-        "w": "great",
-        "start": 182.38,
-        "end": 182.6
+        "w": "does",
+        "start": 313.54,
+        "end": 313.76
       },
       {
-        "w": "if",
-        "start": 182.6,
-        "end": 182.82
+        "w": "two",
+        "start": 313.76,
+        "end": 314.12
       },
       {
-        "w": "you",
-        "start": 182.82,
-        "end": 182.94
+        "w": "one",
+        "start": 314.48,
+        "end": 315.42
       },
       {
-        "w": "need",
-        "start": 182.94,
-        "end": 183.1
-      },
-      {
-        "w": "lessons",
-        "start": 183.1,
-        "end": 183.54
-      },
-      {
-        "w": "as",
-        "start": 183.54,
-        "end": 184.04
+        "w": "for",
+        "start": 315.42,
+        "end": 315.68
       },
       {
         "w": "the",
-        "start": 184.04,
-        "end": 184.22
+        "start": 315.68,
+        "end": 315.8
       },
       {
-        "w": "surf",
-        "start": 184.22,
-        "end": 184.44
+        "w": "over",
+        "start": 315.8,
+        "end": 316.0
       },
       {
-        "w": "schools",
-        "start": 184.44,
-        "end": 184.72
+        "w": "and",
+        "start": 316.58,
+        "end": 316.94
       },
       {
-        "w": "are",
-        "start": 184.72,
-        "end": 184.96
+        "w": "one",
+        "start": 316.94,
+        "end": 317.16
       },
       {
-        "w": "excellent",
-        "start": 184.96,
-        "end": 185.56
+        "w": "for",
+        "start": 317.16,
+        "end": 317.44
+      },
+      {
+        "w": "the",
+        "start": 317.44,
+        "end": 317.56
+      },
+      {
+        "w": "younger",
+        "start": 317.56,
+        "end": 317.74
+      },
+      {
+        "w": "children",
+        "start": 317.74,
+        "end": 318.18
       }
     ],
     "matched": true
   },
   {
     "index": 30,
-    "text": "Sounds good.",
-    "start": 186.12,
-    "end": 186.88,
+    "text": "This is the only activity which we have to make an extra charge for - but it's well worth it.",
+    "start": 319.12,
+    "end": 325.34,
     "words": [
       {
-        "w": "sounds",
-        "start": 186.12,
-        "end": 186.5
+        "w": "this",
+        "start": 319.12,
+        "end": 319.6
       },
       {
-        "w": "good",
-        "start": 186.5,
-        "end": 186.88
+        "w": "is",
+        "start": 319.6,
+        "end": 319.74
+      },
+      {
+        "w": "the",
+        "start": 319.74,
+        "end": 319.9
+      },
+      {
+        "w": "only",
+        "start": 319.9,
+        "end": 320.16
+      },
+      {
+        "w": "activity",
+        "start": 320.16,
+        "end": 320.74
+      },
+      {
+        "w": "which",
+        "start": 320.74,
+        "end": 321.26
+      },
+      {
+        "w": "we",
+        "start": 321.26,
+        "end": 321.46
+      },
+      {
+        "w": "have",
+        "start": 321.46,
+        "end": 321.62
+      },
+      {
+        "w": "to",
+        "start": 321.62,
+        "end": 321.78
+      },
+      {
+        "w": "make",
+        "start": 321.78,
+        "end": 321.94
+      },
+      {
+        "w": "an",
+        "start": 321.94,
+        "end": 322.08
+      },
+      {
+        "w": "extra",
+        "start": 322.08,
+        "end": 322.52
+      },
+      {
+        "w": "charge",
+        "start": 322.52,
+        "end": 323.04
+      },
+      {
+        "w": "for",
+        "start": 323.04,
+        "end": 323.38
+      },
+      {
+        "w": "but",
+        "start": 323.38,
+        "end": 323.96
+      },
+      {
+        "w": "it's",
+        "start": 323.96,
+        "end": 324.24
+      },
+      {
+        "w": "well",
+        "start": 324.24,
+        "end": 324.62
+      },
+      {
+        "w": "worth",
+        "start": 324.62,
+        "end": 325.02
+      },
+      {
+        "w": "it",
+        "start": 325.02,
+        "end": 325.34
       }
     ],
     "matched": true
   },
   {
     "index": 31,
-    "text": "Yes and there's lots to see in the area - like those well-known cliffs - … I've forgotten the name of them … Oh don't worry - I can look them up.",
-    "start": 187.48,
-    "end": 196.66,
+    "text": "Once a week the children have the opportunity to do some music.",
+    "start": 326.04,
+    "end": 329.8,
     "words": [
       {
-        "w": "yes",
-        "start": 187.48,
-        "end": 187.82
+        "w": "once",
+        "start": 326.04,
+        "end": 326.58
       },
       {
-        "w": "and",
-        "start": 187.82,
-        "end": 188.16
+        "w": "a",
+        "start": 326.58,
+        "end": 326.76
       },
       {
-        "w": "there's",
-        "start": 188.16,
-        "end": 188.42
+        "w": "week",
+        "start": 326.76,
+        "end": 326.98
       },
       {
-        "w": "lots",
-        "start": 188.42,
-        "end": 188.58
+        "w": "the",
+        "start": 326.98,
+        "end": 327.18
+      },
+      {
+        "w": "children",
+        "start": 327.18,
+        "end": 327.54
+      },
+      {
+        "w": "have",
+        "start": 327.54,
+        "end": 327.9
+      },
+      {
+        "w": "the",
+        "start": 327.9,
+        "end": 328.06
+      },
+      {
+        "w": "opportunity",
+        "start": 328.06,
+        "end": 328.52
       },
       {
         "w": "to",
-        "start": 188.58,
-        "end": 188.88
+        "start": 328.52,
+        "end": 328.9
       },
       {
-        "w": "see",
-        "start": 188.88,
-        "end": 189.18
+        "w": "do",
+        "start": 328.9,
+        "end": 329.08
       },
       {
-        "w": "in",
-        "start": 189.18,
-        "end": 189.38
+        "w": "some",
+        "start": 329.08,
+        "end": 329.24
       },
       {
-        "w": "the",
-        "start": 189.38,
-        "end": 189.5
-      },
-      {
-        "w": "area",
-        "start": 189.5,
-        "end": 189.84
-      },
-      {
-        "w": "like",
-        "start": 189.84,
-        "end": 190.66
-      },
-      {
-        "w": "those",
-        "start": 190.66,
-        "end": 190.9
-      },
-      {
-        "w": "well",
-        "start": 190.9,
-        "end": 191.22
-      },
-      {
-        "w": "known",
-        "start": 191.22,
-        "end": 191.48
-      },
-      {
-        "w": "cliffs",
-        "start": 191.48,
-        "end": 191.86
-      },
-      {
-        "w": "i've",
-        "start": 192.48,
-        "end": 192.96
-      },
-      {
-        "w": "forgotten",
-        "start": 192.96,
-        "end": 193.16
-      },
-      {
-        "w": "the",
-        "start": 193.16,
-        "end": 193.32
-      },
-      {
-        "w": "name",
-        "start": 193.32,
-        "end": 193.56
-      },
-      {
-        "w": "of",
-        "start": 193.56,
-        "end": 193.68
-      },
-      {
-        "w": "them",
-        "start": 193.68,
-        "end": 193.84
-      },
-      {
-        "w": "oh",
-        "start": 194.2,
-        "end": 194.6
-      },
-      {
-        "w": "don't",
-        "start": 194.6,
-        "end": 195.12
-      },
-      {
-        "w": "worry",
-        "start": 195.12,
-        "end": 195.46
-      },
-      {
-        "w": "i",
-        "start": 195.46,
-        "end": 195.94
-      },
-      {
-        "w": "can",
-        "start": 195.94,
-        "end": 196.12
-      },
-      {
-        "w": "look",
-        "start": 196.12,
-        "end": 196.26
-      },
-      {
-        "w": "them",
-        "start": 196.26,
-        "end": 196.44
-      },
-      {
-        "w": "up",
-        "start": 196.44,
-        "end": 196.66
+        "w": "music",
+        "start": 329.24,
+        "end": 329.8
       }
     ],
     "matched": true
   },
   {
     "index": 32,
-    "text": "I've also been surfing in County Mayo, which is less well-known for surfing, but we had a really good time.",
-    "start": 196.66,
-    "end": 204.0,
+    "text": "We're very lucky that one of our staff is a member of a folk band.",
+    "start": 330.4,
+    "end": 334.52,
     "words": [
       {
-        "w": "i've",
-        "start": 196.66,
-        "end": 197.62
+        "w": "we're",
+        "start": 330.4,
+        "end": 330.76
       },
       {
-        "w": "also",
-        "start": 197.62,
-        "end": 197.94
+        "w": "very",
+        "start": 330.76,
+        "end": 331.02
       },
       {
-        "w": "been",
-        "start": 197.94,
-        "end": 198.22
+        "w": "lucky",
+        "start": 331.02,
+        "end": 331.3
       },
       {
-        "w": "surfing",
-        "start": 198.22,
-        "end": 198.6
+        "w": "that",
+        "start": 331.3,
+        "end": 331.64
       },
       {
-        "w": "in",
-        "start": 198.6,
-        "end": 198.9
+        "w": "one",
+        "start": 331.64,
+        "end": 331.92
       },
       {
-        "w": "county",
-        "start": 198.9,
-        "end": 199.24
+        "w": "of",
+        "start": 331.92,
+        "end": 332.04
       },
       {
-        "w": "mayo",
-        "start": 199.24,
-        "end": 199.62
+        "w": "our",
+        "start": 332.04,
+        "end": 332.2
       },
       {
-        "w": "which",
-        "start": 199.62,
-        "end": 200.42
+        "w": "staff",
+        "start": 332.2,
+        "end": 332.6
       },
       {
         "w": "is",
-        "start": 200.42,
-        "end": 200.58
-      },
-      {
-        "w": "less",
-        "start": 200.58,
-        "end": 200.82
-      },
-      {
-        "w": "well",
-        "start": 200.82,
-        "end": 201.06
-      },
-      {
-        "w": "known",
-        "start": 201.06,
-        "end": 201.32
-      },
-      {
-        "w": "for",
-        "start": 201.32,
-        "end": 201.58
-      },
-      {
-        "w": "surfing",
-        "start": 201.58,
-        "end": 201.92
-      },
-      {
-        "w": "but",
-        "start": 201.92,
-        "end": 202.44
-      },
-      {
-        "w": "we",
-        "start": 202.44,
-        "end": 202.62
-      },
-      {
-        "w": "had",
-        "start": 202.62,
-        "end": 202.82
+        "start": 332.6,
+        "end": 333.26
       },
       {
         "w": "a",
-        "start": 202.82,
-        "end": 202.96
+        "start": 333.26,
+        "end": 333.4
       },
       {
-        "w": "really",
-        "start": 202.96,
-        "end": 203.36
+        "w": "member",
+        "start": 333.4,
+        "end": 333.6
       },
       {
-        "w": "good",
-        "start": 203.36,
-        "end": 203.6
+        "w": "of",
+        "start": 333.6,
+        "end": 333.8
       },
       {
-        "w": "time",
-        "start": 203.6,
-        "end": 204.0
+        "w": "a",
+        "start": 333.8,
+        "end": 333.9
+      },
+      {
+        "w": "folk",
+        "start": 333.9,
+        "end": 334.14
+      },
+      {
+        "w": "band",
+        "start": 334.14,
+        "end": 334.52
       }
     ],
     "matched": true
   },
   {
     "index": 33,
-    "text": "That was a few years ago when the kids were younger.",
-    "start": 205.0,
-    "end": 207.22,
+    "text": "On Mondays, she teaches singing and percussion to groups of children.",
+    "start": 335.3,
+    "end": 339.26,
     "words": [
       {
-        "w": "that",
-        "start": 205.0,
-        "end": 205.12
+        "w": "on",
+        "start": 335.3,
+        "end": 335.6
       },
       {
-        "w": "was",
-        "start": 205.12,
-        "end": 205.24
+        "w": "mondays",
+        "start": 335.6,
+        "end": 336.0
       },
       {
-        "w": "a",
-        "start": 205.24,
-        "end": 205.36
+        "w": "she",
+        "start": 336.0,
+        "end": 336.42
       },
       {
-        "w": "few",
-        "start": 205.36,
-        "end": 205.56
+        "w": "teaches",
+        "start": 336.42,
+        "end": 336.86
       },
       {
-        "w": "years",
-        "start": 205.56,
-        "end": 205.88
+        "w": "singing",
+        "start": 336.86,
+        "end": 337.2
       },
       {
-        "w": "ago",
-        "start": 205.88,
-        "end": 206.16
+        "w": "and",
+        "start": 337.2,
+        "end": 337.68
       },
       {
-        "w": "when",
-        "start": 206.16,
-        "end": 206.46
+        "w": "percussion",
+        "start": 337.68,
+        "end": 338.08
       },
       {
-        "w": "the",
-        "start": 206.46,
-        "end": 206.58
+        "w": "to",
+        "start": 338.08,
+        "end": 338.48
       },
       {
-        "w": "kids",
-        "start": 206.58,
-        "end": 206.76
+        "w": "groups",
+        "start": 338.48,
+        "end": 338.68
       },
       {
-        "w": "were",
-        "start": 206.76,
-        "end": 206.92
+        "w": "of",
+        "start": 338.68,
+        "end": 338.86
       },
       {
-        "w": "younger",
-        "start": 206.92,
-        "end": 207.22
+        "w": "children",
+        "start": 338.86,
+        "end": 339.26
       }
     ],
     "matched": true
   },
   {
     "index": 34,
-    "text": "There's a good surf school at Carrowniskey beach.",
-    "start": 208.0,
-    "end": 211.0,
+    "text": "We do rely on parental support for this, so if any of you sing or play an instrument and would be prepared to help out at these sessions, we'd be delighted.",
+    "start": 340.24,
+    "end": 350.38,
     "words": [
       {
-        "w": "there's",
-        "start": 208.0,
-        "end": 208.18
+        "w": "we",
+        "start": 340.24,
+        "end": 340.52
       },
       {
-        "w": "a",
-        "start": 208.18,
-        "end": 208.26
+        "w": "do",
+        "start": 340.52,
+        "end": 340.84
       },
       {
-        "w": "good",
-        "start": 208.26,
-        "end": 208.48
+        "w": "rely",
+        "start": 340.84,
+        "end": 341.38
       },
       {
-        "w": "surf",
-        "start": 208.48,
-        "end": 208.86
+        "w": "on",
+        "start": 341.38,
+        "end": 341.72
       },
       {
-        "w": "school",
-        "start": 208.86,
-        "end": 209.24
+        "w": "parental",
+        "start": 341.72,
+        "end": 342.04
+      },
+      {
+        "w": "support",
+        "start": 342.04,
+        "end": 342.64
+      },
+      {
+        "w": "for",
+        "start": 342.64,
+        "end": 342.84
+      },
+      {
+        "w": "this",
+        "start": 342.84,
+        "end": 343.14
+      },
+      {
+        "w": "so",
+        "start": 343.14,
+        "end": 343.66
+      },
+      {
+        "w": "if",
+        "start": 343.66,
+        "end": 343.88
+      },
+      {
+        "w": "any",
+        "start": 343.88,
+        "end": 344.22
+      },
+      {
+        "w": "of",
+        "start": 344.22,
+        "end": 344.4
+      },
+      {
+        "w": "you",
+        "start": 344.4,
+        "end": 344.52
+      },
+      {
+        "w": "sing",
+        "start": 344.52,
+        "end": 344.94
+      },
+      {
+        "w": "or",
+        "start": 344.94,
+        "end": 345.24
+      },
+      {
+        "w": "play",
+        "start": 345.24,
+        "end": 345.54
+      },
+      {
+        "w": "an",
+        "start": 345.54,
+        "end": 345.7
+      },
+      {
+        "w": "instrument",
+        "start": 345.7,
+        "end": 346.04
+      },
+      {
+        "w": "and",
+        "start": 346.04,
+        "end": 346.68
+      },
+      {
+        "w": "would",
+        "start": 346.68,
+        "end": 346.8
+      },
+      {
+        "w": "be",
+        "start": 346.8,
+        "end": 346.92
+      },
+      {
+        "w": "prepared",
+        "start": 346.92,
+        "end": 347.36
+      },
+      {
+        "w": "to",
+        "start": 347.36,
+        "end": 347.6
+      },
+      {
+        "w": "help",
+        "start": 347.6,
+        "end": 347.82
+      },
+      {
+        "w": "out",
+        "start": 347.82,
+        "end": 348.06
       },
       {
         "w": "at",
-        "start": 209.24,
-        "end": 209.62
+        "start": 348.06,
+        "end": 348.24
       },
       {
-        "w": "beach",
-        "start": 210.52,
-        "end": 211.0
+        "w": "these",
+        "start": 348.24,
+        "end": 348.4
+      },
+      {
+        "w": "sessions",
+        "start": 348.4,
+        "end": 348.9
+      },
+      {
+        "w": "we'd",
+        "start": 348.9,
+        "end": 349.66
+      },
+      {
+        "w": "be",
+        "start": 349.66,
+        "end": 349.9
+      },
+      {
+        "w": "delighted",
+        "start": 349.9,
+        "end": 350.38
       }
     ],
     "matched": true
   },
   {
     "index": 35,
-    "text": "How do you spell that?",
-    "start": 211.44,
-    "end": 212.64,
+    "text": "Painting continues to be one of the most popular activities.",
+    "start": 351.78,
+    "end": 355.2,
     "words": [
       {
-        "w": "how",
-        "start": 211.44,
-        "end": 211.8
+        "w": "painting",
+        "start": 351.78,
+        "end": 352.3
       },
       {
-        "w": "do",
-        "start": 211.8,
-        "end": 211.96
+        "w": "continues",
+        "start": 352.3,
+        "end": 352.84
       },
       {
-        "w": "you",
-        "start": 211.96,
-        "end": 212.08
+        "w": "to",
+        "start": 352.84,
+        "end": 353.12
       },
       {
-        "w": "spell",
-        "start": 212.08,
-        "end": 212.32
+        "w": "be",
+        "start": 353.12,
+        "end": 353.26
       },
       {
-        "w": "that",
-        "start": 212.32,
-        "end": 212.64
+        "w": "one",
+        "start": 353.26,
+        "end": 353.42
+      },
+      {
+        "w": "of",
+        "start": 353.42,
+        "end": 353.54
+      },
+      {
+        "w": "the",
+        "start": 353.54,
+        "end": 353.64
+      },
+      {
+        "w": "most",
+        "start": 353.64,
+        "end": 353.84
+      },
+      {
+        "w": "popular",
+        "start": 353.84,
+        "end": 354.42
+      },
+      {
+        "w": "activities",
+        "start": 354.42,
+        "end": 355.2
       }
     ],
     "matched": true
   },
   {
     "index": 36,
-    "text": "C-A-double R-O-W-N-I-S-K-E-Y OK.",
-    "start": 213.24,
-    "end": 223.1,
+    "text": "To begin with we weren't keen on offering this because of the extra mess involved, but children kept asking if they could do some art and so we finally gave in.",
+    "start": 356.02,
+    "end": 366.54,
     "words": [
       {
-        "w": "c",
-        "start": 213.24,
-        "end": 213.56
+        "w": "to",
+        "start": 356.02,
+        "end": 356.18
       },
       {
-        "w": "a",
-        "start": 213.56,
-        "end": 214.3
+        "w": "begin",
+        "start": 356.18,
+        "end": 356.4
       },
       {
-        "w": "r",
-        "start": 214.3,
-        "end": 215.44
+        "w": "with",
+        "start": 356.4,
+        "end": 356.66
       },
       {
-        "w": "o",
-        "start": 215.44,
-        "end": 216.86
+        "w": "we",
+        "start": 356.66,
+        "end": 357.06
       },
       {
-        "w": "w",
-        "start": 216.86,
-        "end": 217.92
+        "w": "weren't",
+        "start": 357.06,
+        "end": 357.48
       },
       {
-        "w": "n",
-        "start": 217.92,
-        "end": 218.72
+        "w": "keen",
+        "start": 357.48,
+        "end": 357.78
       },
       {
-        "w": "i",
-        "start": 218.72,
-        "end": 219.56
+        "w": "on",
+        "start": 357.78,
+        "end": 357.98
       },
       {
-        "w": "s",
-        "start": 219.56,
-        "end": 220.38
+        "w": "offering",
+        "start": 357.98,
+        "end": 358.28
       },
       {
-        "w": "k",
-        "start": 220.38,
-        "end": 221.08
+        "w": "this",
+        "start": 358.28,
+        "end": 358.7
       },
       {
-        "w": "e",
-        "start": 221.08,
-        "end": 222.06
+        "w": "because",
+        "start": 358.7,
+        "end": 358.98
       },
       {
-        "w": "y",
-        "start": 222.06,
-        "end": 223.1
+        "w": "of",
+        "start": 358.98,
+        "end": 359.2
+      },
+      {
+        "w": "the",
+        "start": 359.2,
+        "end": 359.3
+      },
+      {
+        "w": "extra",
+        "start": 359.3,
+        "end": 359.76
+      },
+      {
+        "w": "mess",
+        "start": 359.76,
+        "end": 360.06
+      },
+      {
+        "w": "involved",
+        "start": 360.06,
+        "end": 360.72
+      },
+      {
+        "w": "but",
+        "start": 360.72,
+        "end": 361.46
+      },
+      {
+        "w": "children",
+        "start": 361.46,
+        "end": 361.98
+      },
+      {
+        "w": "kept",
+        "start": 361.98,
+        "end": 362.42
+      },
+      {
+        "w": "asking",
+        "start": 362.42,
+        "end": 363.08
+      },
+      {
+        "w": "if",
+        "start": 363.08,
+        "end": 363.44
+      },
+      {
+        "w": "they",
+        "start": 363.44,
+        "end": 363.62
+      },
+      {
+        "w": "could",
+        "start": 363.62,
+        "end": 363.78
+      },
+      {
+        "w": "do",
+        "start": 363.78,
+        "end": 364.0
+      },
+      {
+        "w": "some",
+        "start": 364.0,
+        "end": 364.22
+      },
+      {
+        "w": "art",
+        "start": 364.22,
+        "end": 364.54
+      },
+      {
+        "w": "and",
+        "start": 364.54,
+        "end": 365.18
+      },
+      {
+        "w": "so",
+        "start": 365.18,
+        "end": 365.34
+      },
+      {
+        "w": "we",
+        "start": 365.34,
+        "end": 365.46
+      },
+      {
+        "w": "finally",
+        "start": 365.46,
+        "end": 365.8
+      },
+      {
+        "w": "gave",
+        "start": 365.8,
+        "end": 366.2
+      },
+      {
+        "w": "in",
+        "start": 366.2,
+        "end": 366.54
       }
     ],
     "matched": true
   },
   {
     "index": 37,
-    "text": "I put the kids into the surf camp they run during the summer for 10-16 year olds.",
-    "start": 224.16,
-    "end": 229.98,
+    "text": "Art is great for helping the children to relax after working hard at school all day.",
+    "start": 367.44,
+    "end": 372.24,
     "words": [
       {
-        "w": "i",
-        "start": 224.16,
-        "end": 224.76
+        "w": "art",
+        "start": 367.44,
+        "end": 367.72
       },
       {
-        "w": "put",
-        "start": 224.76,
-        "end": 225.3
+        "w": "is",
+        "start": 367.72,
+        "end": 367.9
       },
       {
-        "w": "the",
-        "start": 225.3,
-        "end": 225.44
-      },
-      {
-        "w": "kids",
-        "start": 225.44,
-        "end": 225.7
-      },
-      {
-        "w": "into",
-        "start": 225.7,
-        "end": 225.98
-      },
-      {
-        "w": "the",
-        "start": 225.98,
-        "end": 226.24
-      },
-      {
-        "w": "surf",
-        "start": 226.24,
-        "end": 226.44
-      },
-      {
-        "w": "camp",
-        "start": 226.44,
-        "end": 226.76
-      },
-      {
-        "w": "they",
-        "start": 226.76,
-        "end": 227.02
-      },
-      {
-        "w": "run",
-        "start": 227.02,
-        "end": 227.24
-      },
-      {
-        "w": "during",
-        "start": 227.24,
-        "end": 227.6
-      },
-      {
-        "w": "the",
-        "start": 227.6,
-        "end": 227.82
-      },
-      {
-        "w": "summer",
-        "start": 227.82,
-        "end": 228.14
+        "w": "great",
+        "start": 367.9,
+        "end": 368.28
       },
       {
         "w": "for",
-        "start": 228.14,
-        "end": 228.44
+        "start": 368.28,
+        "end": 368.56
       },
       {
-        "w": "10",
-        "start": 228.44,
-        "end": 228.74
+        "w": "helping",
+        "start": 368.56,
+        "end": 368.8
       },
       {
-        "w": "16",
-        "start": 228.9,
-        "end": 229.32
+        "w": "the",
+        "start": 368.8,
+        "end": 368.98
       },
       {
-        "w": "year",
-        "start": 229.32,
-        "end": 229.64
+        "w": "children",
+        "start": 368.98,
+        "end": 369.28
       },
       {
-        "w": "olds",
-        "start": 229.64,
-        "end": 229.98
+        "w": "to",
+        "start": 369.28,
+        "end": 369.5
+      },
+      {
+        "w": "relax",
+        "start": 369.5,
+        "end": 369.86
+      },
+      {
+        "w": "after",
+        "start": 369.86,
+        "end": 370.32
+      },
+      {
+        "w": "working",
+        "start": 370.32,
+        "end": 370.74
+      },
+      {
+        "w": "hard",
+        "start": 370.74,
+        "end": 371.16
+      },
+      {
+        "w": "at",
+        "start": 371.16,
+        "end": 371.36
+      },
+      {
+        "w": "school",
+        "start": 371.36,
+        "end": 371.7
+      },
+      {
+        "w": "all",
+        "start": 371.7,
+        "end": 371.96
+      },
+      {
+        "w": "day",
+        "start": 371.96,
+        "end": 372.24
       }
     ],
     "matched": true
   },
   {
     "index": 38,
-    "text": "Oh right.",
-    "start": 230.44,
-    "end": 231.22,
+    "text": "Yoga is something that we've been meaning to introduce for some time but haven't been able to find anyone available to teach it - until now that is.",
+    "start": 373.46,
+    "end": 382.26,
     "words": [
       {
-        "w": "oh",
-        "start": 230.44,
-        "end": 230.78
+        "w": "yoga",
+        "start": 373.46,
+        "end": 373.94
       },
       {
-        "w": "right",
-        "start": 230.78,
-        "end": 231.22
+        "w": "is",
+        "start": 373.94,
+        "end": 374.34
+      },
+      {
+        "w": "something",
+        "start": 374.34,
+        "end": 374.66
+      },
+      {
+        "w": "that",
+        "start": 374.66,
+        "end": 375.0
+      },
+      {
+        "w": "we've",
+        "start": 375.0,
+        "end": 375.24
+      },
+      {
+        "w": "been",
+        "start": 375.24,
+        "end": 375.38
+      },
+      {
+        "w": "meaning",
+        "start": 375.38,
+        "end": 375.64
+      },
+      {
+        "w": "to",
+        "start": 375.64,
+        "end": 375.86
+      },
+      {
+        "w": "introduce",
+        "start": 375.86,
+        "end": 376.24
+      },
+      {
+        "w": "for",
+        "start": 376.24,
+        "end": 376.52
+      },
+      {
+        "w": "some",
+        "start": 376.52,
+        "end": 376.72
+      },
+      {
+        "w": "time",
+        "start": 376.72,
+        "end": 377.16
+      },
+      {
+        "w": "but",
+        "start": 377.16,
+        "end": 377.76
+      },
+      {
+        "w": "haven't",
+        "start": 377.76,
+        "end": 378.06
+      },
+      {
+        "w": "been",
+        "start": 378.06,
+        "end": 378.18
+      },
+      {
+        "w": "able",
+        "start": 378.18,
+        "end": 378.38
+      },
+      {
+        "w": "to",
+        "start": 378.38,
+        "end": 378.56
+      },
+      {
+        "w": "find",
+        "start": 378.56,
+        "end": 378.78
+      },
+      {
+        "w": "anyone",
+        "start": 378.78,
+        "end": 379.16
+      },
+      {
+        "w": "available",
+        "start": 379.16,
+        "end": 379.58
+      },
+      {
+        "w": "to",
+        "start": 379.58,
+        "end": 379.94
+      },
+      {
+        "w": "teach",
+        "start": 379.94,
+        "end": 380.2
+      },
+      {
+        "w": "it",
+        "start": 380.2,
+        "end": 380.56
+      },
+      {
+        "w": "until",
+        "start": 380.82,
+        "end": 381.32
+      },
+      {
+        "w": "now",
+        "start": 381.32,
+        "end": 381.74
+      },
+      {
+        "w": "that",
+        "start": 381.74,
+        "end": 381.96
+      },
+      {
+        "w": "is",
+        "start": 381.96,
+        "end": 382.26
       }
     ],
     "matched": true
   },
   {
     "index": 39,
-    "text": "How long was that for?",
-    "start": 231.88,
-    "end": 233.22,
+    "text": "So we'll see how this goes.",
+    "start": 382.88,
+    "end": 384.32,
     "words": [
       {
+        "w": "so",
+        "start": 382.88,
+        "end": 383.24
+      },
+      {
+        "w": "we'll",
+        "start": 383.24,
+        "end": 383.52
+      },
+      {
+        "w": "see",
+        "start": 383.52,
+        "end": 383.68
+      },
+      {
         "w": "how",
-        "start": 231.88,
-        "end": 232.34
+        "start": 383.68,
+        "end": 383.84
       },
       {
-        "w": "long",
-        "start": 232.34,
-        "end": 232.58
+        "w": "this",
+        "start": 383.84,
+        "end": 384.0
       },
       {
-        "w": "was",
-        "start": 232.58,
-        "end": 232.78
-      },
-      {
-        "w": "that",
-        "start": 232.78,
-        "end": 232.96
-      },
-      {
-        "w": "for",
-        "start": 232.96,
-        "end": 233.22
+        "w": "goes",
+        "start": 384.0,
+        "end": 384.32
       }
     ],
     "matched": true
   },
   {
     "index": 40,
-    "text": "Three hours every day for a week.",
-    "start": 233.68,
-    "end": 235.76,
+    "text": "Hopefully, children will benefit in all sorts of ways from this.",
+    "start": 385.18,
+    "end": 389.2,
     "words": [
       {
-        "w": "three",
-        "start": 233.68,
-        "end": 233.9
+        "w": "hopefully",
+        "start": 385.18,
+        "end": 385.64
       },
       {
-        "w": "hours",
-        "start": 233.9,
-        "end": 234.26
+        "w": "children",
+        "start": 385.64,
+        "end": 386.42
       },
       {
-        "w": "every",
-        "start": 234.26,
-        "end": 234.72
+        "w": "will",
+        "start": 386.42,
+        "end": 386.8
       },
       {
-        "w": "day",
-        "start": 234.72,
-        "end": 235.04
+        "w": "benefit",
+        "start": 386.8,
+        "end": 387.18
       },
       {
-        "w": "for",
-        "start": 235.04,
-        "end": 235.38
+        "w": "in",
+        "start": 387.18,
+        "end": 387.5
       },
       {
-        "w": "a",
-        "start": 235.38,
-        "end": 235.52
+        "w": "all",
+        "start": 387.5,
+        "end": 387.74
       },
       {
-        "w": "week",
-        "start": 235.52,
-        "end": 235.76
+        "w": "sorts",
+        "start": 387.74,
+        "end": 388.1
+      },
+      {
+        "w": "of",
+        "start": 388.1,
+        "end": 388.38
+      },
+      {
+        "w": "ways",
+        "start": 388.38,
+        "end": 388.64
+      },
+      {
+        "w": "from",
+        "start": 388.64,
+        "end": 388.94
+      },
+      {
+        "w": "this",
+        "start": 388.94,
+        "end": 389.2
       }
     ],
     "matched": true
   },
   {
     "index": 41,
-    "text": "It was perfect - they were so tired out after that.",
-    "start": 236.32,
-    "end": 239.62,
+    "text": "Cooking is another popular activity.",
+    "start": 390.42,
+    "end": 392.7,
     "words": [
       {
-        "w": "it",
-        "start": 236.32,
-        "end": 236.5
+        "w": "cooking",
+        "start": 390.42,
+        "end": 390.72
       },
       {
-        "w": "was",
-        "start": 236.5,
-        "end": 236.68
+        "w": "is",
+        "start": 390.72,
+        "end": 391.1
       },
       {
-        "w": "perfect",
-        "start": 236.68,
-        "end": 237.22
+        "w": "another",
+        "start": 391.1,
+        "end": 391.52
       },
       {
-        "w": "they",
-        "start": 237.88,
-        "end": 238.04
+        "w": "popular",
+        "start": 391.52,
+        "end": 391.98
       },
       {
-        "w": "were",
-        "start": 238.04,
-        "end": 238.18
-      },
-      {
-        "w": "so",
-        "start": 238.18,
-        "end": 238.44
-      },
-      {
-        "w": "tired",
-        "start": 238.44,
-        "end": 238.8
-      },
-      {
-        "w": "out",
-        "start": 238.8,
-        "end": 239.06
-      },
-      {
-        "w": "after",
-        "start": 239.06,
-        "end": 239.38
-      },
-      {
-        "w": "that",
-        "start": 239.38,
-        "end": 239.62
+        "w": "activity",
+        "start": 391.98,
+        "end": 392.7
       }
     ],
     "matched": true
   },
   {
     "index": 42,
-    "text": "I can imagine.",
-    "start": 240.14,
-    "end": 240.94,
+    "text": "They make a different sort of cake, or pizza or bread each week.",
+    "start": 393.48,
+    "end": 397.26,
     "words": [
       {
-        "w": "i",
-        "start": 240.14,
-        "end": 240.32
+        "w": "they",
+        "start": 393.48,
+        "end": 393.72
       },
       {
-        "w": "can",
-        "start": 240.32,
-        "end": 240.52
+        "w": "make",
+        "start": 393.72,
+        "end": 393.9
       },
       {
-        "w": "imagine",
-        "start": 240.52,
-        "end": 240.94
+        "w": "a",
+        "start": 393.9,
+        "end": 394.04
+      },
+      {
+        "w": "different",
+        "start": 394.04,
+        "end": 394.24
+      },
+      {
+        "w": "sort",
+        "start": 394.24,
+        "end": 394.5
+      },
+      {
+        "w": "of",
+        "start": 394.5,
+        "end": 394.68
+      },
+      {
+        "w": "cake",
+        "start": 394.68,
+        "end": 394.96
+      },
+      {
+        "w": "or",
+        "start": 394.96,
+        "end": 395.42
+      },
+      {
+        "w": "pizza",
+        "start": 395.42,
+        "end": 395.86
+      },
+      {
+        "w": "or",
+        "start": 395.86,
+        "end": 396.16
+      },
+      {
+        "w": "bread",
+        "start": 396.16,
+        "end": 396.5
+      },
+      {
+        "w": "each",
+        "start": 396.5,
+        "end": 396.9
+      },
+      {
+        "w": "week",
+        "start": 396.9,
+        "end": 397.26
       }
     ],
     "matched": true
   },
   {
     "index": 43,
-    "text": "One thing we did while the kids were surfing was to rent some kayaks to have a look around the bay which is nearby.",
-    "start": 241.7,
-    "end": 248.58,
+    "text": "Although the younger children love doing it, we found that the mess was just too much, so we've decided to restrict this to the over 8s, as they are better able to clean up after themselves.",
+    "start": 397.9,
+    "end": 409.7,
     "words": [
       {
-        "w": "one",
-        "start": 241.7,
-        "end": 242.02
-      },
-      {
-        "w": "thing",
-        "start": 242.02,
-        "end": 242.26
-      },
-      {
-        "w": "we",
-        "start": 242.26,
-        "end": 242.42
-      },
-      {
-        "w": "did",
-        "start": 242.42,
-        "end": 242.62
-      },
-      {
-        "w": "while",
-        "start": 242.62,
-        "end": 242.9
+        "w": "although",
+        "start": 397.9,
+        "end": 398.26
       },
       {
         "w": "the",
-        "start": 242.9,
-        "end": 243.06
+        "start": 398.26,
+        "end": 398.56
       },
       {
-        "w": "kids",
-        "start": 243.06,
-        "end": 243.3
+        "w": "younger",
+        "start": 398.56,
+        "end": 398.82
       },
       {
-        "w": "were",
-        "start": 243.3,
-        "end": 243.52
-      },
-      {
-        "w": "surfing",
-        "start": 243.52,
-        "end": 243.88
-      },
-      {
-        "w": "was",
-        "start": 243.88,
-        "end": 244.52
-      },
-      {
-        "w": "to",
-        "start": 244.52,
-        "end": 244.7
-      },
-      {
-        "w": "rent",
-        "start": 244.7,
-        "end": 244.94
-      },
-      {
-        "w": "some",
-        "start": 244.94,
-        "end": 245.2
-      },
-      {
-        "w": "kayaks",
-        "start": 245.2,
-        "end": 245.92
-      },
-      {
-        "w": "to",
-        "start": 245.92,
-        "end": 246.44
-      },
-      {
-        "w": "have",
-        "start": 246.44,
-        "end": 246.64
-      },
-      {
-        "w": "a",
-        "start": 246.64,
-        "end": 246.74
-      },
-      {
-        "w": "look",
-        "start": 246.74,
-        "end": 246.88
-      },
-      {
-        "w": "around",
-        "start": 246.88,
-        "end": 247.2
-      },
-      {
-        "w": "the",
-        "start": 247.2,
-        "end": 247.36
-      },
-      {
-        "w": "bay",
-        "start": 247.36,
-        "end": 247.72
-      },
-      {
-        "w": "which",
-        "start": 247.72,
-        "end": 248.12
-      },
-      {
-        "w": "is",
-        "start": 248.12,
-        "end": 248.26
-      },
-      {
-        "w": "nearby",
-        "start": 248.26,
-        "end": 248.58
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 44,
-    "text": "It's really beautiful.",
-    "start": 249.38,
-    "end": 250.32,
-    "words": [
-      {
-        "w": "it's",
-        "start": 249.38,
-        "end": 249.6
-      },
-      {
-        "w": "really",
-        "start": 249.6,
-        "end": 249.92
-      },
-      {
-        "w": "beautiful",
-        "start": 249.92,
-        "end": 250.32
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 45,
-    "text": "Oh, I'd love to do that.",
-    "start": 250.84,
-    "end": 252.52,
-    "words": [
-      {
-        "w": "oh",
-        "start": 250.84,
-        "end": 251.22
-      },
-      {
-        "w": "i'd",
-        "start": 251.22,
-        "end": 251.52
+        "w": "children",
+        "start": 398.82,
+        "end": 399.22
       },
       {
         "w": "love",
-        "start": 251.52,
-        "end": 251.82
+        "start": 399.22,
+        "end": 399.52
       },
       {
-        "w": "to",
-        "start": 251.82,
-        "end": 252.06
-      },
-      {
-        "w": "do",
-        "start": 252.06,
-        "end": 252.22
-      },
-      {
-        "w": "that",
-        "start": 252.22,
-        "end": 252.52
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 46,
-    "text": "Now the only time I went to Ireland it rained practically every day.",
-    "start": 288.86,
-    "end": 294.04,
-    "words": [
-      {
-        "w": "now",
-        "start": 288.86,
-        "end": 289.46
-      },
-      {
-        "w": "the",
-        "start": 289.46,
-        "end": 289.76
-      },
-      {
-        "w": "only",
-        "start": 289.76,
-        "end": 289.98
-      },
-      {
-        "w": "time",
-        "start": 289.98,
-        "end": 290.36
-      },
-      {
-        "w": "i",
-        "start": 290.36,
-        "end": 290.64
-      },
-      {
-        "w": "went",
-        "start": 290.64,
-        "end": 290.84
-      },
-      {
-        "w": "to",
-        "start": 290.84,
-        "end": 291.08
-      },
-      {
-        "w": "ireland",
-        "start": 291.08,
-        "end": 291.46
+        "w": "doing",
+        "start": 399.52,
+        "end": 399.8
       },
       {
         "w": "it",
-        "start": 291.46,
-        "end": 292.04
+        "start": 399.8,
+        "end": 400.1
       },
       {
-        "w": "rained",
-        "start": 292.04,
-        "end": 292.38
+        "w": "we",
+        "start": 400.1,
+        "end": 400.68
       },
       {
-        "w": "practically",
-        "start": 292.38,
-        "end": 293.02
-      },
-      {
-        "w": "every",
-        "start": 293.02,
-        "end": 293.6
-      },
-      {
-        "w": "day",
-        "start": 293.6,
-        "end": 294.04
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 47,
-    "text": "Mmm yes - that can be a problem - but you can surf in the rain, you know.",
-    "start": 294.32,
-    "end": 298.74,
-    "words": [
-      {
-        "w": "yes",
-        "start": 294.32,
-        "end": 294.8
+        "w": "found",
+        "start": 400.68,
+        "end": 400.98
       },
       {
         "w": "that",
-        "start": 294.8,
-        "end": 295.54
-      },
-      {
-        "w": "can",
-        "start": 295.54,
-        "end": 295.84
-      },
-      {
-        "w": "be",
-        "start": 295.84,
-        "end": 296.02
-      },
-      {
-        "w": "a",
-        "start": 296.02,
-        "end": 296.12
-      },
-      {
-        "w": "problem",
-        "start": 296.12,
-        "end": 296.4
-      },
-      {
-        "w": "but",
-        "start": 296.4,
-        "end": 297.18
-      },
-      {
-        "w": "you",
-        "start": 297.18,
-        "end": 297.42
-      },
-      {
-        "w": "can",
-        "start": 297.42,
-        "end": 297.62
-      },
-      {
-        "w": "surf",
-        "start": 297.62,
-        "end": 297.92
-      },
-      {
-        "w": "in",
-        "start": 297.92,
-        "end": 298.1
+        "start": 400.98,
+        "end": 401.16
       },
       {
         "w": "the",
-        "start": 298.1,
-        "end": 298.22
+        "start": 401.16,
+        "end": 401.28
       },
       {
-        "w": "rain",
-        "start": 298.22,
-        "end": 298.44
+        "w": "mess",
+        "start": 401.28,
+        "end": 401.54
       },
       {
-        "w": "you",
-        "start": 298.44,
-        "end": 298.62
+        "w": "was",
+        "start": 401.54,
+        "end": 401.78
       },
       {
-        "w": "know",
-        "start": 298.62,
-        "end": 298.74
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 48,
-    "text": "It doesn't have the same appeal, somehow.",
-    "start": 299.32,
-    "end": 301.88,
-    "words": [
-      {
-        "w": "it",
-        "start": 299.32,
-        "end": 299.82
-      },
-      {
-        "w": "doesn't",
-        "start": 299.82,
-        "end": 300.16
-      },
-      {
-        "w": "have",
-        "start": 300.16,
-        "end": 300.34
-      },
-      {
-        "w": "the",
-        "start": 300.34,
-        "end": 300.48
-      },
-      {
-        "w": "same",
-        "start": 300.48,
-        "end": 300.78
-      },
-      {
-        "w": "appeal",
-        "start": 300.78,
-        "end": 301.26
-      },
-      {
-        "w": "somehow",
-        "start": 301.26,
-        "end": 301.88
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 49,
-    "text": "Well, the weather's been fine the last couple of years when I've been there, but actually, it tends to rain more in August than in the spring or autumn.",
-    "start": 302.44,
-    "end": 311.3,
-    "words": [
-      {
-        "w": "well",
-        "start": 302.44,
-        "end": 302.86
-      },
-      {
-        "w": "the",
-        "start": 302.86,
-        "end": 303.12
-      },
-      {
-        "w": "weather's",
-        "start": 303.12,
-        "end": 303.44
-      },
-      {
-        "w": "been",
-        "start": 303.44,
-        "end": 303.68
-      },
-      {
-        "w": "fine",
-        "start": 303.68,
-        "end": 304.1
-      },
-      {
-        "w": "the",
-        "start": 304.1,
-        "end": 304.3
-      },
-      {
-        "w": "last",
-        "start": 304.3,
-        "end": 304.6
-      },
-      {
-        "w": "couple",
-        "start": 304.6,
-        "end": 304.84
-      },
-      {
-        "w": "of",
-        "start": 304.84,
-        "end": 305.04
-      },
-      {
-        "w": "years",
-        "start": 305.04,
-        "end": 305.3
-      },
-      {
-        "w": "when",
-        "start": 305.3,
-        "end": 305.5
-      },
-      {
-        "w": "i've",
-        "start": 305.5,
-        "end": 305.74
-      },
-      {
-        "w": "been",
-        "start": 305.74,
-        "end": 305.9
-      },
-      {
-        "w": "there",
-        "start": 305.9,
-        "end": 306.18
-      },
-      {
-        "w": "but",
-        "start": 306.18,
-        "end": 306.96
-      },
-      {
-        "w": "actually",
-        "start": 306.96,
-        "end": 307.36
-      },
-      {
-        "w": "it",
-        "start": 307.36,
-        "end": 307.64
-      },
-      {
-        "w": "tends",
-        "start": 307.64,
-        "end": 307.92
-      },
-      {
-        "w": "to",
-        "start": 307.92,
-        "end": 308.14
-      },
-      {
-        "w": "rain",
-        "start": 308.14,
-        "end": 308.5
-      },
-      {
-        "w": "more",
-        "start": 308.5,
-        "end": 308.84
-      },
-      {
-        "w": "in",
-        "start": 308.84,
-        "end": 309.1
-      },
-      {
-        "w": "august",
-        "start": 309.1,
-        "end": 309.54
-      },
-      {
-        "w": "than",
-        "start": 309.54,
-        "end": 310.04
-      },
-      {
-        "w": "in",
-        "start": 310.04,
-        "end": 310.18
-      },
-      {
-        "w": "the",
-        "start": 310.18,
-        "end": 310.28
-      },
-      {
-        "w": "spring",
-        "start": 310.28,
-        "end": 310.62
-      },
-      {
-        "w": "or",
-        "start": 310.62,
-        "end": 310.92
-      },
-      {
-        "w": "autumn",
-        "start": 310.92,
-        "end": 311.3
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 50,
-    "text": "September's my favourite month because the water is warmer then.",
-    "start": 312.34,
-    "end": 315.82,
-    "words": [
-      {
-        "w": "september's",
-        "start": 312.34,
-        "end": 313.02
-      },
-      {
-        "w": "my",
-        "start": 313.02,
-        "end": 313.2
-      },
-      {
-        "w": "favourite",
-        "start": 313.2,
-        "end": 313.6
-      },
-      {
-        "w": "month",
-        "start": 313.6,
-        "end": 314.02
-      },
-      {
-        "w": "because",
-        "start": 314.02,
-        "end": 314.34
-      },
-      {
-        "w": "the",
-        "start": 314.34,
-        "end": 314.56
-      },
-      {
-        "w": "water",
-        "start": 314.56,
-        "end": 314.88
-      },
-      {
-        "w": "is",
-        "start": 314.88,
-        "end": 315.12
-      },
-      {
-        "w": "warmer",
-        "start": 315.12,
-        "end": 315.52
-      },
-      {
-        "w": "then",
-        "start": 315.52,
-        "end": 315.82
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 51,
-    "text": "The only problem is that the kids are back to school then.",
-    "start": 316.36,
-    "end": 319.78,
-    "words": [
-      {
-        "w": "the",
-        "start": 316.36,
-        "end": 316.58
-      },
-      {
-        "w": "only",
-        "start": 316.58,
-        "end": 316.82
-      },
-      {
-        "w": "problem",
-        "start": 316.82,
-        "end": 317.32
-      },
-      {
-        "w": "is",
-        "start": 317.32,
-        "end": 317.8
-      },
-      {
-        "w": "that",
-        "start": 317.8,
-        "end": 318.16
-      },
-      {
-        "w": "the",
-        "start": 318.16,
-        "end": 318.32
-      },
-      {
-        "w": "kids",
-        "start": 318.32,
-        "end": 318.6
-      },
-      {
-        "w": "are",
-        "start": 318.6,
-        "end": 318.82
-      },
-      {
-        "w": "back",
-        "start": 318.82,
-        "end": 318.94
-      },
-      {
-        "w": "to",
-        "start": 318.94,
-        "end": 319.14
-      },
-      {
-        "w": "school",
-        "start": 319.14,
-        "end": 319.48
-      },
-      {
-        "w": "then",
-        "start": 319.48,
-        "end": 319.78
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 52,
-    "text": "I know.",
-    "start": 320.14,
-    "end": 320.54,
-    "words": [
-      {
-        "w": "i",
-        "start": 320.14,
-        "end": 320.28
-      },
-      {
-        "w": "know",
-        "start": 320.28,
-        "end": 320.54
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 53,
-    "text": "But one good thing about Irish summers is that it doesn't get too hot.",
-    "start": 321.18,
-    "end": 325.46,
-    "words": [
-      {
-        "w": "but",
-        "start": 321.18,
-        "end": 321.46
-      },
-      {
-        "w": "one",
-        "start": 321.46,
-        "end": 321.74
-      },
-      {
-        "w": "good",
-        "start": 321.74,
-        "end": 321.94
-      },
-      {
-        "w": "thing",
-        "start": 321.94,
-        "end": 322.14
-      },
-      {
-        "w": "about",
-        "start": 322.14,
-        "end": 322.42
-      },
-      {
-        "w": "irish",
-        "start": 322.42,
-        "end": 322.86
-      },
-      {
-        "w": "summers",
-        "start": 322.86,
-        "end": 323.32
-      },
-      {
-        "w": "is",
-        "start": 323.32,
-        "end": 323.98
-      },
-      {
-        "w": "that",
-        "start": 323.98,
-        "end": 324.14
-      },
-      {
-        "w": "it",
-        "start": 324.14,
-        "end": 324.26
-      },
-      {
-        "w": "doesn't",
-        "start": 324.26,
-        "end": 324.5
-      },
-      {
-        "w": "get",
-        "start": 324.5,
-        "end": 324.7
+        "w": "just",
+        "start": 401.78,
+        "end": 402.02
       },
       {
         "w": "too",
-        "start": 324.7,
-        "end": 325.06
-      },
-      {
-        "w": "hot",
-        "start": 325.06,
-        "end": 325.46
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 54,
-    "text": "The average temperature is about 19 degrees and it usually doesn't go above 25 degrees.",
-    "start": 326.16,
-    "end": 333.06,
-    "words": [
-      {
-        "w": "the",
-        "start": 326.16,
-        "end": 326.32
-      },
-      {
-        "w": "average",
-        "start": 326.32,
-        "end": 326.66
-      },
-      {
-        "w": "temperature",
-        "start": 326.66,
-        "end": 327.14
-      },
-      {
-        "w": "is",
-        "start": 327.14,
-        "end": 327.64
-      },
-      {
-        "w": "about",
-        "start": 327.64,
-        "end": 327.92
-      },
-      {
-        "w": "19",
-        "start": 327.92,
-        "end": 328.64
-      },
-      {
-        "w": "degrees",
-        "start": 328.64,
-        "end": 329.14
-      },
-      {
-        "w": "and",
-        "start": 329.14,
-        "end": 330.2
-      },
-      {
-        "w": "it",
-        "start": 330.2,
-        "end": 330.36
-      },
-      {
-        "w": "usually",
-        "start": 330.36,
-        "end": 330.8
-      },
-      {
-        "w": "doesn't",
-        "start": 330.8,
-        "end": 331.38
-      },
-      {
-        "w": "go",
-        "start": 331.38,
-        "end": 331.54
-      },
-      {
-        "w": "above",
-        "start": 331.54,
-        "end": 331.82
-      },
-      {
-        "w": "25",
-        "start": 331.82,
-        "end": 332.5
-      },
-      {
-        "w": "degrees",
-        "start": 332.5,
-        "end": 333.06
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 55,
-    "text": "That sounds alright.",
-    "start": 333.7,
-    "end": 334.6,
-    "words": [
-      {
-        "w": "that",
-        "start": 333.7,
-        "end": 333.96
-      },
-      {
-        "w": "sounds",
-        "start": 333.96,
-        "end": 334.26
-      },
-      {
-        "w": "alright",
-        "start": 334.26,
-        "end": 334.6
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 56,
-    "text": "Now what about costs?",
-    "start": 335.48,
-    "end": 336.98,
-    "words": [
-      {
-        "w": "now",
-        "start": 335.48,
-        "end": 335.86
-      },
-      {
-        "w": "what",
-        "start": 335.86,
-        "end": 336.28
-      },
-      {
-        "w": "about",
-        "start": 336.28,
-        "end": 336.54
-      },
-      {
-        "w": "costs",
-        "start": 336.54,
-        "end": 336.98
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 57,
-    "text": "Surfing is a pretty cheap holiday really - the only cost is the hire of equipment.",
-    "start": 337.7,
-    "end": 342.8,
-    "words": [
-      {
-        "w": "surfing",
-        "start": 337.7,
-        "end": 338.22
-      },
-      {
-        "w": "is",
-        "start": 338.22,
-        "end": 338.4
-      },
-      {
-        "w": "a",
-        "start": 338.4,
-        "end": 338.58
-      },
-      {
-        "w": "pretty",
-        "start": 338.58,
-        "end": 338.84
-      },
-      {
-        "w": "cheap",
-        "start": 338.84,
-        "end": 339.18
-      },
-      {
-        "w": "holiday",
-        "start": 339.18,
-        "end": 339.66
-      },
-      {
-        "w": "really",
-        "start": 339.66,
-        "end": 340.02
-      },
-      {
-        "w": "the",
-        "start": 340.02,
-        "end": 340.86
-      },
-      {
-        "w": "only",
-        "start": 340.86,
-        "end": 341.16
-      },
-      {
-        "w": "cost",
-        "start": 341.16,
-        "end": 341.52
-      },
-      {
-        "w": "is",
-        "start": 341.52,
-        "end": 341.78
-      },
-      {
-        "w": "the",
-        "start": 341.78,
-        "end": 341.94
-      },
-      {
-        "w": "hire",
-        "start": 341.94,
-        "end": 342.24
-      },
-      {
-        "w": "of",
-        "start": 342.24,
-        "end": 342.44
-      },
-      {
-        "w": "equipment",
-        "start": 342.44,
-        "end": 342.8
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 58,
-    "text": "You can expect to pay a daily rate of about 30 euros for the hire of a wetsuit and board - but you can save about 40 euros if you hire by the week.",
-    "start": 343.56,
-    "end": 354.64,
-    "words": [
-      {
-        "w": "you",
-        "start": 343.56,
-        "end": 343.82
-      },
-      {
-        "w": "can",
-        "start": 343.82,
-        "end": 343.94
-      },
-      {
-        "w": "expect",
-        "start": 343.94,
-        "end": 344.28
-      },
-      {
-        "w": "to",
-        "start": 344.28,
-        "end": 344.6
-      },
-      {
-        "w": "pay",
-        "start": 344.6,
-        "end": 344.82
-      },
-      {
-        "w": "a",
-        "start": 344.82,
-        "end": 345.08
-      },
-      {
-        "w": "daily",
-        "start": 345.08,
-        "end": 345.42
-      },
-      {
-        "w": "rate",
-        "start": 345.42,
-        "end": 345.86
-      },
-      {
-        "w": "of",
-        "start": 345.86,
-        "end": 346.08
-      },
-      {
-        "w": "about",
-        "start": 346.08,
-        "end": 346.4
-      },
-      {
-        "w": "30",
-        "start": 346.4,
-        "end": 347.16
-      },
-      {
-        "w": "euros",
-        "start": 347.16,
-        "end": 347.7
-      },
-      {
-        "w": "for",
-        "start": 347.7,
-        "end": 348.08
-      },
-      {
-        "w": "the",
-        "start": 348.08,
-        "end": 348.24
-      },
-      {
-        "w": "hire",
-        "start": 348.24,
-        "end": 348.52
-      },
-      {
-        "w": "of",
-        "start": 348.52,
-        "end": 348.72
-      },
-      {
-        "w": "a",
-        "start": 348.72,
-        "end": 348.82
-      },
-      {
-        "w": "wetsuit",
-        "start": 348.82,
-        "end": 349.3
-      },
-      {
-        "w": "and",
-        "start": 349.3,
-        "end": 349.48
-      },
-      {
-        "w": "board",
-        "start": 349.48,
-        "end": 349.82
-      },
-      {
-        "w": "but",
-        "start": 349.82,
-        "end": 351.0
-      },
-      {
-        "w": "you",
-        "start": 351.0,
-        "end": 351.18
-      },
-      {
-        "w": "can",
-        "start": 351.18,
-        "end": 351.34
-      },
-      {
-        "w": "save",
-        "start": 351.34,
-        "end": 351.68
-      },
-      {
-        "w": "about",
-        "start": 351.68,
-        "end": 351.98
-      },
-      {
-        "w": "40",
-        "start": 351.98,
-        "end": 352.54
-      },
-      {
-        "w": "euros",
-        "start": 352.54,
-        "end": 353.04
-      },
-      {
-        "w": "if",
-        "start": 353.04,
-        "end": 353.52
-      },
-      {
-        "w": "you",
-        "start": 353.52,
-        "end": 353.64
-      },
-      {
-        "w": "hire",
-        "start": 353.64,
-        "end": 353.96
-      },
-      {
-        "w": "by",
-        "start": 353.96,
-        "end": 354.18
-      },
-      {
-        "w": "the",
-        "start": 354.18,
-        "end": 354.32
-      },
-      {
-        "w": "week",
-        "start": 354.32,
-        "end": 354.64
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 59,
-    "text": "That's not too bad.",
-    "start": 355.06,
-    "end": 356.1,
-    "words": [
-      {
-        "w": "that's",
-        "start": 355.06,
-        "end": 355.4
-      },
-      {
-        "w": "not",
-        "start": 355.4,
-        "end": 355.56
-      },
-      {
-        "w": "too",
-        "start": 355.56,
-        "end": 355.8
-      },
-      {
-        "w": "bad",
-        "start": 355.8,
-        "end": 356.1
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 60,
-    "text": "No.",
-    "start": 356.4,
-    "end": 356.64,
-    "words": [
-      {
-        "w": "no",
-        "start": 356.4,
-        "end": 356.64
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 61,
-    "text": "It's important to make sure you get good quality wetsuits - you'll all get too cold if you don't.",
-    "start": 357.42,
-    "end": 363.28,
-    "words": [
-      {
-        "w": "it's",
-        "start": 357.42,
-        "end": 357.7
-      },
-      {
-        "w": "important",
-        "start": 357.7,
-        "end": 358.18
-      },
-      {
-        "w": "to",
-        "start": 358.18,
-        "end": 358.44
-      },
-      {
-        "w": "make",
-        "start": 358.44,
-        "end": 358.6
-      },
-      {
-        "w": "sure",
-        "start": 358.6,
-        "end": 358.88
-      },
-      {
-        "w": "you",
-        "start": 358.88,
-        "end": 359.06
-      },
-      {
-        "w": "get",
-        "start": 359.06,
-        "end": 359.28
-      },
-      {
-        "w": "good",
-        "start": 359.28,
-        "end": 359.58
-      },
-      {
-        "w": "quality",
-        "start": 359.58,
-        "end": 360.02
-      },
-      {
-        "w": "wetsuits",
-        "start": 360.02,
-        "end": 360.72
-      },
-      {
-        "w": "you'll",
-        "start": 361.3,
-        "end": 361.66
-      },
-      {
-        "w": "all",
-        "start": 361.66,
-        "end": 361.86
-      },
-      {
-        "w": "get",
-        "start": 361.86,
-        "end": 362.02
-      },
-      {
-        "w": "too",
-        "start": 362.02,
-        "end": 362.28
-      },
-      {
-        "w": "cold",
-        "start": 362.28,
-        "end": 362.62
-      },
-      {
-        "w": "if",
-        "start": 362.62,
-        "end": 362.8
-      },
-      {
-        "w": "you",
-        "start": 362.8,
-        "end": 362.9
-      },
-      {
-        "w": "don't",
-        "start": 362.9,
-        "end": 363.28
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 62,
-    "text": "And make sure you also get boots.",
-    "start": 363.28,
-    "end": 366.12,
-    "words": [
-      {
-        "w": "and",
-        "start": 363.28,
-        "end": 364.02
-      },
-      {
-        "w": "make",
-        "start": 364.02,
-        "end": 364.32
-      },
-      {
-        "w": "sure",
-        "start": 364.32,
-        "end": 364.68
-      },
-      {
-        "w": "you",
-        "start": 364.68,
-        "end": 364.88
-      },
-      {
-        "w": "also",
-        "start": 364.88,
-        "end": 365.22
-      },
-      {
-        "w": "get",
-        "start": 365.22,
-        "end": 365.58
-      },
-      {
-        "w": "boots",
-        "start": 365.58,
-        "end": 366.12
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 63,
-    "text": "They keep your feet warm and it's easier to surf with them on too.",
-    "start": 366.7,
-    "end": 370.98,
-    "words": [
-      {
-        "w": "they",
-        "start": 366.7,
-        "end": 367.26
-      },
-      {
-        "w": "keep",
-        "start": 367.26,
-        "end": 367.5
-      },
-      {
-        "w": "your",
-        "start": 367.5,
-        "end": 367.7
-      },
-      {
-        "w": "feet",
-        "start": 367.7,
-        "end": 368.0
-      },
-      {
-        "w": "warm",
-        "start": 368.0,
-        "end": 368.44
-      },
-      {
-        "w": "and",
-        "start": 368.44,
-        "end": 368.94
-      },
-      {
-        "w": "it's",
-        "start": 368.94,
-        "end": 369.14
-      },
-      {
-        "w": "easier",
-        "start": 369.14,
-        "end": 369.56
-      },
-      {
-        "w": "to",
-        "start": 369.56,
-        "end": 369.74
-      },
-      {
-        "w": "surf",
-        "start": 369.74,
-        "end": 370.04
-      },
-      {
-        "w": "with",
-        "start": 370.04,
-        "end": 370.28
-      },
-      {
-        "w": "them",
-        "start": 370.28,
-        "end": 370.46
-      },
-      {
-        "w": "on",
-        "start": 370.46,
-        "end": 370.62
-      },
-      {
-        "w": "too",
-        "start": 370.62,
-        "end": 370.98
-      }
-    ],
-    "matched": true
-  },
-  {
-    "index": 64,
-    "text": "OK.",
-    "start": 371.08,
-    "end": 372.32,
-    "words": [],
-    "matched": true,
-    "interpolated": true
-  },
-  {
-    "index": 65,
-    "text": "Well, thanks very much …",
-    "start": 372.42,
-    "end": 373.98,
-    "words": [
-      {
-        "w": "well",
-        "start": 372.42,
-        "end": 372.68
-      },
-      {
-        "w": "thanks",
-        "start": 372.92,
-        "end": 373.4
-      },
-      {
-        "w": "very",
-        "start": 373.4,
-        "end": 373.68
+        "start": 402.02,
+        "end": 402.36
       },
       {
         "w": "much",
-        "start": 373.68,
-        "end": 373.98
+        "start": 402.36,
+        "end": 402.76
+      },
+      {
+        "w": "so",
+        "start": 402.76,
+        "end": 403.58
+      },
+      {
+        "w": "we've",
+        "start": 403.58,
+        "end": 404.18
+      },
+      {
+        "w": "decided",
+        "start": 404.18,
+        "end": 404.58
+      },
+      {
+        "w": "to",
+        "start": 404.58,
+        "end": 404.84
+      },
+      {
+        "w": "restrict",
+        "start": 404.84,
+        "end": 405.22
+      },
+      {
+        "w": "this",
+        "start": 405.22,
+        "end": 405.72
+      },
+      {
+        "w": "to",
+        "start": 405.72,
+        "end": 406.0
+      },
+      {
+        "w": "the",
+        "start": 406.0,
+        "end": 406.14
+      },
+      {
+        "w": "over",
+        "start": 406.14,
+        "end": 406.36
+      },
+      {
+        "w": "as",
+        "start": 406.88,
+        "end": 407.32
+      },
+      {
+        "w": "they",
+        "start": 407.32,
+        "end": 407.48
+      },
+      {
+        "w": "are",
+        "start": 407.48,
+        "end": 407.58
+      },
+      {
+        "w": "better",
+        "start": 407.58,
+        "end": 407.82
+      },
+      {
+        "w": "able",
+        "start": 407.82,
+        "end": 408.16
+      },
+      {
+        "w": "to",
+        "start": 408.16,
+        "end": 408.36
+      },
+      {
+        "w": "clean",
+        "start": 408.36,
+        "end": 408.66
+      },
+      {
+        "w": "up",
+        "start": 408.66,
+        "end": 408.86
+      },
+      {
+        "w": "after",
+        "start": 408.86,
+        "end": 409.2
+      },
+      {
+        "w": "themselves",
+        "start": 409.2,
+        "end": 409.7
       }
     ],
     "matched": true

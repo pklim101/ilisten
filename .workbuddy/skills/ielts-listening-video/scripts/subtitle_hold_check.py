@@ -61,15 +61,20 @@ def main() -> int:
         return 1
 
     tl = json.loads((data / "timeline.json").read_text(encoding="utf-8"))
-    dlg = []
+    dlg_all = []
     for ln in (data / "subtitles.ass").read_text(encoding="utf-8").splitlines():
         if ln.startswith("Dialogue:"):
             p = ln.split(",", 9)
-            dlg.append((ass_seconds(p[1]), ass_seconds(p[2])))
+            dlg_all.append((ass_seconds(p[1]), ass_seconds(p[2]), p[3].strip()))
+    # 2026-11-17：读题段也出字幕（EN_INSTR 样式），只验正文字幕的停留；
+    # 读题字幕显示区间=音频播放区间、无 hold，不参与「句尾停留」判定。
+    dlg = [(s, e) for s, e, style in dlg_all if style != "EN_INSTR"]
+    n_instr_sub = sum(1 for _s, _e, style in dlg_all if style == "EN_INSTR")
     ev = sorted(tl["events"], key=lambda e: float(e["start"]))
     total = float(tl["total_duration"])
     if len(dlg) != len(ev):
-        print(f"[错误] ASS Dialogue {len(dlg)} != timeline 事件 {len(ev)}", file=sys.stderr)
+        print(f"[错误] ASS 正文字幕 {len(dlg)} != timeline 事件 {len(ev)}"
+              f"（读题字幕 {n_instr_sub} 段已排除）", file=sys.stderr)
         return 1
 
     # [1][2] 停留时长 + 不重叠
@@ -102,7 +107,8 @@ def main() -> int:
     print(f" 中间产物: {data}")
     print(f" 成片:     {mp4}")
     print("-" * 64)
-    print(f" 事件 {len(ev)}；字幕相对音频边界停留：中位 {float(np.median(gains)):.3f}s，"
+    print(f" 事件 {len(ev)}（另读题字幕 {n_instr_sub} 段不参与停留判定）；"
+          f"字幕相对音频边界停留：中位 {float(np.median(gains)):.3f}s，"
           f"范围 {min(gains):.3f}~{max(gains):.3f}s")
     print(f" 停留 >0.5s 的事件: {sum(1 for g in gains if g > 0.5)}/{len(gains)}")
     print(f" [1][2] 字幕重叠下一句: {overlaps} 句（BLOCK 阈值 >0）")

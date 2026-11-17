@@ -24,8 +24,10 @@ QUERIES = {
                 "4) 背景是否铺满整幅画面、有没有黑边。"),
     "2_bilingual": ("这是一张雅思听力精听视频的抽帧。请只回答看到的事实：画面上是否同时出现一行英文原文和一行中文翻译，"
                     "两行是否都在画面内、居中、不重叠、不被裁切。"),
-    "3_instruction": ("这是一张雅思听力精听视频的抽帧。请只回答看到的事实：这一帧画面上是否完全没有字幕"
-                      "（既无英文也无中文），只有背景图。如果出现任何文字请指出内容。"),
+    "3_instruction": ("这是一张雅思听力精听视频读题阶段的抽帧。请只回答看到的事实：1) 画面上是否显示一行完整的英文字幕"
+                      "（题目说明文字），而不是空白背景；2) 英文字幕里有没有下划线填空或橙色高亮词（应都没有）；"
+                      "3) 字幕是否垂直居中、左右留有边距、不贴边不被裁切；4) 背景是否铺满整幅画面无黑边。"
+                      "若画面完全无字幕，请明确指出。"),
     "4_highlight": ("这是一张雅思听力精听视频的抽帧。请只回答看到的事实：画面上的英文字幕里是否有若干词被标成橙色高亮，"
                     "高亮是否清晰、字幕是否居中不越界。"),
 }
@@ -101,13 +103,22 @@ def main() -> int:
     if bil:
         frames.append(("2_bilingual", t_in(bil), f"sentence_index={bil.get('sentence_index')} 双语态"))
 
-    gaps = uncovered_gaps(events, total)
-    if gaps:
-        lo, hi = max(gaps, key=lambda g: g[1] - g[0])
-        frames.append(("3_instruction", (lo + hi) / 2,
-                       f"说明段间隙 {lo:.1f}~{hi:.1f}s（共 {len(gaps)} 段）"))
+    # 2026-11-17：读题段现在有完整英文字幕（instruction_events），第 3 帧改为验证它。
+    # 取时长最长的读题段中点（字幕最可能完整显示），无该字段的旧留档降级为原「无字幕间隙」检查。
+    instr = tl.get("instruction_events", [])
+    if instr:
+        ins = max(instr, key=lambda e: float(e["end"]) - float(e["start"]))
+        it = (float(ins["start"]) + float(ins["end"])) / 2
+        frames.append(("3_instruction", it,
+                       f"读题段字幕 {float(ins['start']):.1f}~{float(ins['end']):.1f}s（共 {len(instr)} 段）"))
     else:
-        print("[WARN] 未找到 >=4.0s 的未覆盖间隙，跳过说明段帧", file=sys.stderr)
+        gaps = uncovered_gaps(events, total)
+        if gaps:
+            lo, hi = max(gaps, key=lambda g: g[1] - g[0])
+            frames.append(("3_instruction", (lo + hi) / 2,
+                           f"[旧版]说明段间隙 {lo:.1f}~{hi:.1f}s（共 {len(gaps)} 段）"))
+        else:
+            print("[WARN] 未找到读题段也未找到 >=4.0s 间隙，跳过说明段帧", file=sys.stderr)
 
     if args.with_highlight:
         hl_pool = [e for e in events if e.get("repeat") == 1 and e.get("highlights")]

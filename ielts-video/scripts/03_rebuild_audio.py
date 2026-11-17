@@ -212,6 +212,10 @@ def build(instructions, annotated, work_dir):
 
     audio_pieces = []
     timeline = []
+    # 读题段在重组时间轴上的区间（2026-11-17 用户要求：读题时也显示完整英文字幕）。
+    # instructions 原始 start/end 是原音频时间；读题音频切片后 cursor 恰好落在它
+    # 在成片里的播放区间，故在此记录 cursor 前的位置。04 据此生成一条无挖空的字幕。
+    instruction_events = []
     cursor = 0.0
 
     # 合并指令段和正文句，按时间顺序交织
@@ -254,7 +258,8 @@ def build(instructions, annotated, work_dir):
     sent_counter = 0
     for idx, (kind, item) in enumerate(segments):
         if kind == "instr":
-            # 题目说明段：原样播一遍，无字幕
+            # 题目说明段：原样播一遍，不挖空。起点后移到前句补出的尾音之后，
+            # 避免与前一句 TailFitter 补出来的尾音重复播放同一段原音频。
             start = instr_start[idx]
             end = item["end"]
             seg_path = work / f"instr_{start:.1f}.mp3"
@@ -267,8 +272,17 @@ def build(instructions, annotated, work_dir):
         dur = end - start
 
         if kind == "instr":
+            # 读题段：音频原样播一遍；并生成一条「完整英文、不挖空」字幕。
+            # 区间用重组时间轴的 cursor（音频实际播放位置），不是原音频 start。
+            # 2026-11-17 用户要求「读题时也要显示读题字幕，只读一遍、不挖空」。
+            seg_start = cursor
             audio_pieces.append(str(seg_path))
             cursor += dur
+            instruction_events.append({
+                "start": round(seg_start, 3),
+                "end": round(cursor, 3),
+                "text": item["text"],
+            })
             continue
 
         # 正文句：逐句 ×3 遍
@@ -306,7 +320,7 @@ def build(instructions, annotated, work_dir):
 
         sent_counter += 1
 
-    return timeline, cursor, audio_pieces
+    return timeline, cursor, audio_pieces, instruction_events
 
 
 def main():
@@ -316,7 +330,7 @@ def main():
     print(f"题目说明段 {len(instructions)} 个，正文句 {n_sent} 句参与重组")
 
     work_dir = "ielts-video/data/tmp_audio"
-    timeline, total_dur, audio_pieces = build(instructions, annotated, work_dir)
+    timeline, total_dur, audio_pieces, instruction_events = build(instructions, annotated, work_dir)
 
     pads = [ev["tail_pad_sec"] for ev in timeline if ev.get("tail_pad_sec", 0) > 0]
     if pads:
@@ -332,10 +346,11 @@ def main():
         "repeats": REPEATS,
         "total_duration": round(total_dur, 3),
         "events": timeline,
+        "instruction_events": instruction_events,
     }
     Path(OUT_TIMELINE).write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"[完成] 重组音频 {OUT_AUDIO}")
-    print(f"[完成] 时间轴 {OUT_TIMELINE}（{len(timeline)} 个字幕事件）")
+    print(f"[完成] 时间轴 {OUT_TIMELINE}（{len(timeline)} 个字幕事件 + {len(instruction_events)} 段读题字幕）")
 
 
 if __name__ == "__main__":

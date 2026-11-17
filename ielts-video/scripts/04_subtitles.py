@@ -23,6 +23,11 @@ from pathlib import Path
 
 TIMELINE = os.environ.get("TIMELINE", "ielts-video/data/timeline.json")
 OUT_ASS = os.environ.get("OUT_ASS", "ielts-video/data/subtitles.ass")
+# 读题段（2026-11-17 用户要求）：读题时也显示英文字幕，完整原文、不挖空、只读一遍。
+# 读题音频在 03_rebuild_audio.build() 里已原样播一遍（不循环），但旧版没写进 timeline，
+# 画面在 0~几十秒的读题期全空。03 现在把读题段在**重组时间轴**上的精确区间写进
+# timeline["instruction_events"]（[{start,end,text}]），04 据此生成一条完整英文字幕。
+# 单一真值源只认 timeline；缺该字段时降级跳过（兼容旧留档），不臆造区间。
 
 VIDEO_W = int(os.environ.get("VIDEO_W", "1920"))
 VIDEO_H = int(os.environ.get("VIDEO_H", "1080"))
@@ -209,6 +214,7 @@ WrapStyle: 0
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: EN,Arial,48,&H00202020,&H00202020,&H00FFFFFF,&H00000000,1,0,0,0,100,100,0,0,1,4,0,5,120,120,40,1
 Style: ZH,Arial,36,&H00404040,&H00404040,&H00FFFFFF,&H00000000,0,0,0,0,100,100,0,0,1,3,0,5,120,120,40,1
+Style: EN_INSTR,Arial,48,&H00202020,&H00202020,&H00FFFFFF,&H00000000,0,0,0,0,100,100,0,0,1,4,0,5,120,120,40,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -219,6 +225,21 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     MAX_W_ZH = VIDEO_W - 2 * 120
 
     lines = [header]
+
+    # —— 读题段字幕（2026-11-17 用户要求）——
+    # timeline["instruction_events"] 由 03 写出，区间是**重组时间轴**上的精确播放位置。
+    # 每条读题段生成一条完整英文字幕：不挖空、不高亮、不翻译（用户选「英文原文即可」），
+    # 显示区间严格 = 读题音频播放区间 [start, end]，不加 hold（读题只读一遍）。
+    for ins in timeline.get("instruction_events", []):
+        txt = str(ins.get("text", "")).strip()
+        if not txt:
+            continue
+        it_start = fmt_time(float(ins["start"]))
+        it_end = fmt_time(float(ins["end"]))
+        en_lines = wrap_text(escape_ass(txt), 48, MAX_W_EN).split("\\N")
+        rendered = "\\N".join(en_lines)
+        lines.append(f"Dialogue: 0,{it_start},{it_end},EN_INSTR,,0,0,0,,{{\\an5}}{rendered}")
+
     for ev in events:
         rep = ev["repeat"]
         start = fmt_time(ev["start"])
