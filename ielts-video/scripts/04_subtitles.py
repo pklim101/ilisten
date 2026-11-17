@@ -27,6 +27,51 @@ OUT_ASS = os.environ.get("OUT_ASS", "ielts-video/data/subtitles.ass")
 VIDEO_W = int(os.environ.get("VIDEO_W", "1920"))
 VIDEO_H = int(os.environ.get("VIDEO_H", "1080"))
 
+# —— 句尾字幕停留（2026-11-17 验收缺陷修复）——
+# symptom：每句话末尾还有半个音节没读完时字幕就消失了。
+# 根因不是音频丢音（词级 end 已全部 <= play_end，成片字幕 end 后也无残留语音），
+# 而是字幕 end 精确取音频片段右边界 ev["end"]，尾音渐弱的最后一刻字幕被硬切移除；
+# 且 03_rebuild_audio.py 的设计注释明确写「三遍之间停顿 1 秒（停顿期间字幕保持显示）」，
+# 旧实现在停顿一开始就把字幕清空，与注释不符。
+# 修法：字幕 end = ev["end"] + SUBTITLE_HOLD_SEC，再三重 clamp：
+#   ① 不越过下一字幕事件 start - GUARD（遍间 1s / 句间 3s，绝不重叠、不吞下一句）；
+#   ② 不越过片尾 total_duration；
+#   ③ 不侵入 >=4s 的未覆盖间隙（说明段），与 qa_check.uncovered_gaps / C6 同源，
+#      否则「说明段无字幕」会 BLOCK。
+# 回归基线：48 篇 7218 事件，end→下一事件最小空隙 1.0s，0 个 <0.30s 紧邻事件。
+# 绝不改音频切片 / tail_pad / 淡出参数——那部分已经验收通过。
+SUBTITLE_HOLD_SEC = float(os.environ.get("SUBTITLE_HOLD_SEC", "0.8"))
+SUBTITLE_HOLD_GUARD_SEC = float(os.environ.get("SUBTITLE_HOLD_GUARD_SEC", "0.10"))
+# 与 qa_check.py 的 GAP_SEC 同源；说明段（读题/结束语）间隙必须全程无字幕。
+INSTR_GAP_SEC = float(os.environ.get("INSTR_GAP_SEC", "4.0"))
+
+
+def uncovered_gap_starts(events_sorted, total, gap_sec=INSTR_GAP_SEC):
+    """返回 >=gap_sec 的未覆盖间隙起点，与 qa_check.uncovered_gaps 同源。"""
+    starts = []
+    cur = 0.0
+    for e in events_sorted:
+        s, en = float(e["start"]), float(e["end"])
+        if s - cur >= gap_sec:
+            starts.append(cur)
+        cur = max(cur, en)
+    if total - cur >= gap_sec:
+        starts.append(cur)
+    return starts
+
+
+def held_end(ev, next_start, total, gap_starts):
+    """返回该字幕事件带停留的 end（已三重 clamp，必定 >= 原 ev["end"]）。"""
+    base = float(ev["end"])
+    end = base + SUBTITLE_HOLD_SEC
+    end = min(end, next_start - SUBTITLE_HOLD_GUARD_SEC, total)
+    # 不侵入说明段间隙：若某 gap 起点落在 (base, end] 内，收在 gap 起点前。
+    for gs in gap_starts:
+        if base - 0.01 <= gs < end:
+            end = gs
+            break
+    return max(end, base)
+
 
 def escape_ass(text):
     """转义 ASS 特殊字符。"""
@@ -143,6 +188,15 @@ def apply_highlights(text, highlights, mode):
 
 def build_ass(timeline):
     events = timeline["events"]
+    # 按时间排序后计算每条事件的停留 end：next_start 取紧邻的下一事件起点，
+    # 最后一条取片尾时长；说明段间隙起点供 clamp 使用。
+    ordered = sorted(events, key=lambda e: float(e["start"]))
+    total = float(timeline.get("total_duration", max(float(e["end"]) for e in events)))
+    gap_starts = uncovered_gap_starts(ordered, total)
+    hold_ends = {}
+    for i, ev in enumerate(ordered):
+        nxt = float(ordered[i + 1]["start"]) if i + 1 < len(ordered) else total
+        hold_ends[id(ev)] = held_end(ev, nxt, total, gap_starts)
 
     header = f"""[Script Info]
 ScriptType: v4.00+
@@ -168,7 +222,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     for ev in events:
         rep = ev["repeat"]
         start = fmt_time(ev["start"])
-        end = fmt_time(ev["end"])
+        end = fmt_time(hold_ends[id(ev)])
 
         # 方案：先对纯文本折行，再逐行应用高亮标签，避免标签跨行断裂。
         # \an5 居中 + \N 硬换行，不依赖 libass 的 \q2。
